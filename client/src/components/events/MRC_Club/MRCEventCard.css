@@ -1,0 +1,59 @@
+.mrccard{
+    width: 75%;
+    justify-content: center;
+    margin: auto;
+    display: flex;
+}
+
+.registerdiv {
+    position: absolute;
+    background-color: skyblue;
+    top:0px;
+    opacity: 0.8;
+    right: 0px;
+    height: 250px;
+    width: 18rem;
+    transition: all 0.4s ease;
+    text-align: center;
+    display: none;
+}
+.regbtn{
+    z-index: 5;
+    margin: auto;
+    margin-top: 100px;
+    border: 2px solid black;
+    font-size: 20px;
+    padding: 5px 40px;
+    font-weight: 800;
+    color: #000;
+}
+.regbtn:hover{
+    color: #000;
+    box-shadow: none;
+}
+.regbtn:focus{
+    box-shadow: none;
+}
+.mrceventcard{
+    border: none;
+    width: 18rem;
+    margin: 30px;
+    box-shadow: rgba(6, 24, 44, 0.4) 0px 0px 0px 3px, rgba(36, 64, 95, 0.65) 0px 6px 8px 5px, rgba(255, 255, 255, 0.08) 0px 4px 0px inset;
+}
+.mrceventcard:hover{
+    transform: scale(1.03);
+    z-index: 10;
+    cursor: pointer;
+}
+.mrceventcard:hover .registerdiv{
+    display: block;
+}
+@media (max-width:990px) {
+    .mrccard{
+        flex-direction: column;
+    }
+    .mrceventcard{
+        margin: auto;
+        margin-bottom: 30px;
+    }
+}

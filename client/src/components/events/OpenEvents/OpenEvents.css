@@ -1,0 +1,21 @@
+.openevents{
+    background: url("../../../../public/images/tech.jpg") no-repeat center center fixed;
+    min-height: 100vh;
+    width: 100%;
+    background-attachment: fixed;
+    text-align: center;
+    background-size: cover;
+}
+.sec1{
+    padding-top:6%;
+    height:80vh;
+}
+.sec2{
+    padding-top:4.5%;
+    height:90vh;
+}
+@media (max-width:990px) {
+    .sec1,.sec2{
+        height: auto;
+    }
+}

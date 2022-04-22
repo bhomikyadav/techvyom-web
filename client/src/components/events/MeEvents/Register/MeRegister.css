@@ -1,0 +1,85 @@
+.meeventregister{
+    background: url("../../../../../public/images/tech.jpg") no-repeat center center fixed;
+    min-height: 100vh;
+    width: 100%;
+    background-attachment: fixed;
+    padding-bottom: 50px;
+    background-size: cover;
+}
+.regform{
+    width: 30%;
+    margin: auto;
+}
+.form{
+    display: flex;
+    flex-direction: column;
+}
+.avtr{
+    width: 100px;
+    height: 100px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 10px;
+}
+.form > h3{
+    text-align: center;
+}
+.form > input, .form>select{
+    border: none;
+    margin: 20px;
+    background: transparent;
+    border-bottom: 2px solid white;
+}
+.form >label{
+    margin: 10px 20px;
+    font-size: 18px;
+    font-weight: 700;
+}
+.form > input::-webkit-input-placeholder {
+    font-family: FontAwesome;
+    font-weight: 500;
+    overflow: visible;
+    vertical-align: middle;
+    display: inline-block !important;
+    font-size: 18px;
+    color: black;
+}
+.form > button{
+    margin-top: 10px;
+    color: white;padding: 7px;
+    background-color: rgb(40, 40, 177);
+    border: none;
+    border-radius: 10px;
+    font-size: 20px;
+    width: 30%;
+    margin: auto;
+}
+
+.eventselect > ul > li{
+    list-style: none;
+    margin-bottom: 5px;
+    font-size: 18px;
+    margin-left: -10px;
+    font-weight: 500;
+}
+.homebtn{
+    border: none;
+    background-color: rgb(40, 40, 177);
+    color: white;
+    border-radius: 5px;
+    padding: 8px 12px;
+    margin-top: 15px;
+}
+.homebtn:hover{
+    cursor: pointer;
+}
+@media (max-width:720px) {
+    .regform{
+        width: 95%;
+    }
+}
+@media (min-width:721px) and (max-width:1020px) {
+    .regform{
+        width: 50%;
+    }
+}

@@ -1,0 +1,8 @@
+.navbar{
+    justify-content: center;
+    color: white;
+}
+.navdiv>span{
+    font-size: 32px;
+    font-weight: 600;
+}
