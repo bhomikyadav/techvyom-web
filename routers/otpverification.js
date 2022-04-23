@@ -41,7 +41,7 @@ router.post("/genrate", async (req, res) => {
   });
   var mailOptions = {
     from: "srms.techvyom@gmail.com",
-    to: "bhomickyadav786@gmail.com",
+    to: email,
     subject: "verify otp",
     html: `${otp} expire in 1 hour`,
   };
