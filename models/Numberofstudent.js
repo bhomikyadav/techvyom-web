@@ -6,7 +6,7 @@ const NumberofstudentSchema = new mongoose.Schema({
   },
   numberofstudent: {
     type: Number,
-    default: 0,
+    default: 1,
   },
 });
 

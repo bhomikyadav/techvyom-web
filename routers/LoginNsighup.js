@@ -31,12 +31,12 @@ router.post("/create", async (req, res) => {
       });
     }
     // get Pid from Numberofstudent model
-    const numOfStu = await Numberofstudent.findOne({
+    const { numberofstudent } = await Numberofstudent.findOne({
       name: "admin",
     });
     // creating new data for user
 
-    const Pid = `22${numOfStu.numberofstudent + 1}`;
+    const Pid = `22${parseInt(numberofstudent) + 1}`;
     let newuser_data = {
       Phonenumber: req.body.Phonenumber,
       email: req.body.email,
@@ -57,19 +57,19 @@ router.post("/create", async (req, res) => {
         name: "admin",
       },
       {
-        numberofstudent: numOfStu.numberofstudent + 1,
+        numberofstudent: numberofstudent + 1,
       }
     );
 
     // send data to client
     res.send({
       status: true,
-      mas: "registered",
+      msg: "registered",
       data: {
         name: new_User_result.name,
         rollnumber: new_User_result.rollnumber,
         verified: new_User_result.verified,
-        Pid,
+        Pid: new_User_result.Pid,
       },
     });
   } catch (error) {
@@ -82,7 +82,7 @@ router.post("/create", async (req, res) => {
 });
 
 // ------------------------------------------
-router.get("/login", async (req, res) => {
+router.post("/login", async (req, res) => {
   const validatadta = Jio.object({
     rollnumber: Jio.string().required(),
     Pid: Jio.string().required(),
@@ -108,6 +108,7 @@ router.get("/login", async (req, res) => {
     }
     res.send({
       status: true,
+      msg: "login successfully",
       name: student_exits.name,
       rollnumber: student_exits.rollnumber,
       verified: student_exits.verified,
