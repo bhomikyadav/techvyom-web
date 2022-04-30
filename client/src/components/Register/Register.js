@@ -11,7 +11,7 @@ const Register = () => {
   const [number, setnumber] = useState("");
   const [rollnumber, setrollnumber] = useState("");
   const handleonsubmit = async (event) => {
-    userData.working();
+   
     event.preventDefault();
     console.log(name + "\n" + number + "\n" + rollnumber + "\n" + email);
     try {
@@ -31,8 +31,9 @@ const Register = () => {
 
       const data = await response.json();
       console.log(data);
-      await userData.setuserPid(data.data.Pid);
+     
       if (data.status) {
+        userData.setuserPid(data.data.Pid);
         userData.setuseremail(email);
         userData.setusername(name);
         userData.setusernumber(number);
@@ -50,7 +51,7 @@ const Register = () => {
         console.log(otpdata);
         if (otpdata.status) {
           toast.success(otpdata.msg);
-          toast.success(`your Pid : ${userData.userPid}`);
+         
           navigate("/otpverify");
         } else {
           toast.error(otpdata.msg);

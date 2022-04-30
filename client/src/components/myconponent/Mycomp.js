@@ -40,14 +40,14 @@ const Mycomp = () => {
                 <li className="tag__item">
                   <i className="fas fa-tag mr-2"></i>Grouped
                 </li>
-                {/* <li className="tag__item">
-                  <i className="fas fa-clock mr-2"></i>55 mins.
+               <li className="tag__item">
+                  <i className="fas fa-clock mr-2"></i>
                 </li>
                 <li className="tag__item play blue">
                   <a href="#">
-                    <i className="fas fa-play mr-2"></i>Play Episode
+                    <i className="fas fa-play mr-2"></i>
                   </a>
-                </li> */}
+                </li> 
               </ul>
             </div>
           </article>
@@ -79,14 +79,14 @@ const Mycomp = () => {
               </div>
               <ul className="postcard__tagbox">
                 <li className="tag__item">
-                  <i className="fas fa-tag mr-2"></i>Podcast
+                  <i className="fas fa-tag mr-2"></i>Grouped
                 </li>
                 <li className="tag__item">
-                  <i className="fas fa-clock mr-2"></i>55 mins.
+                  <i className="fas fa-clock mr-2"></i>
                 </li>
                 <li className="tag__item play red">
                   <a href="#">
-                    <i className="fas fa-play mr-2"></i>Play Episode
+                    <i className="fas fa-play mr-2"></i>
                   </a>
                 </li>
               </ul>
@@ -122,14 +122,14 @@ const Mycomp = () => {
               </div>
               <ul className="postcard__tagbox">
                 <li className="tag__item">
-                  <i className="fas fa-tag mr-2"></i>Podcast
+                  <i className="fas fa-tag mr-2"></i>Grouped
                 </li>
                 <li className="tag__item">
-                  <i className="fas fa-clock mr-2"></i>55 mins.
+                  <i className="fas fa-clock mr-2"></i>
                 </li>
                 <li className="tag__item play green">
                   <a href="#">
-                    <i className="fas fa-play mr-2"></i>Play Episode
+                    <i className="fas fa-play mr-2"></i>
                   </a>
                 </li>
               </ul>
@@ -168,14 +168,14 @@ const Mycomp = () => {
               </div>
               <ul className="postcard__tagbox">
                 <li className="tag__item">
-                  <i className="fas fa-tag mr-2"></i>Podcast
+                  <i className="fas fa-tag mr-2"></i>Grouped
                 </li>
                 <li className="tag__item">
-                  <i className="fas fa-clock mr-2"></i>55 mins.
+                  <i className="fas fa-clock mr-2"></i>
                 </li>
                 <li className="tag__item play yellow">
                   <a href="#">
-                    <i className="fas fa-play mr-2"></i>Play Episode
+                    <i className="fas fa-play mr-2"></i>
                   </a>
                 </li>
               </ul>
@@ -215,11 +215,11 @@ const Mycomp = () => {
                   <i className="fas fa-tag mr-2"></i>Grouped
                 </li>
                 <li className="tag__item">
-                  <i className="fas fa-clock mr-2"></i>55 mins.
+                  <i className="fas fa-clock mr-2"></i>
                 </li>
                 <li className="tag__item play blue">
                   <a href="#">
-                    <i className="fas fa-play mr-2"></i>Play Episode
+                    <i className="fas fa-play mr-2"></i>
                   </a>
                 </li>
               </ul>
@@ -261,14 +261,14 @@ const Mycomp = () => {
               </div>
               <ul className="postcard__tagbox">
                 <li className="tag__item">
-                  <i className="fas fa-tag mr-2"></i>Podcast
+                  <i className="fas fa-tag mr-2"></i>Grouped
                 </li>
                 <li className="tag__item">
-                  <i className="fas fa-clock mr-2"></i>55 mins.
+                  <i className="fas fa-clock mr-2"></i>
                 </li>
                 <li className="tag__item play blue">
                   <a href="#">
-                    <i className="fas fa-play mr-2"></i>Play Episode
+                    <i className="fas fa-play mr-2"></i>
                   </a>
                 </li>
               </ul>
@@ -299,14 +299,14 @@ const Mycomp = () => {
               </div>
               <ul className="postcard__tagbox">
                 <li className="tag__item">
-                  <i className="fas fa-tag mr-2"></i>Podcast
+                  <i className="fas fa-tag mr-2"></i>Grouped
                 </li>
                 <li className="tag__item">
-                  <i className="fas fa-clock mr-2"></i>55 mins.
+                  <i className="fas fa-clock mr-2"></i>
                 </li>
                 <li className="tag__item play red">
                   <a href="#">
-                    <i className="fas fa-play mr-2"></i>Play Episode
+                    <i className="fas fa-play mr-2"></i>
                   </a>
                 </li>
               </ul>
@@ -337,14 +337,14 @@ const Mycomp = () => {
               </div>
               <ul className="postcard__tagbox">
                 <li className="tag__item">
-                  <i className="fas fa-tag mr-2"></i>Podcast
+                  <i className="fas fa-tag mr-2"></i>Grouped
                 </li>
                 <li className="tag__item">
-                  <i className="fas fa-clock mr-2"></i>55 mins.
+                  <i className="fas fa-clock mr-2"></i>
                 </li>
                 <li className="tag__item play green">
                   <a href="#">
-                    <i className="fas fa-play mr-2"></i>Play Episode
+                    <i className="fas fa-play mr-2"></i>
                   </a>
                 </li>
               </ul>
@@ -376,14 +376,14 @@ const Mycomp = () => {
               </div>
               <ul className="postcard__tagbox">
                 <li className="tag__item">
-                  <i className="fas fa-tag mr-2"></i>Podcast
+                  <i className="fas fa-tag mr-2"></i>Grouped
                 </li>
                 <li className="tag__item">
-                  <i className="fas fa-clock mr-2"></i>55 mins.
+                  <i className="fas fa-clock mr-2"></i>
                 </li>
                 <li className="tag__item play yellow">
                   <a href="#">
-                    <i className="fas fa-play mr-2"></i>Play Episode
+                    <i className="fas fa-play mr-2"></i>
                   </a>
                 </li>
               </ul>
@@ -414,14 +414,14 @@ const Mycomp = () => {
               </div>
               <ul className="postcard__tagbox">
                 <li className="tag__item">
-                  <i className="fas fa-tag mr-2"></i>Podcast
+                  <i className="fas fa-tag mr-2"></i>Single
                 </li>
                 <li className="tag__item">
-                  <i className="fas fa-clock mr-2"></i>55 mins.
+                  <i className="fas fa-clock mr-2"></i>
                 </li>
                 <li className="tag__item play yellow">
                   <a href="#">
-                    <i className="fas fa-play mr-2"></i>Play Episode
+                    <i className="fas fa-play mr-2"></i>
                   </a>
                 </li>
               </ul>
@@ -467,11 +467,11 @@ const Mycomp = () => {
                   <i className="fas fa-tag mr-2"></i>Grouped
                 </li>
                 <li className="tag__item">
-                  <i className="fas fa-clock mr-2"></i>55 mins.
+                  <i className="fas fa-clock mr-2"></i>.
                 </li>
                 <li className="tag__item play blue">
                   <a href="#">
-                    <i className="fas fa-play mr-2"></i>Play Episode
+                    <i className="fas fa-play mr-2"></i>
                   </a>
                 </li>
               </ul>
@@ -506,14 +506,14 @@ const Mycomp = () => {
               </div>
               <ul className="postcard__tagbox">
                 <li className="tag__item">
-                  <i className="fas fa-tag mr-2"></i>Podcast
+                  <i className="fas fa-tag mr-2"></i>single
                 </li>
                 <li className="tag__item">
-                  <i className="fas fa-clock mr-2"></i>55 mins.
+                  <i className="fas fa-clock mr-2"></i>
                 </li>
                 <li className="tag__item play red">
                   <a href="#">
-                    <i className="fas fa-play mr-2"></i>Play Episode
+                    <i className="fas fa-play mr-2"></i>
                   </a>
                 </li>
               </ul>
@@ -547,14 +547,14 @@ const Mycomp = () => {
               </div>
               <ul className="postcard__tagbox">
                 <li className="tag__item">
-                  <i className="fas fa-tag mr-2"></i>Podcast
+                  <i className="fas fa-tag mr-2"></i>grouped
                 </li>
                 <li className="tag__item">
-                  <i className="fas fa-clock mr-2"></i>55 mins.
+                  <i className="fas fa-clock mr-2"></i>
                 </li>
                 <li className="tag__item play green">
                   <a href="#">
-                    <i className="fas fa-play mr-2"></i>Play Episode
+                    <i className="fas fa-play mr-2"></i>
                   </a>
                 </li>
               </ul>
@@ -585,14 +585,14 @@ const Mycomp = () => {
               </div>
               <ul className="postcard__tagbox">
                 <li className="tag__item">
-                  <i className="fas fa-tag mr-2"></i>Podcast
+                  <i className="fas fa-tag mr-2"></i>single
                 </li>
                 <li className="tag__item">
-                  <i className="fas fa-clock mr-2"></i>55 mins.
+                  <i className="fas fa-clock mr-2"></i>
                 </li>
                 <li className="tag__item play yellow">
                   <a href="#">
-                    <i className="fas fa-play mr-2"></i>Play Episode
+                    <i className="fas fa-play mr-2"></i>
                   </a>
                 </li>
               </ul>
@@ -631,14 +631,14 @@ const Mycomp = () => {
               </div>
               <ul className="postcard__tagbox">
                 <li className="tag__item">
-                  <i className="fas fa-tag mr-2"></i>Podcast
+                  <i className="fas fa-tag mr-2"></i>single
                 </li>
                 <li className="tag__item">
-                  <i className="fas fa-clock mr-2"></i>55 mins.
+                  <i className="fas fa-clock mr-2"></i>
                 </li>
                 <li className="tag__item play blue">
                   <a href="#">
-                    <i className="fas fa-play mr-2"></i>Play Episode
+                    <i className="fas fa-play mr-2"></i>
                   </a>
                 </li>
               </ul>
@@ -669,14 +669,14 @@ const Mycomp = () => {
               </div>
               <ul className="postcard__tagbox">
                 <li className="tag__item">
-                  <i className="fas fa-tag mr-2"></i>Podcast
+                  <i className="fas fa-tag mr-2"></i>single
                 </li>
                 <li className="tag__item">
-                  <i className="fas fa-clock mr-2"></i>55 mins.
+                  <i className="fas fa-clock mr-2"></i>
                 </li>
                 <li className="tag__item play red">
                   <a href="#">
-                    <i className="fas fa-play mr-2"></i>Play Episode
+                    <i className="fas fa-play mr-2"></i>
                   </a>
                 </li>
               </ul>
@@ -707,14 +707,14 @@ const Mycomp = () => {
               </div>
               <ul className="postcard__tagbox">
                 <li className="tag__item">
-                  <i className="fas fa-tag mr-2"></i>Podcast
+                  <i className="fas fa-tag mr-2"></i>single
                 </li>
                 <li className="tag__item">
-                  <i className="fas fa-clock mr-2"></i>55 mins.
+                  <i className="fas fa-clock mr-2"></i>
                 </li>
                 <li className="tag__item play green">
                   <a href="#">
-                    <i className="fas fa-play mr-2"></i>Play Episode
+                    <i className="fas fa-play mr-2"></i>
                   </a>
                 </li>
               </ul>
@@ -744,14 +744,14 @@ const Mycomp = () => {
               </div>
               <ul className="postcard__tagbox">
                 <li className="tag__item">
-                  <i className="fas fa-tag mr-2"></i>Podcast
+                  <i className="fas fa-tag mr-2"></i>single
                 </li>
                 <li className="tag__item">
-                  <i className="fas fa-clock mr-2"></i>55 mins.
+                  <i className="fas fa-clock mr-2"></i>
                 </li>
                 <li className="tag__item play yellow">
                   <a href="#">
-                    <i className="fas fa-play mr-2"></i>Play Episode
+                    <i className="fas fa-play mr-2"></i>
                   </a>
                 </li>
               </ul>
@@ -781,14 +781,14 @@ const Mycomp = () => {
               </div>
               <ul className="postcard__tagbox">
                 <li className="tag__item">
-                  <i className="fas fa-tag mr-2"></i>Podcast
+                  <i className="fas fa-tag mr-2"></i>Grouped
                 </li>
                 <li className="tag__item">
-                  <i className="fas fa-clock mr-2"></i>55 mins.
+                  <i className="fas fa-clock mr-2"></i>.
                 </li>
                 <li className="tag__item play yellow">
                   <a href="#">
-                    <i className="fas fa-play mr-2"></i>Play Episode
+                    <i className="fas fa-play mr-2"></i>
                   </a>
                 </li>
               </ul>
@@ -831,14 +831,14 @@ const Mycomp = () => {
               </div>
               <ul className="postcard__tagbox">
                 <li className="tag__item">
-                  <i className="fas fa-tag mr-2"></i>Grouped
+                  <i className="fas fa-tag mr-2"></i>single
                 </li>
                 <li className="tag__item">
-                  <i className="fas fa-clock mr-2"></i>55 mins.
+                  <i className="fas fa-clock mr-2"></i>
                 </li>
                 <li className="tag__item play blue">
                   <a href="#">
-                    <i className="fas fa-play mr-2"></i>Play Episode
+                    <i className="fas fa-play mr-2"></i>
                   </a>
                 </li>
               </ul>
@@ -873,14 +873,14 @@ const Mycomp = () => {
               </div>
               <ul className="postcard__tagbox">
                 <li className="tag__item">
-                  <i className="fas fa-tag mr-2"></i>Podcast
+                  <i className="fas fa-tag mr-2"></i>Grouped
                 </li>
                 <li className="tag__item">
-                  <i className="fas fa-clock mr-2"></i>55 mins.
+                  <i className="fas fa-clock mr-2"></i>
                 </li>
                 <li className="tag__item play red">
                   <a href="#">
-                    <i className="fas fa-play mr-2"></i>Play Episode
+                    <i className="fas fa-play mr-2"></i>
                   </a>
                 </li>
               </ul>
@@ -914,14 +914,14 @@ const Mycomp = () => {
               </div>
               <ul className="postcard__tagbox">
                 <li className="tag__item">
-                  <i className="fas fa-tag mr-2"></i>Podcast
+                  <i className="fas fa-tag mr-2"></i>single
                 </li>
                 <li className="tag__item">
-                  <i className="fas fa-clock mr-2"></i>55 mins.
+                  <i className="fas fa-clock mr-2"></i>
                 </li>
                 <li className="tag__item play green">
                   <a href="#">
-                    <i className="fas fa-play mr-2"></i>Play Episode
+                    <i className="fas fa-play mr-2"></i>
                   </a>
                 </li>
               </ul>
@@ -952,14 +952,14 @@ const Mycomp = () => {
               </div>
               <ul className="postcard__tagbox">
                 <li className="tag__item">
-                  <i className="fas fa-tag mr-2"></i>Podcast
+                  <i className="fas fa-tag mr-2"></i>Grouped
                 </li>
                 <li className="tag__item">
-                  <i className="fas fa-clock mr-2"></i>55 mins.
+                  <i className="fas fa-clock mr-2"></i>
                 </li>
                 <li className="tag__item play yellow">
                   <a href="#">
-                    <i className="fas fa-play mr-2"></i>Play Episode
+                    <i className="fas fa-play mr-2"></i>
                   </a>
                 </li>
               </ul>
@@ -990,14 +990,14 @@ const Mycomp = () => {
               </div>
               <ul className="postcard__tagbox">
                 <li className="tag__item">
-                  <i className="fas fa-tag mr-2"></i>Podcast
+                  <i className="fas fa-tag mr-2"></i>Single
                 </li>
                 <li className="tag__item">
-                  <i className="fas fa-clock mr-2"></i>55 mins.
+                  <i className="fas fa-clock mr-2"></i>
                 </li>
                 <li className="tag__item play yellow">
                   <a href="#">
-                    <i className="fas fa-play mr-2"></i>Play Episode
+                    <i className="fas fa-play mr-2"></i>
                   </a>
                 </li>
               </ul>
@@ -1039,14 +1039,14 @@ const Mycomp = () => {
               </div>
               <ul className="postcard__tagbox">
                 <li className="tag__item">
-                  <i className="fas fa-tag mr-2"></i>Podcast
+                  <i className="fas fa-tag mr-2"></i>Single
                 </li>
                 <li className="tag__item">
-                  <i className="fas fa-clock mr-2"></i>55 mins.
+                  <i className="fas fa-clock mr-2"></i>
                 </li>
                 <li className="tag__item play blue">
                   <a href="#">
-                    <i className="fas fa-play mr-2"></i>Play Episode
+                    <i className="fas fa-play mr-2"></i>
                   </a>
                 </li>
               </ul>
@@ -1077,14 +1077,14 @@ const Mycomp = () => {
               </div>
               <ul className="postcard__tagbox">
                 <li className="tag__item">
-                  <i className="fas fa-tag mr-2"></i>Podcast
+                  <i className="fas fa-tag mr-2"></i>Single
                 </li>
                 <li className="tag__item">
-                  <i className="fas fa-clock mr-2"></i>55 mins.
+                  <i className="fas fa-clock mr-2"></i>
                 </li>
                 <li className="tag__item play red">
                   <a href="#">
-                    <i className="fas fa-play mr-2"></i>Play Episode
+                    <i className="fas fa-play mr-2"></i>
                   </a>
                 </li>
               </ul>
@@ -1128,11 +1128,11 @@ const Mycomp = () => {
                   <i className="fas fa-tag mr-2"></i>Grouped
                 </li>
                 <li className="tag__item">
-                  <i className="fas fa-clock mr-2"></i>55 mins.
+                  <i className="fas fa-clock mr-2"></i>
                 </li>
                 <li className="tag__item play blue">
                   <a href="#">
-                    <i className="fas fa-play mr-2"></i>Play Episode
+                    <i className="fas fa-play mr-2"></i>
                   </a>
                 </li>
               </ul>
@@ -1167,14 +1167,14 @@ const Mycomp = () => {
               </div>
               <ul className="postcard__tagbox">
                 <li className="tag__item">
-                  <i className="fas fa-tag mr-2"></i>Podcast
+                  <i className="fas fa-tag mr-2"></i>Grouped
                 </li>
                 <li className="tag__item">
-                  <i className="fas fa-clock mr-2"></i>55 mins.
+                  <i className="fas fa-clock mr-2"></i>
                 </li>
                 <li className="tag__item play red">
                   <a href="#">
-                    <i className="fas fa-play mr-2"></i>Play Episode
+                    <i className="fas fa-play mr-2"></i>
                   </a>
                 </li>
               </ul>
@@ -1211,11 +1211,11 @@ const Mycomp = () => {
                   <i className="fas fa-tag mr-2"></i>Grouped
                 </li>
                 <li className="tag__item">
-                  <i className="fas fa-clock mr-2"></i>55 mins.
+                  <i className="fas fa-clock mr-2"></i>
                 </li>
                 <li className="tag__item play blue">
                   <a href="#">
-                    <i className="fas fa-play mr-2"></i>Play Episode
+                    <i className="fas fa-play mr-2"></i>
                   </a>
                 </li>
               </ul>
@@ -1250,14 +1250,13 @@ const Mycomp = () => {
               </div>
               <ul className="postcard__tagbox">
                 <li className="tag__item">
-                  <i className="fas fa-tag mr-2"></i>Podcast
-                </li>
+                  <i className="fas fa-tag mr-2"></i>Single                </li>
                 <li className="tag__item">
-                  <i className="fas fa-clock mr-2"></i>55 mins.
+                  <i className="fas fa-clock mr-2"></i>
                 </li>
                 <li className="tag__item play red">
                   <a href="#">
-                    <i className="fas fa-play mr-2"></i>Play Episode
+                    <i className="fas fa-play mr-2"></i>
                   </a>
                 </li>
               </ul>
@@ -1299,14 +1298,14 @@ const Mycomp = () => {
               </div>
               <ul className="postcard__tagbox">
                 <li className="tag__item">
-                  <i className="fas fa-tag mr-2"></i>Podcast
+                  <i className="fas fa-tag mr-2"></i>Single
                 </li>
                 <li className="tag__item">
-                  <i className="fas fa-clock mr-2"></i>55 mins.
+                  <i className="fas fa-clock mr-2"></i>
                 </li>
                 <li className="tag__item play blue">
                   <a href="#">
-                    <i className="fas fa-play mr-2"></i>Play Episode
+                    <i className="fas fa-play mr-2"></i>
                   </a>
                 </li>
               </ul>
@@ -1337,14 +1336,14 @@ const Mycomp = () => {
               </div>
               <ul className="postcard__tagbox">
                 <li className="tag__item">
-                  <i className="fas fa-tag mr-2"></i>Podcast
+                  <i className="fas fa-tag mr-2"></i>Single
                 </li>
                 <li className="tag__item">
-                  <i className="fas fa-clock mr-2"></i>55 mins.
+                  <i className="fas fa-clock mr-2"></i>
                 </li>
                 <li className="tag__item play red">
                   <a href="#">
-                    <i className="fas fa-play mr-2"></i>Play Episode
+                    <i className="fas fa-play mr-2"></i>
                   </a>
                 </li>
               </ul>
@@ -1375,14 +1374,14 @@ const Mycomp = () => {
               </div>
               <ul className="postcard__tagbox">
                 <li className="tag__item">
-                  <i className="fas fa-tag mr-2"></i>Podcast
+                  <i className="fas fa-tag mr-2"></i>Single
                 </li>
                 <li className="tag__item">
-                  <i className="fas fa-clock mr-2"></i>55 mins.
+                  <i className="fas fa-clock mr-2"></i>
                 </li>
                 <li className="tag__item play green">
                   <a href="#">
-                    <i className="fas fa-play mr-2"></i>Play Episode
+                    <i className="fas fa-play mr-2"></i>
                   </a>
                 </li>
               </ul>
@@ -1414,14 +1413,14 @@ const Mycomp = () => {
               </div>
               <ul className="postcard__tagbox">
                 <li className="tag__item">
-                  <i className="fas fa-tag mr-2"></i>Podcast
+                  <i className="fas fa-tag mr-2"></i>Single
                 </li>
                 <li className="tag__item">
-                  <i className="fas fa-clock mr-2"></i>55 mins.
+                  <i className="fas fa-clock mr-2"></i>
                 </li>
                 <li className="tag__item play yellow">
                   <a href="#">
-                    <i className="fas fa-play mr-2"></i>Play Episode
+                    <i className="fas fa-play mr-2"></i>
                   </a>
                 </li>
               </ul>
@@ -1462,14 +1461,14 @@ const Mycomp = () => {
               </div>
               <ul className="postcard__tagbox">
                 <li className="tag__item">
-                  <i className="fas fa-tag mr-2"></i>Grouped
+                  <i className="fas fa-tag mr-2"></i>Single
                 </li>
                 <li className="tag__item">
-                  <i className="fas fa-clock mr-2"></i>55 mins.
+                  <i className="fas fa-clock mr-2"></i>
                 </li>
                 <li className="tag__item play blue">
                   <a href="#">
-                    <i className="fas fa-play mr-2"></i>Play Episode
+                    <i className="fas fa-play mr-2"></i>
                   </a>
                 </li>
               </ul>
@@ -1504,14 +1503,14 @@ const Mycomp = () => {
               </div>
               <ul className="postcard__tagbox">
                 <li className="tag__item">
-                  <i className="fas fa-tag mr-2"></i>Podcast
+                  <i className="fas fa-tag mr-2"></i>Single
                 </li>
                 <li className="tag__item">
-                  <i className="fas fa-clock mr-2"></i>55 mins.
+                  <i className="fas fa-clock mr-2"></i>
                 </li>
                 <li className="tag__item play red">
                   <a href="#">
-                    <i className="fas fa-play mr-2"></i>Play Episode
+                    <i className="fas fa-play mr-2"></i>
                   </a>
                 </li>
               </ul>
@@ -1548,11 +1547,11 @@ const Mycomp = () => {
                   <i className="fas fa-tag mr-2"></i>Grouped
                 </li>
                 <li className="tag__item">
-                  <i className="fas fa-clock mr-2"></i>55 mins.
+                  <i className="fas fa-clock mr-2"></i>
                 </li>
                 <li className="tag__item play blue">
                   <a href="#">
-                    <i className="fas fa-play mr-2"></i>Play Episode
+                    <i className="fas fa-play mr-2"></i>
                   </a>
                 </li>
               </ul>
@@ -1594,14 +1593,14 @@ const Mycomp = () => {
               </div>
               <ul className="postcard__tagbox">
                 <li className="tag__item">
-                  <i className="fas fa-tag mr-2"></i>Podcast
+                  <i className="fas fa-tag mr-2"></i>Single
                 </li>
                 <li className="tag__item">
-                  <i className="fas fa-clock mr-2"></i>55 mins.
+                  <i className="fas fa-clock mr-2"></i>
                 </li>
                 <li className="tag__item play blue">
                   <a href="#">
-                    <i className="fas fa-play mr-2"></i>Play Episode
+                    <i className="fas fa-play mr-2"></i>
                   </a>
                 </li>
               </ul>
@@ -1632,14 +1631,14 @@ const Mycomp = () => {
               </div>
               <ul className="postcard__tagbox">
                 <li className="tag__item">
-                  <i className="fas fa-tag mr-2"></i>Podcast
+                  <i className="fas fa-tag mr-2"></i>Single
                 </li>
                 <li className="tag__item">
-                  <i className="fas fa-clock mr-2"></i>55 mins.
+                  <i className="fas fa-clock mr-2"></i>
                 </li>
                 <li className="tag__item play red">
                   <a href="#">
-                    <i className="fas fa-play mr-2"></i>Play Episode
+                    <i className="fas fa-play mr-2"></i>
                   </a>
                 </li>
               </ul>
@@ -1670,14 +1669,14 @@ const Mycomp = () => {
               </div>
               <ul className="postcard__tagbox">
                 <li className="tag__item">
-                  <i className="fas fa-tag mr-2"></i>Podcast
+                  <i className="fas fa-tag mr-2"></i>Single
                 </li>
                 <li className="tag__item">
-                  <i className="fas fa-clock mr-2"></i>55 mins.
+                  <i className="fas fa-clock mr-2"></i>
                 </li>
                 <li className="tag__item play green">
                   <a href="#">
-                    <i className="fas fa-play mr-2"></i>Play Episode
+                    <i className="fas fa-play mr-2"></i>
                   </a>
                 </li>
               </ul>
@@ -1709,14 +1708,14 @@ const Mycomp = () => {
               </div>
               <ul className="postcard__tagbox">
                 <li className="tag__item">
-                  <i className="fas fa-tag mr-2"></i>Podcast
+                  <i className="fas fa-tag mr-2"></i>Single
                 </li>
                 <li className="tag__item">
-                  <i className="fas fa-clock mr-2"></i>55 mins.
+                  <i className="fas fa-clock mr-2"></i>
                 </li>
                 <li className="tag__item play yellow">
                   <a href="#">
-                    <i className="fas fa-play mr-2"></i>Play Episode
+                    <i className="fas fa-play mr-2"></i>
                   </a>
                 </li>
               </ul>
@@ -1748,14 +1747,14 @@ const Mycomp = () => {
               </div>
               <ul className="postcard__tagbox">
                 <li className="tag__item">
-                  <i className="fas fa-tag mr-2"></i>Podcast
+                  <i className="fas fa-tag mr-2"></i>Single
                 </li>
                 <li className="tag__item">
-                  <i className="fas fa-clock mr-2"></i>55 mins.
+                  <i className="fas fa-clock mr-2"></i>
                 </li>
                 <li className="tag__item play yellow">
                   <a href="#">
-                    <i className="fas fa-play mr-2"></i>Play Episode
+                    <i className="fas fa-play mr-2"></i>
                   </a>
                 </li>
               </ul>

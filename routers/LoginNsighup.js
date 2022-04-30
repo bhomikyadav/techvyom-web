@@ -36,7 +36,7 @@ router.post("/create", async (req, res) => {
     });
     // creating new data for user
 
-    const Pid = `22${parseInt(numberofstudent) + 1}`;
+    const Pid =  `22${numberofstudent + 1}`;
     let newuser_data = {
       Phonenumber: req.body.Phonenumber,
       email: req.body.email,
@@ -62,7 +62,7 @@ router.post("/create", async (req, res) => {
     );
 
     // send data to client
-    res.send({
+ return  res.send({
       status: true,
       msg: "registered",
       data: {
@@ -73,11 +73,12 @@ router.post("/create", async (req, res) => {
       },
     });
   } catch (error) {
-    res.send({
+    console.log(error);
+ return   res.send({
       status: false,
       msg: "internal server error1",
     });
-    console.log(error);
+    
   }
 });
 
@@ -101,12 +102,12 @@ router.post("/login", async (req, res) => {
       rollnumber: req.body.rollnumber,
     });
     if (!student_exits) {
-      res.status(401).send({ status: false, msg: "please register first" });
+     return res.status(401).send({ status: false, msg: "please register first" });
     }
     if (student_exits.Pid != req.body.Pid) {
-      res.status(401).send({ status: false, msg: "wrong Pid" });
+     return res.status(401).send({ status: false, msg: "wrong Pid" });
     }
-    res.send({
+    return res.send({
       status: true,
       msg: "login successfully",
       name: student_exits.name,
@@ -116,7 +117,7 @@ router.post("/login", async (req, res) => {
       Pid: student_exits.Pid,
     });
   } catch (error) {
-    res.send({ status: false, msg: "internal server error" });
+   return res.send({ status: false, msg: "internal server error" });
   }
 });
 

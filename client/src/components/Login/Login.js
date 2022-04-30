@@ -23,6 +23,8 @@ const Login = () => {
       if (data.status) {
         toast.success(data.msg);
         navigate("/");
+      }else {
+        toast.error(data.msg)
       }
     } catch (error) {
       console.log(error);
@@ -115,10 +117,10 @@ const Login = () => {
                           </Link>
                         </p>
                         <a href="#!" className="small text-muted">
-                          Terms of use.
+                         verify your email
                         </a>
                         <a href="#!" className="small text-muted">
-                          Privacy policy
+                         
                         </a>
                       </form>
                     </div>

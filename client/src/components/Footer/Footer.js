@@ -4,16 +4,15 @@ import "./Footer.css";
 const Footer = () => {
   return (
     <>
-      <footer className="footer">
+      <footer className="footer" style={{marginBottom:"0"}} >
         <div className="footer__addr">
-          <h1 className="footer__logo">Something</h1>
+          <h1 className="footer__logo">Techvyom</h1>
 
-          <h2>Contact</h2>
-
+          <h2>Address</h2>
           <address>
-            5534 Somewhere In. The World 22193-10212
+          Ram Murti Puram, Bareilly - Nainital Rd, Highway, Bhoji Pura, Uttar Pradesh 243202
             <br />
-            <a className="footer__btn" href="mailto:example@gmail.com">
+            <a className="footer__btn" href="/">
               Email Us
             </a>
           </address>
@@ -88,13 +87,8 @@ const Footer = () => {
         </ul>
 
         <div className="legal">
-          <p>&copy; 2019 Something. All rights reserved.</p>
+          <p>&copy; 2022 srms. All rights reserved.</p>
 
-          <div className="legal__links">
-            <span>
-              Made with <span className="heart">♥</span> remotely from Anywhere
-            </span>
-          </div>
         </div>
       </footer>
     </>
