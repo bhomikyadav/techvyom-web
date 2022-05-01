@@ -80,7 +80,7 @@ const Register = () => {
         onSubmit={(e) => handleonsubmit(e)}
       >
         <div className="form-outline mb-4">
-          <h1 className="my-10" style={{ textAlign: "center", color: "black" }}>
+          <h1 className="my-10 mb-4" style={{ textAlign: "center", color: "black" }}>
             Register yourself
           </h1>
           <label
