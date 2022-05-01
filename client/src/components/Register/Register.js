@@ -79,10 +79,17 @@ const Register = () => {
         style={{ marginTop: "100px" }}
         onSubmit={(e) => handleonsubmit(e)}
       >
-        <div className="form-outline">
+        <div className="form-outline mb-4">
           <h1 className="my-10" style={{ textAlign: "center", color: "black" }}>
             Register yourself
           </h1>
+          <label
+            style={{ color: "black",marginBottom:'2px' }}
+            className="form-label"
+            htmlFor="form6Example1"
+          >
+            Full name
+          </label>
           <input
             type="text"
             value={name}
@@ -92,16 +99,17 @@ const Register = () => {
             }}
             className="form-control"
           />
-          <label
-            style={{ color: "black" }}
-            className="form-label"
-            htmlFor="form6Example1"
-          >
-            Full name
-          </label>
+          
         </div>
 
         <div className="form-outline mb-4">
+        <label
+            style={{ color: "black",marginBottom:'2px' }}
+            className="form-label"
+            htmlFor="form6Example5"
+          >
+            Email
+          </label>
           <input
             type="email"
             value={email}
@@ -111,16 +119,17 @@ const Register = () => {
             id="form6Example5"
             className="form-control"
           />
-          <label
-            style={{ color: "black" }}
-            className="form-label"
-            htmlFor="form6Example5"
-          >
-            Email
-          </label>
+         
         </div>
 
         <div className="form-outline mb-4">
+        <label
+            style={{ color: "black",marginBottom:'2px' }}
+            className="form-label"
+            htmlFor="form6Example6"
+          >
+            Phone
+          </label>
           <input
             value={number}
             type="tel"
@@ -130,15 +139,16 @@ const Register = () => {
             }}
             className="form-control"
           />
-          <label
-            style={{ color: "black" }}
+          
+        </div>
+        <div className="form-outline mb-4">
+        <label
+            style={{ color: "black",marginBottom:'2px' }}
             className="form-label"
             htmlFor="form6Example6"
           >
-            Phone
+            Rollnumber
           </label>
-        </div>
-        <div className="form-outline mb-4">
           <input
             onChange={(e) => {
               setrollnumber(e.target.value);
@@ -148,13 +158,7 @@ const Register = () => {
             id="form6Example6"
             className="form-control"
           />
-          <label
-            style={{ color: "black" }}
-            className="form-label"
-            htmlFor="form6Example6"
-          >
-            Rollnumber
-          </label>
+         
         </div>
 
         <button type="submit" className="btn btn-primary btn-block mb-4">
