@@ -1,4 +1,4 @@
-import React, { useContext, useState } from "react";
+import React, { useContext, useEffect, useState } from "react";
 import Userdatacontext from "../../context/Userdatacontext";
 import EventData from "../../EventData";
 import { useParams } from "react-router-dom";
@@ -6,6 +6,10 @@ const GRegisterEvent = () => {
   const [tid, settid] = useState("");
   const userdata = useContext(Userdatacontext);
   const { Ecode } = useParams();
+
+  useEffect(() => {
+    userdata.collectdata();
+  }, []);
   const handleonsubmit = async (event) => {
     event.preventDefault();
   };

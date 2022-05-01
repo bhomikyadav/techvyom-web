@@ -1,8 +1,14 @@
-import React, { useState } from "react";
+import React, { useContext, useEffect, useState } from "react";
 import toast from "react-hot-toast";
 import { Link, useNavigate } from "react-router-dom";
+import Userdatacontext from "../../context/Userdatacontext";
 
 const Login = () => {
+  const userdata = useContext(Userdatacontext);
+  useEffect(() => {
+    userdata.collectdata();
+  }, []);
+
   const navigate = useNavigate();
   const [rollnumber, setrollnumber] = useState("");
   const [Pid, setPid] = useState("");
@@ -23,8 +29,8 @@ const Login = () => {
       if (data.status) {
         toast.success(data.msg);
         navigate("/");
-      }else {
-        toast.error(data.msg)
+      } else {
+        toast.error(data.msg);
       }
     } catch (error) {
       console.log(error);
@@ -33,7 +39,7 @@ const Login = () => {
 
   return (
     <>
-      <section className="vh-100" style={{ backgroundColor: "#9A616D" }}>
+      <section className="vh-100" style={{ backgroundColor: "#6081f7" }}>
         <div className="container py-5 h-100">
           <div className="row d-flex justify-content-center align-items-center h-100">
             <div className="col col-xl-10">
@@ -117,11 +123,9 @@ const Login = () => {
                           </Link>
                         </p>
                         <a href="#!" className="small text-muted">
-                         verify your email
+                          verify your email
                         </a>
-                        <a href="#!" className="small text-muted">
-                         
-                        </a>
+                        <a href="#!" className="small text-muted"></a>
                       </form>
                     </div>
                   </div>

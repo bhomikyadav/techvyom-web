@@ -7,13 +7,21 @@ const Userdatastate = (props) => {
   const [username, setusername] = useState("");
   const [usernumber, setusernumber] = useState("");
   const [userrollnumber, setuserrollnumber] = useState("");
-  const working = () => {
-    console.log(" working context");
+
+  const collectdata = () => {
+    const data = JSON.parse(localStorage.getItem("data"));
+    if (data) {
+      setusername(data.name);
+      setuserrollnumber(data.rollnumber);
+      setusernumber(data.number);
+      setuserPid(data.Pid);
+      setuseremail(data.email);
+    }
   };
   return (
     <Userdatacontext.Provider
       value={{
-        working,
+        collectdata,
         useremail,
         setuseremail,
         username,

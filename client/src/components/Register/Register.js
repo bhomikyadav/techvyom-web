@@ -11,7 +11,6 @@ const Register = () => {
   const [number, setnumber] = useState("");
   const [rollnumber, setrollnumber] = useState("");
   const handleonsubmit = async (event) => {
-   
     event.preventDefault();
     console.log(name + "\n" + number + "\n" + rollnumber + "\n" + email);
     try {
@@ -31,8 +30,18 @@ const Register = () => {
 
       const data = await response.json();
       console.log(data);
-     
+
       if (data.status) {
+        localStorage.setItem(
+          "data",
+          JSON.stringify({
+            name,
+            number,
+            rollnumber,
+            email,
+            Pid: data.data.Pid,
+          })
+        );
         userData.setuserPid(data.data.Pid);
         userData.setuseremail(email);
         userData.setusername(name);
@@ -51,7 +60,7 @@ const Register = () => {
         console.log(otpdata);
         if (otpdata.status) {
           toast.success(otpdata.msg);
-         
+
           navigate("/otpverify");
         } else {
           toast.error(otpdata.msg);
