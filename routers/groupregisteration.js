@@ -68,7 +68,7 @@ router.post("/create", CheckVerification, async (req, res) => {
         msg: "internal error",
       });
     }
-    res.send({
+    return res.send({
       status: true,
       msg: "registered",
       tid,
@@ -102,7 +102,7 @@ router.post("/addme", CheckVerification, async (req, res) => {
     const { email, name, eventname, rollnumber, tid, Pid } = req.body;
     const event_entered = await Events.findOne({ Eventname: eventname });
     if (!event_entered) {
-      res.send({
+      return res.send({
         status: false,
         msg: "invalid event",
       });
@@ -111,21 +111,21 @@ router.post("/addme", CheckVerification, async (req, res) => {
       $and: [{ rollnumber }, { eventname }],
     });
     if (allreadyexits) {
-      res.send({
+      return res.send({
         status: false,
         msg: "u allready registered",
       });
     }
     const find_group = await Eventgroup.find({ tid });
     if (!find_group[0]) {
-      res.send({
+      return res.send({
         status: false,
         msg: "invalid tid or create new group",
       });
     }
 
     if (find_group.length > event_entered.Maxparticipation) {
-      res.send({
+      return res.send({
         status: false,
         msg: "group limit is full",
       });
@@ -145,7 +145,7 @@ router.post("/addme", CheckVerification, async (req, res) => {
       });
     }
 
-    res.send({
+    return res.send({
       status: true,
       msg: "registered",
       yourteam: find_group,

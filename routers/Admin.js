@@ -42,11 +42,11 @@ router.get("/eventcode/:Ecode", async (req, res) => {
   );
 
   if (checkmail) {
-    res.send({
+    return res.send({
       msg: "ok",
     });
   } else {
-    res.send({ msg: "internal server error" });
+    return res.send({ msg: "internal server error" });
   }
 });
 module.exports = router;

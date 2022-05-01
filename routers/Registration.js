@@ -19,7 +19,7 @@ router.post("/event", CheckVerification, async (req, res) => {
     console.log(error);
     return res.send({
       status: false,
-      msg: "please send email ",
+      msg: "invalid credentials",
     });
   }
   // =======
@@ -28,7 +28,7 @@ router.post("/event", CheckVerification, async (req, res) => {
     const find_event = await Event.findOne({ Eventname: eventname });
     console.log(find_event);
     if (!find_event) {
-      res.send({
+      return res.send({
         status: false,
         msg: " invalid  event",
       });
@@ -38,14 +38,14 @@ router.post("/event", CheckVerification, async (req, res) => {
       $and: [{ Pid }, { Eventname: eventname }],
     });
     if (allreadyexits) {
-      res.send({
+      return res.send({
         status: false,
         msg: "u allready registered",
       });
     }
     const Check_student = await Student.findOne({ rollnumber });
     if (!Check_student) {
-      res.send({
+      return res.send({
         status: false,
         msg: "registered first",
       });
@@ -58,7 +58,7 @@ router.post("/event", CheckVerification, async (req, res) => {
       Pid: Check_student.Pid,
     });
     if (!newparticipation) {
-      res.send({
+      return res.send({
         status: false,
         msg: "internl error ",
       });
@@ -76,19 +76,19 @@ router.post("/event", CheckVerification, async (req, res) => {
       "checking mail"
     );
 
-    if (!return_mail) {
-      res.send({
+    if (!Send_EmailTO_Student) {
+      return res.send({
         status: false,
-        msg: "internal error 009",
+        msg: "internal error",
       });
     }
     await Event.updateOne(
       { Eventname: eventname },
       {
-        Numberparticipation: find_event.Numberparticipation + 1,
+        Numberparticipation: parseInt(find_event.Numberparticipation) + 1,
       }
     );
-    res.send({
+    return res.send({
       status: true,
       msg: "registered",
       pid: newparticipation.pid,
