@@ -76,27 +76,28 @@ const Register = () => {
     <>
       <form
         className="container"
-        style={{ marginTop: "100px" }}
+        style={{width:'30%',margin:'auto', marginTop: "100px",background: '#f857a8',
+        background: '-webkit-linear-gradient(45deg, #f857a8, #ff5858)',
+        background: 'linear-gradient(45deg, #f857a8, #ff5858)',padding:'20px',borderRadius:'20px' }}
         onSubmit={(e) => handleonsubmit(e)}
       >
-        <div className="form-outline mb-4">
-          <h1 className="my-10 mb-4" style={{ textAlign: "center", color: "black" }}>
+        <h1 className="my-10 mb-4" style={{ textAlign: "center", color: "black" }}>
             Register yourself
-          </h1>
+        </h1>
+        <div className="form-outline mb-4">
+          
           <label
             style={{ color: "black",marginBottom:'2px' }}
             className="form-label"
             htmlFor="form6Example1"
           >
-            Full name
+            Full name:
           </label>
           <input
             type="text"
             value={name}
             id="form6Example1"
-            onChange={(e) => {
-              setname(e.target.value);
-            }}
+            onChange={(e) => {setname(e.target.value);}}
             className="form-control"
           />
           
@@ -108,7 +109,7 @@ const Register = () => {
             className="form-label"
             htmlFor="form6Example5"
           >
-            Email
+            Email:
           </label>
           <input
             type="email"
@@ -128,7 +129,7 @@ const Register = () => {
             className="form-label"
             htmlFor="form6Example6"
           >
-            Phone
+            Phone:
           </label>
           <input
             value={number}
@@ -147,7 +148,7 @@ const Register = () => {
             className="form-label"
             htmlFor="form6Example6"
           >
-            Rollnumber
+            Rollnumber:
           </label>
           <input
             onChange={(e) => {
@@ -161,7 +162,7 @@ const Register = () => {
          
         </div>
 
-        <button type="submit" className="btn btn-primary btn-block mb-4">
+        <button type="submit" className="btn btn-primary btn-block mb-4" style={{marginLeft:'40%',marginTop:'20px',background:'transparent',border:'2px solid white', borderRadius:'10px'}}>
           Verify email
         </button>
       </form>

@@ -57,13 +57,10 @@ const Login = () => {
                     <div className="card-body p-4 p-lg-5 text-black">
                       <form>
                         <div className="d-flex align-items-center mb-3 pb-1">
-                          <i
-                            className="fas fa-cubes fa-2x me-3"
-                            style={{ color: "#ff6219" }}
-                          ></i>
                           <span className="h1 fw-bold mb-0">
                             <img src="/images/techvyom_logo.jpeg" style={{height:'100px',width:'100px'}}/>
                           </span>
+                          <span style={{fontSize:'36px',margin:'auto',fontWeight:'700',fontStyle:'italic'}}>TECHVYOM</span>
                         </div>
 
                         <h5

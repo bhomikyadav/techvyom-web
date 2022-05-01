@@ -6,8 +6,23 @@ const Mycomp = () => {
   let navigate = useNavigate();
   return (
     <>
-      <h1 style={{ color: "black",textAlign:'center' }}>Events </h1>
-      <section className="dark">
+      {/* <h1 style={{ color: "black",textAlign:'center' }}>Events </h1> */}
+      <section style={{padding:'1%',justifyContent:'center'}}>
+        <div style={{display:'flex',margin:'auto',justifyContent:'center',flexWrap:'wrap'}}>
+          <div><button className="tvyomeventbtns">Robotrax Club</button></div>
+          <div><button className="tvyomeventbtns">Synergy Club</button></div>
+          <div><button className="tvyomeventbtns">Aeronautics Club</button></div>
+          <div><button className="tvyomeventbtns">Equinox & Illuminati Club</button></div>
+          <div><button className="tvyomeventbtns">Literary Club</button></div>
+          <div><button className="tvyomeventbtns">MRC Club</button></div>
+        
+          <div><button className="tvyomeventbtns">Pharmaquimica Club</button></div>
+          <div><button className="tvyomeventbtns">Design Club</button></div>
+          <div><button className="tvyomeventbtns">LAN War</button></div>
+          <div><button className="tvyomeventbtns">Open Events</button></div>
+        </div>
+      </section>
+      <section className="dark" id="section1">
         <div className="container py-4">
           <h1 className="h1 text-center" id="pageHeaderTitle">
             ROBOTRAX CLUB
