@@ -74,7 +74,10 @@ router.post("/create", CheckVerification, async (req, res) => {
       tid,
     });
   } catch (error) {
-    console.log(error);
+    return res.send({
+      status: false,
+      msg: "internal server error",
+    });
   }
 });
 
@@ -152,6 +155,10 @@ router.post("/addme", CheckVerification, async (req, res) => {
     });
   } catch (error) {
     console.log("1" + error);
+    return res.send({
+      status: false,
+      msg: "internal error",
+    });
   }
 });
 

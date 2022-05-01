@@ -79,7 +79,7 @@ router.post("/verifyotp", async (req, res) => {
   const getotp = await Otpverify.findOne({ email });
 
   if (Date.now() >= getotp.expiredate) {
-    res.json({
+    return res.json({
       status: false,
       msg: "time is expreied",
     });
@@ -88,12 +88,12 @@ router.post("/verifyotp", async (req, res) => {
   if (otp == getotp.otp) {
     await Otpverify.deleteMany({ email });
     await Student.updateOne({ email }, { verified: true });
-    res.json({
+    return res.json({
       status: true,
       msg: "otp is verified",
     });
   } else {
-    res.json({
+    return res.json({
       status: false,
       msg: "invalied otp",
     });
