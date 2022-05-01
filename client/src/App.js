@@ -13,6 +13,7 @@ import SRegisterEvent from "./components/SRegisterevent/SRegisterEvent";
 import GRegisterEvent from "./components/GRegisterEvent/GRegisterEvent";
 import Otpverifypage from "./components/Otpverifypage/Otpverifypage";
 import Userdatastate from "./context/UserdataState";
+import About from "./components/About/About";
 
 function App() {
   const [Loading, setLoading] = useState(true);
@@ -40,6 +41,7 @@ function App() {
                 <Route path="/otpverify" element={<Otpverifypage />} />
                 <Route path="/Sevent/:Ecode" element={<SRegisterEvent />} />
                 <Route path="/Gevent/:Ecode" element={<GRegisterEvent />} />
+                <Route path="/aboutme" element={<About/>}/>
               </Routes>
             </BrowserRouter>
           </>

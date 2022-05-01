@@ -1,0 +1,28 @@
+@import url('https://fonts.googleapis.com/css2?family=BIZ+UDPMincho&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab&display=swap');
+.tvyomstudentdetails >div{
+    width: 80%;
+    margin: auto;
+}
+.tvyomstudentdetails>div>h2{
+    font-family: 'BIZ UDPMincho', serif;
+    color: #000;
+    text-decoration: underline;
+    margin-bottom: 25px;
+}
+.tvyomstudentdetails>div>h6{
+    display: inline-flex;
+    width: 18%;
+    line-height: 50px;
+    margin-left: 20px;
+    font-family: 'BIZ UDPMincho', serif;
+    color: black;
+    font-weight: 600;
+}
+.tvyomstudentdetails>div>span{
+    font-family: 'Roboto Slab', serif;
+    color: #000;
+}
+.tvyomstudentdetails{
+    padding-top: 100px;
+}

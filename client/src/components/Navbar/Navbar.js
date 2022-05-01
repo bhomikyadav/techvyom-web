@@ -62,7 +62,7 @@ const Navbar = () => {
                 </Link>
               </>
             )}
-            <Link to="/" className="nav-link">
+            <Link to="/aboutme" className="nav-link">
               <span className="nav-link-span">
                 <span className="u-nav">about me</span>
               </span>
