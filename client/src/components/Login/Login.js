@@ -39,7 +39,7 @@ const Login = () => {
 
   return (
     <>
-      <section className="vh-100" style={{ backgroundColor: "#6081f7" }}>
+      <section className="vh-100" style={{ backgroundColor: "#6081f7",marginTop:'5vh'}}>
         <div className="container py-5 h-100">
           <div className="row d-flex justify-content-center align-items-center h-100">
             <div className="col col-xl-10">
@@ -50,7 +50,7 @@ const Login = () => {
                       src="/images/backlogin.png"
                       alt="login form"
                       className="img-fluid"
-                      style={{ borderRadius: "1rem 0 0 1rem;" }}
+                      style={{ borderRadius: "1rem 0 0 1rem", height:'100%' }}
                     />
                   </div>
                   <div className="col-md-6 col-lg-7 d-flex align-items-center">
@@ -61,7 +61,9 @@ const Login = () => {
                             className="fas fa-cubes fa-2x me-3"
                             style={{ color: "#ff6219" }}
                           ></i>
-                          <span className="h1 fw-bold mb-0">Logo</span>
+                          <span className="h1 fw-bold mb-0">
+                            <img src="/images/techvyom_logo.jpeg" style={{height:'100px',width:'100px'}}/>
+                          </span>
                         </div>
 
                         <h5

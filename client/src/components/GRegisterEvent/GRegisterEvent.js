@@ -1,7 +1,9 @@
 import React, { useContext, useEffect, useState } from "react";
+import './GRegisterEvent.css'
 import Userdatacontext from "../../context/Userdatacontext";
 import EventData from "../../EventData";
 import { useParams } from "react-router-dom";
+import GridViewIcon from '@mui/icons-material/GridView';
 const GRegisterEvent = () => {
   const [tid, settid] = useState("");
   const userdata = useContext(Userdatacontext);
@@ -15,7 +17,7 @@ const GRegisterEvent = () => {
   };
   return (
     <>
-      <div className="container" style={{ color: "black", marginTop: "5%" }}>
+      {/* <div className="container" style={{ color: "black", marginTop: "5%" }}>
         <h1 className="my-2" style={{ textAlign: "center", marginTop: "40px" }}>
           Event Details
         </h1>
@@ -90,7 +92,50 @@ const GRegisterEvent = () => {
             create group
           </button>
         </form>
-      </div>
+      </div> */}
+      <div className="tvyomGeventDetails" style={{ color: "black" }}>
+            <h1 style={{ color: "black",textAlign:'center',marginTop:'-20px' }}>Event Name</h1>
+            <div style={{ color: "black" }}>
+            <div className="tvyomGeventDetailsd1">
+                <h3 style={{ color: "black" }}>Introduction :</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
+                <br/>
+                
+                <h3>Rules :</h3>
+                <ul>
+                    <li><GridViewIcon style={{transform:'rotate(45deg)',verticalAlign:'middle',fontSize:'18px'}}/>&ensp;Lorem ipsum dolor sit amet, consectetur adipiscing elit.</li>
+                    <li><GridViewIcon style={{transform:'rotate(45deg)',verticalAlign:'middle',fontSize:'18px'}}/>&ensp;Lorem ipsum dolor sit amet, consectetur adipiscing elit.</li>
+                    <li><GridViewIcon style={{transform:'rotate(45deg)',verticalAlign:'middle',fontSize:'18px'}}/>&ensp;Lorem ipsum dolor sit amet, consectetur adipiscing elit.</li>
+                    <li><GridViewIcon style={{transform:'rotate(45deg)',verticalAlign:'middle',fontSize:'18px'}}/>&ensp;Lorem ipsum dolor sit amet, consectetur adipiscing elit.</li>
+                </ul>
+                <br/>
+                
+                <span style={{fontWeight:'400',color:'rgb(105,105,105)'}}>* Want to participate in this event? <button style={{border:'none',background:'none',color:'#f857a8'}}>First Register Yourself</button></span>
+                <br/>
+                <span style={{marginLeft:'10%',fontWeight:'400',color:'rgb(105,105,105)'}}>Or</span>
+                <br/>
+                <span style={{fontWeight:'400',color:'rgb(105,105,105)'}}>Already Registered? <button style={{border:'none',background:'none',color:'#f857a8'}}>Create Team</button></span>
+                <br/>
+                <span style={{marginLeft:'10%',fontWeight:'400',color:'rgb(105,105,105)'}}>Or</span>
+                <br/>
+                <input type="text" placeholder="Enter TID here" style={{width:'70%',height:'32px',margin:'15px auto',border:'2px solid black',borderRadius:'5px'}}/>
+                <br/>
+                <button>Register</button>
+            </div>
+            <div className="tvyomGeventDetailsd2">
+                <img src="https://i.all3dp.com/wp-content/uploads/2015/10/27130922/11950515_1700903740139223_1658642607_n-300x300.jpg" alt="img" />
+                <div style={{textAlign:'left',marginTop:'20px'}}>
+                    <h3>Event Details:</h3>
+                    <h6>Name:</h6><span>event name</span><br/>
+                    <h6>Club:</h6><span>club name</span><br/>
+                    <h6>Code:</h6><span>event code</span><br/>
+                    <h6>Mentor:</h6><span>mentor name</span><br/>
+                    <h6>Members:</h6><span>grouped/single</span><br/>
+                    <h6>Mentor Email:</h6><span>example@example.com</span>
+                </div>
+            </div>
+            </div>
+        </div>
     </>
   );
 };

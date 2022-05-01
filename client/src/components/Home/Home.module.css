@@ -1,8 +1,8 @@
 .tvyomhomepage{
-    margin-top: 9vh;
+    margin-top: 5vh;
     background: url("./tvyomePoster.png")  no-repeat center center;
-    min-height: 100vh;
+    min-height: 160vh;
     width: 100%;
     overflow-y: hidden;
-    background-size: cover;
+    background-size: contain;
 }

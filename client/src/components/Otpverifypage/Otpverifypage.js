@@ -32,11 +32,11 @@ const Otpverifypage = () => {
   return (
     <>
       <div className="d-flex justify-content-center align-items-center containerotp">
-        <div className="cardotp py-5 px-3">
-          <h5 className="m-0">Mobile phone verification</h5>
+        <div className="cardotp py-5 px-3" style={{textAlign:'center'}}>
+          <h5 className="m-0" style={{color:'black'}}>Mobile phone verification</h5>
           <span className="mobile-text">
             Enter the 4 digit code we just send on your email 
-            <b className="text-danger"> {userdata.useremail}</b>
+            <b className="text-danger" > {userdata.useremail}</b>
           </span>
           <div className="d-flex flex-row mt-5">
             <input
@@ -47,12 +47,13 @@ const Otpverifypage = () => {
               }}
               className="form-control"
               autoFocus=""
+              style={{textAlign:'center'}}
             />
           </div>
           <button
             type="button"
             className="btn btn-primary text-center my-2"
-            style={{ marginLeft: "35%" }}
+            
             onClick={(e) => handleonsubmitotp(e)}
           >
             submit

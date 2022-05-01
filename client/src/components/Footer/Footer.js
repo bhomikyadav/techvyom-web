@@ -10,11 +10,11 @@ const Footer = () => {
 
           <h2>Address</h2>
           <address>
-          Ram Murti Puram, Bareilly - Nainital Rd, Highway, Bhoji Pura, Uttar Pradesh 243202
+          Ram Murti Puram, Bareilly - Nainital Rd, Highway,<br/> Bhoji Pura, Uttar Pradesh 243202
             <br />
-            <a className="footer__btn" href="/">
+            <button className="footer__btn">
               Email Us
-            </a>
+            </button>
           </address>
         </div>
 
@@ -88,7 +88,6 @@ const Footer = () => {
 
         <div className="legal">
           <p>&copy; 2022 srms. All rights reserved.</p>
-
         </div>
       </footer>
     </>

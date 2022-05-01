@@ -1,10 +1,10 @@
 .cardotp {
     width: 350px;
-    padding: 10px;
+    padding: 5px;
     border-radius: 20px;
     background: #fff;
     border: none;
-    height: 350px;
+    height: 360px;
     position: relative
 }
 
@@ -18,7 +18,8 @@ body {
 
 .mobile-text {
     color: #989696b8;
-    font-size: 15px
+    font-size: 15px;
+    text-align: center;
 }
 
 .form-control{

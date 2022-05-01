@@ -11,7 +11,7 @@
 
 .tvyomeventintropage {
     margin-top: 15vh;
-    padding: 5vh 0vh;
+    padding: 2vh 0vh;
     background-color: #f4f4f4;
 }
 
@@ -58,7 +58,7 @@
     cursor: pointer;
 }
 
-.tvyomeventintropaged1>h2 {
+.tvyomeventintropaged1>h3{
     margin-top: 2px;
     font-family: 'BIZ UDPMincho', serif;
     text-decoration: underline;
@@ -92,16 +92,18 @@
     margin: auto;
 }
 
-.tvyomeventintropaged2>div>h2 {
+.tvyomeventintropaged2>div>h3 {
     font-family: 'BIZ UDPMincho', serif;
     text-decoration: underline;
 }
 
-.tvyomeventintropaged2>div>h4 {
+.tvyomeventintropaged2>div>h6{
     width: 30%;
     display: inline-flex;
-    margin: 5px;
+    margin: 6px;
     font-family: 'BIZ UDPMincho', serif;
+    font-size: 16px;
+    font-weight: 600;
 }
 
 .tvyomeventintropaged2>div>span {

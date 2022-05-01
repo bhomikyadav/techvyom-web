@@ -98,10 +98,10 @@ const RegisterEvent = () => {
         </form>
       </div> */}
       <div className="tvyomeventintropage" style={{ color: "black" }}>
-        <h1 style={{ color: "black" }}>Event Name</h1>
+        <h1 style={{ color: "black",textAlign:'center',marginTop:'-20px' }}>Event Name</h1>
         <div style={{ color: "black" }}>
           <div className="tvyomeventintropaged1">
-            <h2>Introduction :</h2>
+            <h3>Introduction :</h3>
             <p>
               Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
               eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
@@ -112,7 +112,7 @@ const RegisterEvent = () => {
             </p>
             <br />
 
-            <h2>Rules :</h2>
+            <h3>Rules :</h3>
             <ul>
               <li>
                 <GridViewIcon
@@ -159,7 +159,7 @@ const RegisterEvent = () => {
 
             <span style={{ fontWeight: "400", color: "rgb(105,105,105)" }}>
               * Want to participate in this event?{" "}
-              <a href="#">First Generate your PID</a>
+              <button style={{border:'none',background:'none',color:'#f857a8'}}>First Register Yourself</button>
             </span>
             <br />
             <br />
@@ -170,24 +170,24 @@ const RegisterEvent = () => {
               src="https://i.all3dp.com/wp-content/uploads/2015/10/27130922/11950515_1700903740139223_1658642607_n-300x300.jpg"
               alt="img"
             />
-            <div style={{ textAlign: "left" }}>
-              <h2>Event Details:</h2>
-              <h4>Name:</h4>
+            <div style={{ textAlign: "left",marginTop:'20px' }}>
+              <h3>Event Details:</h3>
+              <h6>Name:</h6>
               <span>event name</span>
               <br />
-              <h4>Club:</h4>
+              <h6>Club:</h6>
               <span>club name</span>
               <br />
-              <h4>Code:</h4>
+              <h6>Code:</h6>
               <span>event code</span>
               <br />
-              <h4>Mentor:</h4>
+              <h6>Mentor:</h6>
               <span>mentor name</span>
               <br />
-              <h4>Members:</h4>
+              <h6>Members:</h6>
               <span>grouped/single</span>
               <br />
-              <h4>Mentor Email:</h4>
+              <h6>Mentor Email:</h6>
               <span>example@example.com</span>
             </div>
           </div>
