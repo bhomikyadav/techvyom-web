@@ -3,6 +3,7 @@ import "./Mycomp.css";
 import { useNavigate } from "react-router-dom";
 import { HashLink } from "react-router-hash-link";
 import Userdatacontext from "../../context/Userdatacontext";
+import ArrowUpwardSharpIcon from '@mui/icons-material/ArrowUpwardSharp';
 
 const Mycomp = () => {
   const handleScrollevent = () => {
@@ -24,7 +25,8 @@ const Mycomp = () => {
       {/* <h1 style={{ color: "black",textAlign:'center' }}>Events </h1> */}
       {show ? <div style={{position:'fixed',right:'10px',bottom:'50vh'}}>
           <HashLink smooth to="#IDEVENTS">
-            <button style={{border:'1px solid grey',fontSize:'20px',borderRadius:'50%',height:'80px',width:'80px',background:'black',color:'white'}}>Go Up</button>
+            <button style={{border:'2px solid black',fontSize:'20px',borderRadius:'50%',height:'60px',width:'60px',background: 'rgb(163,199,255)',
+    background: 'linear-gradient(90deg, rgba(163,199,255,1) 1%, rgba(0,93,189,1) 99%)',color:'white'}}><ArrowUpwardSharpIcon style={{fontSize:'40px'}}/></button>
           </HashLink>
       </div> : ""}
       <section style={{ padding: "1%", justifyContent: "center",background:'silver' }} id="IDEVENTS">
@@ -87,7 +89,7 @@ const Mycomp = () => {
             </HashLink>
           </div >
           <div className="tvyomeventbtns">
-            <HashLink smooth to="#LAN WAR">
+            <HashLink smooth to="#IDLANWAR">
               <img src="https://bsmedia.business-standard.com/_media/bs/img/article/2019-07/28/full/1564336499-4935.jpg" style={{height:'118px',width:'118px',borderRadius:'50%'}}/>
               <br/><span>LAN <br/> War</span>
             </HashLink>

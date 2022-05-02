@@ -14,6 +14,9 @@ const RegisterEvent = () => {
   useEffect(() => {
     userdata.collectdata();
   }, []);
+  useEffect(() => {
+    window.scrollTo(0, 0)
+  }, [])
 
   const handlesubmit = async (event) => {
     event.preventDefault();

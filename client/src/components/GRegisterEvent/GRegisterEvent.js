@@ -38,6 +38,9 @@ const GRegisterEvent = () => {
   useEffect(() => {
     userdata.collectdata();
   }, []);
+  useEffect(() => {
+    window.scrollTo(0, 0)
+  }, [])
   const handleonsubmit = async (event) => {
     event.preventDefault();
     if (tid === "") {
