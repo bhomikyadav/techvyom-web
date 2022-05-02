@@ -1,7 +1,7 @@
 const router = require("express").Router();
 const Jio = require("joi");
 const Student = require("../models/Student");
-const Numberofstudent = require("../models/Numberofstudent");
+
 const sendcustomMail = require("../controllers/sendmail");
 
 // post(name,email,rollnumber,Phonenumber)
@@ -20,15 +20,15 @@ router.post("/", async (req, res) => {
   try {
     const { rollnumber } = req.body;
     // checking if user allready registered
-    const student_exits = await Student.exists({
-      $or: [{ rollnumber: req.body.rollnumber }, { rollnumber }],
-    });
+    const student_exits = await Student.findOne({ rollnumber });
+
     if (!student_exits) {
       return res.status(401).send({
         status: false,
         msg: "invalid rollnumber",
       });
     }
+
     const send_mail = sendcustomMail(
       student_exits.email,
       "your information",
@@ -54,7 +54,5 @@ router.post("/", async (req, res) => {
     });
   }
 });
-
-// ------------------------------------------
 
 module.exports = router;

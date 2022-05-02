@@ -34,7 +34,7 @@ router.post("/event", CheckVerification, async (req, res) => {
       });
     }
 
-    const allreadyexits = await Praticipation.exists({
+    const allreadyexits = await Praticipation.find({
       $and: [{ Pid }, { Eventname: eventname }],
     });
     if (allreadyexits) {
@@ -71,9 +71,33 @@ router.post("/event", CheckVerification, async (req, res) => {
     // 1. student ok
     const Send_EmailTO_Student = sendcustomMail(
       email,
-      "checking",
-      "checking mail",
-      "checking mail"
+      "register in new event",
+      `Hi Sir /Madam 
+Thank you for registering in ${eventname} of Techvyom of ${find_event.EventClub} \nFollowing are yeh details :
+Event name : ${eventname}\n
+Pid :${Check_student.Pid}\n
+
+Event code :${find_event.EventCode}\n
+Event Mentor :${find_event.Eventmentor}\n
+Mentor email:${find_event.Eventmentoremail}\n
+
+See you in the even . Good luck !! \n
+Thanks and regards\n
+Techvyom team\n
+ SRMS CET BAREILLY\n `,
+      `Hi Sir /Madam 
+Thank you for registering in ${eventname} of Techvyom of ${find_event.EventClub} \nFollowing are yeh details :
+Event name : ${eventname}\n
+Pid :${Check_student.Pid}\n
+
+Event code :${find_event.EventCode}\n
+Event Mentor :${find_event.Eventmentor}\n
+Mentor email:${find_event.Eventmentoremail}\n
+
+See you in the even . Good luck !! \n
+Thanks and regards\n
+Techvyom team\n
+ SRMS CET BAREILLY\n `
     );
 
     if (!Send_EmailTO_Student) {
@@ -88,6 +112,7 @@ router.post("/event", CheckVerification, async (req, res) => {
         Numberparticipation: parseInt(find_event.Numberparticipation) + 1,
       }
     );
+
     return res.send({
       status: true,
       msg: "registered",

@@ -24,7 +24,7 @@ const Login = () => {
           "Content-Type": "application/json",
         },
         body: JSON.stringify({
-          rollnumber: rollnumber,
+          rollnumber,
         }),
       });
       const f_data = await f_responce.json();
