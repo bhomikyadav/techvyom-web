@@ -27,6 +27,7 @@ app.use("/add", require("./routers/Registration"));
 app.use("/group", require("./routers/groupregisteration"));
 // ADMIN
 app.use("/admin", require("./routers/Admin"));
+app.use("/forgot", require("./routers/Forgot"));
 
 app.listen(port, () => {
   console.log(`server in runing :${port}`);

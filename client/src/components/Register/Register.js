@@ -12,7 +12,10 @@ const Register = () => {
   const [rollnumber, setrollnumber] = useState("");
   const handleonsubmit = async (event) => {
     event.preventDefault();
-    console.log(name + "\n" + number + "\n" + rollnumber + "\n" + email);
+    if (!name || !email || !number || !rollnumber) {
+      toast.error("field never be empty");
+      return;
+    }
     try {
       const response = await fetch("http://localhost:5000/user/create", {
         method: "POST",
@@ -73,20 +76,33 @@ const Register = () => {
     }
   };
   return (
-    <div style={{ background: 'rgb(163,199,255)',
-    background: 'linear-gradient(90deg, rgba(163,199,255,1) 1%, rgba(0,93,189,1) 99%)',marginTop:'5vh'}}>
+    <div
+      style={{
+        background: "rgb(163,199,255)",
+        background:
+          "linear-gradient(90deg, rgba(163,199,255,1) 1%, rgba(0,93,189,1) 99%)",
+        marginTop: "5vh",
+      }}
+    >
       <form
         className="container"
-        style={{width:'30%',margin:'auto',padding:'20px',borderRadius:'20px' }}
+        style={{
+          width: "30%",
+          margin: "auto",
+          padding: "20px",
+          borderRadius: "20px",
+        }}
         onSubmit={(e) => handleonsubmit(e)}
       >
-        <h1 className="my-10 mb-4" style={{ textAlign: "center", color: "black" }}>
-            Register yourself
+        <h1
+          className="my-10 mb-4"
+          style={{ textAlign: "center", color: "black" }}
+        >
+          Register yourself
         </h1>
         <div className="form-outline mb-4">
-          
           <label
-            style={{ color: "black",marginBottom:'2px',fontSize:'20px' }}
+            style={{ color: "black", marginBottom: "2px", fontSize: "20px" }}
             className="form-label"
             htmlFor="form6Example1"
           >
@@ -96,16 +112,21 @@ const Register = () => {
             type="text"
             value={name}
             id="form6Example1"
-            onChange={(e) => {setname(e.target.value);}}
+            onChange={(e) => {
+              setname(e.target.value);
+            }}
             className="form-control"
-            style={{border:'2px solid black',background:'#EDEADE',height:'30px'}}
+            style={{
+              border: "2px solid black",
+              background: "#EDEADE",
+              height: "30px",
+            }}
           />
-          
         </div>
 
         <div className="form-outline mb-4">
-        <label
-            style={{ color: "black",marginBottom:'2px',fontSize:'20px' }}
+          <label
+            style={{ color: "black", marginBottom: "2px", fontSize: "20px" }}
             className="form-label"
             htmlFor="form6Example5"
           >
@@ -119,14 +140,17 @@ const Register = () => {
             }}
             id="form6Example5"
             className="form-control"
-            style={{border:'2px solid black',background:'#EDEADE',height:'30px'}}
+            style={{
+              border: "2px solid black",
+              background: "#EDEADE",
+              height: "30px",
+            }}
           />
-         
         </div>
 
         <div className="form-outline mb-4">
-        <label
-            style={{ color: "black",marginBottom:'2px',fontSize:'20px' }}
+          <label
+            style={{ color: "black", marginBottom: "2px", fontSize: "20px" }}
             className="form-label"
             htmlFor="form6Example6"
           >
@@ -140,13 +164,16 @@ const Register = () => {
               setnumber(e.target.value);
             }}
             className="form-control"
-            style={{border:'2px solid black',background:'#EDEADE',height:'30px'}}
+            style={{
+              border: "2px solid black",
+              background: "#EDEADE",
+              height: "30px",
+            }}
           />
-          
         </div>
         <div className="form-outline mb-4">
-        <label
-            style={{ color: "black",marginBottom:'2px',fontSize:'20px' }}
+          <label
+            style={{ color: "black", marginBottom: "2px", fontSize: "20px" }}
             className="form-label"
             htmlFor="form6Example6"
           >
@@ -160,12 +187,28 @@ const Register = () => {
             value={rollnumber}
             id="form6Example6"
             className="form-control"
-            style={{border:'2px solid black',background:'#EDEADE',height:'30px'}}
+            style={{
+              border: "2px solid black",
+              background: "#EDEADE",
+              height: "30px",
+            }}
           />
-         
         </div>
 
-        <button type="submit" className="btn btn-primary btn-block mb-4" style={{marginLeft:'30%',marginTop:'20px',background:'transparent',border:'2px solid black',color:'black', borderRadius:'10px',fontSize:'18px',padding:'8px 40px'}}>
+        <button
+          type="submit"
+          className="btn btn-primary btn-block mb-4"
+          style={{
+            marginLeft: "30%",
+            marginTop: "20px",
+            background: "transparent",
+            border: "2px solid black",
+            color: "black",
+            borderRadius: "10px",
+            fontSize: "18px",
+            padding: "8px 40px",
+          }}
+        >
           Verify email
         </button>
       </form>

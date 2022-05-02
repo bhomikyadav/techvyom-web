@@ -4,14 +4,40 @@ import { Link, useNavigate } from "react-router-dom";
 import Userdatacontext from "../../context/Userdatacontext";
 
 const Login = () => {
+  const navigate = useNavigate();
+  const [rollnumber, setrollnumber] = useState("");
+  const [Pid, setPid] = useState("");
   const userdata = useContext(Userdatacontext);
   useEffect(() => {
     userdata.collectdata();
   }, []);
+  const handleonclickforgot = async (e) => {
+    if (!rollnumber) {
+      toast.error("enter your rollnumber");
+      return;
+    }
+    try {
+      const f_responce = await fetch("http://localhost:5000/forgot", {
+        method: "POST",
+        mode: "cors",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify({
+          rollnumber: rollnumber,
+        }),
+      });
+      const f_data = await f_responce.json();
+      if (f_data.status) {
+        toast.success(f_data.msg);
+      } else {
+        toast.error(f_data.msg);
+      }
+    } catch (error) {
+      toast.error("internal server error");
+    }
+  };
 
-  const navigate = useNavigate();
-  const [rollnumber, setrollnumber] = useState("");
-  const [Pid, setPid] = useState("");
   const handleonclick = async () => {
     try {
       const response = await fetch("http://localhost:5000/user/login", {
@@ -124,6 +150,15 @@ const Login = () => {
                             Pid
                           </label>
                         </div>
+                        <p
+                          onClick={(e) => {
+                            handleonclickforgot(e);
+                          }}
+                          className="mb-5 pb-lg-2"
+                          style={{ color: "#393f81" }}
+                        >
+                          Forgot pid?{" "}
+                        </p>
 
                         <div className="pt-1 mb-4">
                           <button
