@@ -74,11 +74,12 @@ const Login = () => {
   return (
     <>
       <section
-        className="vh-100"
-        style={{ backgroundColor: "#6081f7", marginTop: "5vh" }}
+        
+        style={{ backgroundColor:' rgb(163,199,255)',
+          background:'linear-gradient(90deg, rgba(163,199,255,1) 1%, rgba(0,93,189,1) 99%)',overflowY:'hidden',minHeight:'80vh'}}
       >
-        <div className="container py-5 h-100">
-          <div className="row d-flex justify-content-center align-items-center h-100">
+        <div className="container h-100" style={{paddingTop:'1.7rem',paddingBottom:'1.7rem',overflowY:'hidden'}}>
+          <div className="row d-flex justify-content-center align-items-center">
             <div className="col col-xl-10">
               <div className="card" style={{ borderRadius: "1rem" }}>
                 <div className="row g-0">
@@ -97,7 +98,8 @@ const Login = () => {
                           <span className="h1 fw-bold mb-0">
                             <img
                               src="/images/techvyom_logo.jpeg"
-                              style={{ height: "100px", width: "100px" }}
+                              alt="imagehere"
+                              style={{ height: "80px", width: "80px" }}
                             />
                           </span>
                           <span
@@ -113,13 +115,19 @@ const Login = () => {
                         </div>
 
                         <h5
-                          className="fw-normal mb-3 pb-3"
+                          className="fw-normal mb-2 pb-2"
                           style={{ letterSpacing: "1px" }}
                         >
                           Sign into your account
                         </h5>
 
-                        <div className="form-outline mb-4">
+                        <div className="form-outline mb-2">
+                        <label
+                            className="form-label"
+                            htmlFor="form2Example17"
+                          >
+                            rollnumber
+                          </label>
                           <input
                             type="email"
                             id="form2Example17"
@@ -127,15 +135,16 @@ const Login = () => {
                             onChange={(e) => setrollnumber(e.target.value)}
                             className="form-control form-control-lg"
                           />
-                          <label
-                            className="form-label"
-                            htmlFor="form2Example17"
-                          >
-                            rollnumber
-                          </label>
+                          
                         </div>
 
-                        <div className="form-outline mb-4">
+                        <div className="form-outline mb-2">
+                        <label
+                            className="form-label"
+                            htmlFor="form2Example27"
+                          >
+                            Pid
+                          </label>
                           <input
                             type="text"
                             id="form2Example27"
@@ -143,35 +152,31 @@ const Login = () => {
                             onChange={(e) => setPid(e.target.value)}
                             className="form-control form-control-lg"
                           />
-                          <label
-                            className="form-label"
-                            htmlFor="form2Example27"
-                          >
-                            Pid
-                          </label>
+                          
                         </div>
                         <p
                           onClick={(e) => {
                             handleonclickforgot(e);
                           }}
-                          className="mb-5 pb-lg-2"
+                          className="mb-3 pb-lg-2"
                           style={{ color: "#393f81" }}
                         >
                           Forgot pid?{" "}
                         </p>
 
-                        <div className="pt-1 mb-4">
+                        <div className="pt-1 mb-2">
                           <button
                             className="btn btn-dark btn-lg btn-block"
                             type="button"
                             onClick={(e) => handleonclick(e)}
+                            style={{padding:'8px 25px'}}
                           >
                             Login
                           </button>
                         </div>
 
                         <p
-                          className="mb-5 pb-lg-2"
+                          className="pb-lg-2"
                           style={{ color: "#393f81" }}
                         >
                           Don't have an account?{" "}

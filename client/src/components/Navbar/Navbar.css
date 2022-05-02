@@ -146,7 +146,7 @@ a:hover {
 }
 
 .btn-nav {
-  color: #f857a8;
+  color: rgba(0,93,189,1);
   padding-left: 2em;
   padding-right: 2em;
 }
@@ -181,9 +181,8 @@ a:hover {
   .nava:link.active,
   a:visited.active,
   a:active.active {
-    background: #f857a8;
-    background: -webkit-linear-gradient(45deg, #f857a8, #ff5858);
-    background: linear-gradient(45deg, #f857a8, #ff5858);
+    background: rgb(163,199,255);
+    background: linear-gradient(90deg, rgba(163,199,255,1) 1%, rgba(0,93,189,1) 99%);
     color: #fff;
   }
 

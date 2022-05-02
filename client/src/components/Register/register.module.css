@@ -1,0 +1,46 @@
+.tvyomregisterform{
+    background-color: rgb(163,199,255);
+    background:linear-gradient(90deg, rgba(163,199,255,1) 1%, rgba(0,93,189,1) 99%);
+    padding:6.7vh 0;
+    overflow-y:hidden;
+}
+.tvyomregisterform>form{
+    width: 80%;
+    height: 80%;
+    margin: auto;
+    padding: 20px;
+    border-radius: 20px;
+}
+.tvyomregisterform>form>button{
+    display: block;
+    width: 20%;
+    
+    margin-top: 20px;
+    background: transparent;
+    border: 3px solid rgb(5, 55, 105);
+    color: rgb(5, 55, 105);
+    border-radius: 10px;
+    font-size: 20px;
+    font-weight: 500;
+    padding: 8px 10px;
+    
+}
+.tvyomregisterform>form>button:hover{
+    background: rgb(5, 55, 105);
+    color: white;
+}
+.tvyomregisterform>form>button:focus{
+    background: rgb(5, 55, 105);
+    color: white;
+}
+@media (max-width:1180px) {
+    .tvyomregisterform>form{
+        width: 50%;
+    }
+}
+@media (max-width:660px) {
+    .tvyomregisterform>form>button{
+        width: 50%;
+        margin: auto;
+    }
+}

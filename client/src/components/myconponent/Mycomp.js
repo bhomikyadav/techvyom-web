@@ -29,7 +29,7 @@ const Mycomp = () => {
     background: 'linear-gradient(90deg, rgba(163,199,255,1) 1%, rgba(0,93,189,1) 99%)',color:'white'}}><ArrowUpwardSharpIcon style={{fontSize:'40px'}}/></button>
           </HashLink>
       </div> : ""}
-      <section style={{ padding: "1%", justifyContent: "center",background:'silver' }} id="IDEVENTS">
+      <section style={{ padding: "4% 1%", justifyContent: "center",background:'silver' }} id="IDEVENTS">
         <div
           style={{
             display: "flex",
@@ -139,9 +139,7 @@ const Mycomp = () => {
                   <i className="fas fa-clock mr-2"></i>011
                 </li>
                 <li className="tag__item play blue">
-                  <a href="#">
                     <i className="fas fa-play mr-2"></i>
-                  </a>
                 </li>
               </ul>
             </div>
@@ -180,9 +178,7 @@ const Mycomp = () => {
                   <i className="fas fa-clock mr-2"></i>012
                 </li>
                 <li className="tag__item play red">
-                  <a href="#">
                     <i className="fas fa-play mr-2"></i>
-                  </a>
                 </li>
               </ul>
             </div>
@@ -223,9 +219,7 @@ const Mycomp = () => {
                   <i className="fas fa-clock mr-2"></i>013
                 </li>
                 <li className="tag__item play green">
-                  <a href="#">
                     <i className="fas fa-play mr-2"></i>
-                  </a>
                 </li>
               </ul>
             </div>
@@ -269,9 +263,7 @@ const Mycomp = () => {
                   <i className="fas fa-clock mr-2"></i>014
                 </li>
                 <li className="tag__item play yellow">
-                  <a href="#">
                     <i className="fas fa-play mr-2"></i>
-                  </a>
                 </li>
               </ul>
             </div>
@@ -313,9 +305,7 @@ const Mycomp = () => {
                   <i className="fas fa-clock mr-2"></i>015
                 </li>
                 <li className="tag__item play blue">
-                  <a href="#">
                     <i className="fas fa-play mr-2" id="IDSYNERGYCLUB"></i>
-                  </a>
                 </li>
               </ul>
             </div>
@@ -360,9 +350,7 @@ const Mycomp = () => {
                   <i className="fas fa-clock mr-2"></i>021
                 </li>
                 <li className="tag__item play blue">
-                  <a href="#">
                     <i className="fas fa-play mr-2"></i>
-                  </a>
                 </li>
               </ul>
             </div>
@@ -398,9 +386,7 @@ const Mycomp = () => {
                   <i className="fas fa-clock mr-2"></i>022
                 </li>
                 <li className="tag__item play red">
-                  <a href="#">
                     <i className="fas fa-play mr-2"></i>
-                  </a>
                 </li>
               </ul>
             </div>
@@ -436,9 +422,7 @@ const Mycomp = () => {
                   <i className="fas fa-clock mr-2"></i>023
                 </li>
                 <li className="tag__item play green">
-                  <a href="#">
                     <i className="fas fa-play mr-2"></i>
-                  </a>
                 </li>
               </ul>
             </div>
@@ -475,9 +459,7 @@ const Mycomp = () => {
                   <i className="fas fa-clock mr-2"></i>024
                 </li>
                 <li className="tag__item play yellow">
-                  <a href="#">
                     <i className="fas fa-play mr-2"></i>
-                  </a>
                 </li>
               </ul>
             </div>
@@ -513,9 +495,7 @@ const Mycomp = () => {
                   <i className="fas fa-clock mr-2"></i>025
                 </li>
                 <li className="tag__item play yellow">
-                  <a href="#">
                     <i id="IDAERONAUTICSCLUB" className="fas fa-play mr-2"></i>
-                  </a>
                 </li>
               </ul>
             </div>
@@ -569,9 +549,7 @@ const Mycomp = () => {
                   <i className="fas fa-clock mr-2"></i>031
                 </li>
                 <li className="tag__item play blue">
-                  <a href="#">
                     <i className="fas fa-play mr-2"></i>
-                  </a>
                 </li>
               </ul>
             </div>
@@ -611,9 +589,7 @@ const Mycomp = () => {
                   <i className="fas fa-clock mr-2"></i>032
                 </li>
                 <li className="tag__item play red">
-                  <a href="#">
                     <i className="fas fa-play mr-2"></i>
-                  </a>
                 </li>
               </ul>
             </div>
@@ -652,9 +628,7 @@ const Mycomp = () => {
                   <i className="fas fa-clock mr-2"></i>033
                 </li>
                 <li className="tag__item play green">
-                  <a href="#">
                     <i className="fas fa-play mr-2"></i>
-                  </a>
                 </li>
               </ul>
             </div>
@@ -690,12 +664,10 @@ const Mycomp = () => {
                   <i className="fas fa-clock mr-2"></i>034
                 </li>
                 <li className="tag__item play yellow">
-                  <a href="#">
                     <i
                       id="IDEQUINOX&ILLUMINATICLUB"
                       className="fas fa-play mr-2"
                     ></i>
-                  </a>
                 </li>
               </ul>
             </div>
@@ -739,9 +711,7 @@ const Mycomp = () => {
                   <i className="fas fa-clock mr-2"></i>041
                 </li>
                 <li className="tag__item play blue">
-                  <a href="#">
                     <i className="fas fa-play mr-2"></i>
-                  </a>
                 </li>
               </ul>
             </div>
@@ -777,9 +747,7 @@ const Mycomp = () => {
                   <i className="fas fa-clock mr-2"></i>042
                 </li>
                 <li className="tag__item play red">
-                  <a href="#">
                     <i className="fas fa-play mr-2"></i>
-                  </a>
                 </li>
               </ul>
             </div>
@@ -815,9 +783,7 @@ const Mycomp = () => {
                   <i className="fas fa-clock mr-2"></i>043
                 </li>
                 <li className="tag__item play green">
-                  <a href="#">
                     <i className="fas fa-play mr-2"></i>
-                  </a>
                 </li>
               </ul>
             </div>
@@ -852,9 +818,7 @@ const Mycomp = () => {
                   <i className="fas fa-clock mr-2"></i>044
                 </li>
                 <li className="tag__item play yellow">
-                  <a href="#">
                     <i className="fas fa-play mr-2"></i>
-                  </a>
                 </li>
               </ul>
             </div>
@@ -890,9 +854,7 @@ const Mycomp = () => {
                   <i className="fas fa-clock mr-2"></i>.
                 </li>
                 <li className="tag__item play yellow">
-                  <a href="#">
                     <i id="IDLITERARAYCLUB" className="fas fa-play mr-2"></i>
-                  </a>
                 </li>
               </ul>
             </div>
@@ -940,9 +902,7 @@ const Mycomp = () => {
                   <i className="fas fa-clock mr-2"></i>051
                 </li>
                 <li className="tag__item play blue">
-                  <a href="#">
                     <i className="fas fa-play mr-2"></i>
-                  </a>
                 </li>
               </ul>
             </div>
@@ -982,9 +942,7 @@ const Mycomp = () => {
                   <i className="fas fa-clock mr-2"></i>052
                 </li>
                 <li className="tag__item play red">
-                  <a href="#">
                     <i className="fas fa-play mr-2"></i>
-                  </a>
                 </li>
               </ul>
             </div>
@@ -1023,9 +981,7 @@ const Mycomp = () => {
                   <i className="fas fa-clock mr-2"></i>053
                 </li>
                 <li className="tag__item play green">
-                  <a href="#">
                     <i className="fas fa-play mr-2"></i>
-                  </a>
                 </li>
               </ul>
             </div>
@@ -1061,9 +1017,7 @@ const Mycomp = () => {
                   <i className="fas fa-clock mr-2"></i>054
                 </li>
                 <li className="tag__item play yellow">
-                  <a href="#">
                     <i className="fas fa-play mr-2"></i>
-                  </a>
                 </li>
               </ul>
             </div>
@@ -1099,9 +1053,7 @@ const Mycomp = () => {
                   <i className="fas fa-clock mr-2"></i>055
                 </li>
                 <li className="tag__item play yellow">
-                  <a href="#">
                     <i id="IDMRCCLUB" className="fas fa-play mr-2"></i>
-                  </a>
                 </li>
               </ul>
             </div>
@@ -1148,9 +1100,7 @@ const Mycomp = () => {
                   <i className="fas fa-clock mr-2"></i>061
                 </li>
                 <li className="tag__item play blue">
-                  <a href="#">
                     <i className="fas fa-play mr-2"></i>
-                  </a>
                 </li>
               </ul>
             </div>
@@ -1186,9 +1136,7 @@ const Mycomp = () => {
                   <i className="fas fa-clock mr-2"></i>062
                 </li>
                 <li className="tag__item play red">
-                  <a href="#">
                     <i id="IDPHARMQUIMICACLUB" className="fas fa-play mr-2"></i>
-                  </a>
                 </li>
               </ul>
             </div>
@@ -1234,9 +1182,7 @@ const Mycomp = () => {
                   <i className="fas fa-clock mr-2"></i>071
                 </li>
                 <li className="tag__item play blue">
-                  <a href="#">
                     <i className="fas fa-play mr-2"></i>
-                  </a>
                 </li>
               </ul>
             </div>
@@ -1276,9 +1222,7 @@ const Mycomp = () => {
                   <i className="fas fa-clock mr-2"></i>072
                 </li>
                 <li className="tag__item play red">
-                  <a href="#">
                     <i className="fas fa-play mr-2"></i>
-                  </a>
                 </li>
               </ul>
             </div>
@@ -1317,9 +1261,7 @@ const Mycomp = () => {
                   <i className="fas fa-clock mr-2"></i>073
                 </li>
                 <li className="tag__item play blue">
-                  <a href="#">
                     <i className="fas fa-play mr-2"></i>
-                  </a>
                 </li>
               </ul>
             </div>
@@ -1359,9 +1301,7 @@ const Mycomp = () => {
                   <i className="fas fa-clock mr-2"></i>074
                 </li>
                 <li className="tag__item play red">
-                  <a href="#">
                     <i id="IDDESIGNCLUB" className="fas fa-play mr-2"></i>
-                  </a>
                 </li>
               </ul>
             </div>
@@ -1408,9 +1348,7 @@ const Mycomp = () => {
                   <i className="fas fa-clock mr-2"></i>081
                 </li>
                 <li className="tag__item play blue">
-                  <a href="#">
                     <i className="fas fa-play mr-2"></i>
-                  </a>
                 </li>
               </ul>
             </div>
@@ -1446,9 +1384,7 @@ const Mycomp = () => {
                   <i className="fas fa-clock mr-2"></i>082
                 </li>
                 <li className="tag__item play red">
-                  <a href="#">
                     <i className="fas fa-play mr-2"></i>
-                  </a>
                 </li>
               </ul>
             </div>
@@ -1484,9 +1420,7 @@ const Mycomp = () => {
                   <i className="fas fa-clock mr-2"></i>083
                 </li>
                 <li className="tag__item play green">
-                  <a href="#">
                     <i className="fas fa-play mr-2"></i>
-                  </a>
                 </li>
               </ul>
             </div>
@@ -1523,9 +1457,7 @@ const Mycomp = () => {
                   <i className="fas fa-clock mr-2"></i>084
                 </li>
                 <li className="tag__item play yellow">
-                  <a href="#">
                     <i id="IDLANWAR" className="fas fa-play mr-2"></i>
-                  </a>
                 </li>
               </ul>
             </div>
@@ -1571,9 +1503,7 @@ const Mycomp = () => {
                   <i className="fas fa-clock mr-2"></i>091
                 </li>
                 <li className="tag__item play blue">
-                  <a href="#">
                     <i className="fas fa-play mr-2"></i>
-                  </a>
                 </li>
               </ul>
             </div>
@@ -1613,9 +1543,7 @@ const Mycomp = () => {
                   <i className="fas fa-clock mr-2"></i>092
                 </li>
                 <li className="tag__item play red">
-                  <a href="#">
                     <i className="fas fa-play mr-2"></i>
-                  </a>
                 </li>
               </ul>
             </div>
@@ -1654,9 +1582,7 @@ const Mycomp = () => {
                   <i className="fas fa-clock mr-2"></i>093
                 </li>
                 <li className="tag__item play blue">
-                  <a href="#">
                     <i id="IDOPENEVENTS" className="fas fa-play mr-2"></i>
-                  </a>
                 </li>
               </ul>
             </div>
@@ -1703,9 +1629,7 @@ const Mycomp = () => {
                   <i className="fas fa-clock mr-2"></i>101
                 </li>
                 <li className="tag__item play blue">
-                  <a href="#">
                     <i className="fas fa-play mr-2"></i>
-                  </a>
                 </li>
               </ul>
             </div>
@@ -1741,9 +1665,7 @@ const Mycomp = () => {
                   <i className="fas fa-clock mr-2"></i>102
                 </li>
                 <li className="tag__item play red">
-                  <a href="#">
                     <i className="fas fa-play mr-2"></i>
-                  </a>
                 </li>
               </ul>
             </div>
@@ -1779,9 +1701,7 @@ const Mycomp = () => {
                   <i className="fas fa-clock mr-2"></i>103
                 </li>
                 <li className="tag__item play green">
-                  <a href="#">
                     <i className="fas fa-play mr-2"></i>
-                  </a>
                 </li>
               </ul>
             </div>
@@ -1817,10 +1737,8 @@ const Mycomp = () => {
                 <li className="tag__item">
                   <i className="fas fa-clock mr-2"></i>104
                 </li>
-                <li className="tag__item play yellow">
-                  <a href="#">
+                <li className="tag__item play yellow">               
                     <i className="fas fa-play mr-2"></i>
-                  </a>
                 </li>
               </ul>
             </div>
@@ -1857,9 +1775,7 @@ const Mycomp = () => {
                   <i className="fas fa-clock mr-2"></i>105
                 </li>
                 <li className="tag__item play yellow">
-                  <a href="#">
                     <i className="fas fa-play mr-2"></i>
-                  </a>
                 </li>
               </ul>
             </div>

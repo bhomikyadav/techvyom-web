@@ -3,13 +3,15 @@
     padding: 5px;
     border-radius: 20px;
     background: #fff;
-    border: none;
+    border: 1px solid rgb(5, 55, 105);
     height: 360px;
     position: relative
 }
 
 .containerotp {
-    height: 100vh
+    height: 100vh;
+    background: rgb(163,199,255);
+    background: linear-gradient(90deg, rgba(163,199,255,1) 1%, rgba(0,93,189,1) 99%);
 }
 
 body {

@@ -12,7 +12,7 @@ function About() {
       {userdata.username === "" ? (
         <>
           <h1 style={{ marginTop: "5%", color: "black", textAlign: "center" }}>
-            first Register yoursef
+            first Register yourself
           </h1>
         </>
       ) : (

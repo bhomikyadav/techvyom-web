@@ -1,4 +1,5 @@
 import React, { useState, useContext } from "react";
+import style from './register.module.css'
 import toast from "react-hot-toast";
 import Userdatacontext from "../../context/Userdatacontext";
 import { useNavigate } from "react-router-dom";
@@ -76,22 +77,9 @@ const Register = () => {
     }
   };
   return (
-    <div
-      style={{
-        background: "rgb(163,199,255)",
-        background:
-          "linear-gradient(90deg, rgba(163,199,255,1) 1%, rgba(0,93,189,1) 99%)",
-        marginTop: "5vh",
-      }}
-    >
+    <div className={style.tvyomregisterform}>
       <form
         className="container"
-        style={{
-          width: "30%",
-          margin: "auto",
-          padding: "20px",
-          borderRadius: "20px",
-        }}
         onSubmit={(e) => handleonsubmit(e)}
       >
         <h1
@@ -102,7 +90,7 @@ const Register = () => {
         </h1>
         <div className="form-outline mb-4">
           <label
-            style={{ color: "black", marginBottom: "2px", fontSize: "20px" }}
+            style={{ color: "black", marginBottom: "2px", fontSize: "24px" }}
             className="form-label"
             htmlFor="form6Example1"
           >
@@ -117,16 +105,16 @@ const Register = () => {
             }}
             className="form-control"
             style={{
-              border: "2px solid black",
+              border: "2px solid rgb(5, 55, 105)",
               background: "#EDEADE",
-              height: "30px",
+              height: "36px",
             }}
           />
         </div>
 
         <div className="form-outline mb-4">
           <label
-            style={{ color: "black", marginBottom: "2px", fontSize: "20px" }}
+            style={{ color: "black", marginBottom: "2px", fontSize: "24px" }}
             className="form-label"
             htmlFor="form6Example5"
           >
@@ -141,16 +129,16 @@ const Register = () => {
             id="form6Example5"
             className="form-control"
             style={{
-              border: "2px solid black",
+              border: "2px solid rgb(5, 55, 105)",
               background: "#EDEADE",
-              height: "30px",
+              height: "36px",
             }}
           />
         </div>
 
         <div className="form-outline mb-4">
           <label
-            style={{ color: "black", marginBottom: "2px", fontSize: "20px" }}
+            style={{ color: "black", marginBottom: "2px", fontSize: "24px" }}
             className="form-label"
             htmlFor="form6Example6"
           >
@@ -165,15 +153,15 @@ const Register = () => {
             }}
             className="form-control"
             style={{
-              border: "2px solid black",
+              border: "2px solid rgb(5, 55, 105)",
               background: "#EDEADE",
-              height: "30px",
+              height: "36px",
             }}
           />
         </div>
         <div className="form-outline mb-4">
           <label
-            style={{ color: "black", marginBottom: "2px", fontSize: "20px" }}
+            style={{ color: "black", marginBottom: "2px", fontSize: "24px" }}
             className="form-label"
             htmlFor="form6Example6"
           >
@@ -188,9 +176,10 @@ const Register = () => {
             id="form6Example6"
             className="form-control"
             style={{
-              border: "2px solid black",
+              border: "2px solid rgb(5, 55, 105)",
               background: "#EDEADE",
-              height: "30px",
+              height: "36px",
+              marginBottom:'45px'
             }}
           />
         </div>
@@ -198,16 +187,6 @@ const Register = () => {
         <button
           type="submit"
           className="btn btn-primary btn-block mb-4"
-          style={{
-            marginLeft: "30%",
-            marginTop: "20px",
-            background: "transparent",
-            border: "2px solid black",
-            color: "black",
-            borderRadius: "10px",
-            fontSize: "18px",
-            padding: "8px 40px",
-          }}
         >
           Verify email
         </button>

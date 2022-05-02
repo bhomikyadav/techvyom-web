@@ -38,7 +38,7 @@ const Otpverifypage = () => {
             Enter the 4 digit code we just send on your email 
             <b className="text-danger" > {userdata.useremail}</b>
           </span>
-          <div className="d-flex flex-row mt-5">
+          <div className="d-flex flex-row my-4">
             <input
               type="text"
               value={otp}
@@ -47,18 +47,17 @@ const Otpverifypage = () => {
               }}
               className="form-control"
               autoFocus=""
-              style={{textAlign:'center'}}
+              style={{textAlign:'center',border:'1px solid rgb(5, 55, 105)'}}
             />
           </div>
           <button
             type="button"
             className="btn btn-primary text-center my-2"
-            
             onClick={(e) => handleonsubmitotp(e)}
           >
             submit
           </button>
-          <div className="text-center mt-5">
+          <div className="text-center my-4">
             <span className="d-block mobile-text">Don't receive the code?</span>
             <span className="font-weight-bold text-danger cursorotp">
               Resend
