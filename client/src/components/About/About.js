@@ -1,8 +1,12 @@
-import React, { useContext } from "react";
+import React, { useContext, useEffect } from "react";
 import "./About.css";
 import userdatacontext from "../../context/Userdatacontext";
 function About() {
   const userdata = useContext(userdatacontext);
+  useEffect(() => {
+    userdata.collectdata();
+  }, []);
+
   return (
     <>
       {userdata.username === "" ? (

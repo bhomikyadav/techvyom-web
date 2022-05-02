@@ -1,30 +1,90 @@
-import React from "react";
+import React, { useContext, useEffect } from "react";
 import "./Mycomp.css";
 import { useNavigate } from "react-router-dom";
+import { HashLink } from "react-router-hash-link";
+import Userdatacontext from "../../context/Userdatacontext";
 
 const Mycomp = () => {
+  const handleScrollevent = () => {
+    console.log(window.scrollY);
+  };
+  const userdata = useContext(Userdatacontext);
+  useEffect(() => {
+    userdata.collectdata();
+  }, []);
+
   let navigate = useNavigate();
   return (
     <>
       {/* <h1 style={{ color: "black",textAlign:'center' }}>Events </h1> */}
-      <section style={{padding:'1%',justifyContent:'center'}}>
-        <div style={{display:'flex',margin:'auto',justifyContent:'center',flexWrap:'wrap'}}>
-          <div><button className="tvyomeventbtns">Robotrax Club</button></div>
-          <div><button className="tvyomeventbtns">Synergy Club</button></div>
-          <div><button className="tvyomeventbtns">Aeronautics Club</button></div>
-          <div><button className="tvyomeventbtns">Equinox & Illuminati Club</button></div>
-          <div><button className="tvyomeventbtns">Literary Club</button></div>
-          <div><button className="tvyomeventbtns">MRC Club</button></div>
-        
-          <div><button className="tvyomeventbtns">Pharmaquimica Club</button></div>
-          <div><button className="tvyomeventbtns">Design Club</button></div>
-          <div><button className="tvyomeventbtns">LAN War</button></div>
-          <div><button className="tvyomeventbtns">Open Events</button></div>
+      <section style={{ padding: "1%", justifyContent: "center" }}>
+        <div
+          style={{
+            display: "flex",
+            margin: "auto",
+            justifyContent: "center",
+            flexWrap: "wrap",
+          }}
+        >
+          <div>
+            <HashLink smooth to="#IDROBOTRAXCLUB">
+              <button className="tvyomeventbtns">Robotrax Club</button>
+            </HashLink>
+          </div>
+          <div>
+            <HashLink smooth to="#IDSYNERGYCLUB">
+              <button className="tvyomeventbtns">Synergy Club</button>
+            </HashLink>
+          </div>
+          <div>
+            {" "}
+            <HashLink smooth to="#IDAERONAUTICSCLUB">
+              <button className="tvyomeventbtns">Aeronautics Club</button>
+            </HashLink>
+          </div>
+          <div>
+            <HashLink smooth to="#IDEQUINOX&ILLUMINATICLUB">
+              <button className="tvyomeventbtns">
+                Equinox & Illuminati Club
+              </button>
+            </HashLink>
+          </div>
+          <div>
+            <HashLink smooth to="#IDLITERARAYCLUB">
+              <button className="tvyomeventbtns">Literary Club</button>
+            </HashLink>
+          </div>
+          <div>
+            <HashLink smooth to="#IDMRCCLUB">
+              <button className="tvyomeventbtns">MRC Club</button>
+            </HashLink>
+          </div>
+
+          <div>
+            <HashLink smooth to="#IDPHARMQUIMICACLUB">
+              <button className="tvyomeventbtns">Pharmaquimica Club</button>
+            </HashLink>
+          </div>
+          <div>
+            <HashLink smooth to="#IDDESIGNCLUB">
+              <button className="tvyomeventbtns">Design Club</button>
+            </HashLink>
+          </div>
+          <div>
+            <HashLink smooth to="#LAN WAR">
+              <button className="tvyomeventbtns">LAN War</button>
+            </HashLink>
+          </div>
+          <div>
+            <HashLink smooth to="#IDOPENEVENTS">
+              <button className="tvyomeventbtns">Open Events</button>
+            </HashLink>
+          </div>
         </div>
       </section>
       <section className="dark" id="section1">
         <div className="container py-4">
-          <h1 className="h1 text-center" id="pageHeaderTitle">
+          <h1 className="h1 text-center" id="IDROBOTRAXCLUB">
             ROBOTRAX CLUB
           </h1>
 
@@ -55,14 +115,14 @@ const Mycomp = () => {
                 <li className="tag__item">
                   <i className="fas fa-tag mr-2"></i>Grouped
                 </li>
-               <li className="tag__item">
+                <li className="tag__item">
                   <i className="fas fa-clock mr-2"></i>011
                 </li>
                 <li className="tag__item play blue">
                   <a href="#">
                     <i className="fas fa-play mr-2"></i>
                   </a>
-                </li> 
+                </li>
               </ul>
             </div>
           </article>
@@ -234,7 +294,7 @@ const Mycomp = () => {
                 </li>
                 <li className="tag__item play blue">
                   <a href="#">
-                    <i className="fas fa-play mr-2"></i>
+                    <i className="fas fa-play mr-2" id="IDSYNERGYCLUB"></i>
                   </a>
                 </li>
               </ul>
@@ -245,9 +305,7 @@ const Mycomp = () => {
       {/* {============} */}
       <section className="light">
         <div className="container py-2">
-          <div className="h1 text-center text-dark" id="pageHeaderTitle">
-            SYNERGY CLUB
-          </div>
+          <div className="h1 text-center text-dark">SYNERGY CLUB</div>
 
           <article
             onClick={(e) => {
@@ -436,7 +494,7 @@ const Mycomp = () => {
                 </li>
                 <li className="tag__item play yellow">
                   <a href="#">
-                    <i className="fas fa-play mr-2"></i>
+                    <i id="IDAERONAUTICSCLUB" className="fas fa-play mr-2"></i>
                   </a>
                 </li>
               </ul>
@@ -448,7 +506,13 @@ const Mycomp = () => {
       {/* =============== */}
       <section className="dark">
         <div className="container py-4">
-          <h1 className="h1 text-center" id="pageHeaderTitle">
+          <h1
+            onClick={() => {
+              handleScrollevent();
+            }}
+            className="h1 text-center"
+            id="pageHeaderTitle"
+          >
             AERONAUTICS CLUB
           </h1>
 
@@ -607,7 +671,10 @@ const Mycomp = () => {
                 </li>
                 <li className="tag__item play yellow">
                   <a href="#">
-                    <i className="fas fa-play mr-2"></i>
+                    <i
+                      id="IDEQUINOX&ILLUMINATICLUB"
+                      className="fas fa-play mr-2"
+                    ></i>
                   </a>
                 </li>
               </ul>
@@ -798,12 +865,13 @@ const Mycomp = () => {
                 <li className="tag__item">
                   <i className="fas fa-tag mr-2"></i>Grouped
                 </li>
-                <li className="tag__item">045
+                <li className="tag__item">
+                  045
                   <i className="fas fa-clock mr-2"></i>.
                 </li>
                 <li className="tag__item play yellow">
                   <a href="#">
-                    <i className="fas fa-play mr-2"></i>
+                    <i id="IDLITERARAYCLUB" className="fas fa-play mr-2"></i>
                   </a>
                 </li>
               </ul>
@@ -1012,7 +1080,7 @@ const Mycomp = () => {
                 </li>
                 <li className="tag__item play yellow">
                   <a href="#">
-                    <i className="fas fa-play mr-2"></i>
+                    <i id="IDMRCCLUB" className="fas fa-play mr-2"></i>
                   </a>
                 </li>
               </ul>
@@ -1099,7 +1167,7 @@ const Mycomp = () => {
                 </li>
                 <li className="tag__item play red">
                   <a href="#">
-                    <i className="fas fa-play mr-2"></i>
+                    <i id="IDPHARMQUIMICACLUB" className="fas fa-play mr-2"></i>
                   </a>
                 </li>
               </ul>
@@ -1265,13 +1333,14 @@ const Mycomp = () => {
               </div>
               <ul className="postcard__tagbox">
                 <li className="tag__item">
-                  <i className="fas fa-tag mr-2"></i>Single                </li>
+                  <i className="fas fa-tag mr-2"></i>Single{" "}
+                </li>
                 <li className="tag__item">
                   <i className="fas fa-clock mr-2"></i>074
                 </li>
                 <li className="tag__item play red">
                   <a href="#">
-                    <i className="fas fa-play mr-2"></i>
+                    <i id="IDDESIGNCLUB" className="fas fa-play mr-2"></i>
                   </a>
                 </li>
               </ul>
@@ -1435,7 +1504,7 @@ const Mycomp = () => {
                 </li>
                 <li className="tag__item play yellow">
                   <a href="#">
-                    <i className="fas fa-play mr-2"></i>
+                    <i id="IDLANWAR" className="fas fa-play mr-2"></i>
                   </a>
                 </li>
               </ul>
@@ -1566,7 +1635,7 @@ const Mycomp = () => {
                 </li>
                 <li className="tag__item play blue">
                   <a href="#">
-                    <i className="fas fa-play mr-2"></i>
+                    <i id="IDOPENEVENTS" className="fas fa-play mr-2"></i>
                   </a>
                 </li>
               </ul>

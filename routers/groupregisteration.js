@@ -163,3 +163,16 @@ router.post("/addme", CheckVerification, async (req, res) => {
 });
 
 module.exports = router;
+// Hi Sir /Madam
+// Thank you for registering in (event name ) of Techvyom of (club) Following are yeh details :
+// Event name
+// Pid
+// Tid
+// Event code
+// Event Mentor
+// Mentor email
+
+// See you in the even . Good luck !!
+// Thanks and regards
+// Techvyom team
+//  SRMS CET BAREILLY

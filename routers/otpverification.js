@@ -42,8 +42,15 @@ router.post("/genrate", async (req, res) => {
   var mailOptions = {
     from: "srms.techvyom@gmail.com",
     to: email,
-    subject: "verify otp",
-    html: `${otp} expire in 1 hour`,
+    subject: "YOUR OTP FOR TECHVYOM",
+    html: `<h6>Hi <h4>Sir/Ma'am</h4>
+This is response to your Techvyom Registration.
+This <h2>${otp}</h2> is your OTP . 
+Hurry up !! Fill it fast !! OTP will expire within 1 hour </h6>. 
+
+<h2>Thanks and Regards<br/> 
+Techvyom organization<br/>  
+SRMS CET ,Bareilly</h2>`,
   };
   const save_otp = Otpverify.create({
     email,

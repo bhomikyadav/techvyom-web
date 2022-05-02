@@ -204,10 +204,7 @@ const GRegisterEvent = () => {
             </button>
           </div>
           <div className="tvyomGeventDetailsd2">
-            <img
-              src="https://i.all3dp.com/wp-content/uploads/2015/10/27130922/11950515_1700903740139223_1658642607_n-300x300.jpg"
-              alt="img"
-            />
+            <img src={`/images/${EventData[Ecode].img}`} />
             <div style={{ textAlign: "left", marginTop: "20px" }}>
               <h3>Event Details:</h3>
               <h6>Name:</h6>

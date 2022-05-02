@@ -27,19 +27,30 @@ const Login = () => {
       });
       const data = await response.json();
       if (data.status) {
+        console.log(data);
+        userdata.setusername(data.name);
+        userdata.setuserPid(data.Pid);
+        userdata.setuserrollnumber(data.rollnumber);
+        userdata.setuseremail(data.email);
+        userdata.setusernumber(data.number);
+        userdata.setlocaldata();
         toast.success(data.msg);
         navigate("/");
       } else {
         toast.error(data.msg);
       }
     } catch (error) {
+      toast.error(error.message);
       console.log(error);
     }
   };
 
   return (
     <>
-      <section className="vh-100" style={{ backgroundColor: "#6081f7",marginTop:'5vh'}}>
+      <section
+        className="vh-100"
+        style={{ backgroundColor: "#6081f7", marginTop: "5vh" }}
+      >
         <div className="container py-5 h-100">
           <div className="row d-flex justify-content-center align-items-center h-100">
             <div className="col col-xl-10">
@@ -50,7 +61,7 @@ const Login = () => {
                       src="/images/backlogin.png"
                       alt="login form"
                       className="img-fluid"
-                      style={{ borderRadius: "1rem 0 0 1rem", height:'100%' }}
+                      style={{ borderRadius: "1rem 0 0 1rem", height: "100%" }}
                     />
                   </div>
                   <div className="col-md-6 col-lg-7 d-flex align-items-center">
@@ -58,9 +69,21 @@ const Login = () => {
                       <form>
                         <div className="d-flex align-items-center mb-3 pb-1">
                           <span className="h1 fw-bold mb-0">
-                            <img src="/images/techvyom_logo.jpeg" style={{height:'100px',width:'100px'}}/>
+                            <img
+                              src="/images/techvyom_logo.jpeg"
+                              style={{ height: "100px", width: "100px" }}
+                            />
                           </span>
-                          <span style={{fontSize:'36px',margin:'auto',fontWeight:'700',fontStyle:'italic'}}>TECHVYOM</span>
+                          <span
+                            style={{
+                              fontSize: "36px",
+                              margin: "auto",
+                              fontWeight: "700",
+                              fontStyle: "italic",
+                            }}
+                          >
+                            TECHVYOM
+                          </span>
                         </div>
 
                         <h5

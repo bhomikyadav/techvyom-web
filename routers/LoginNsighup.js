@@ -112,6 +112,7 @@ router.post("/login", async (req, res) => {
       status: true,
       msg: "login successfully",
       name: student_exits.name,
+      number: student_exits.Phonenumber,
       rollnumber: student_exits.rollnumber,
       verified: student_exits.verified,
       email: student_exits.email,
