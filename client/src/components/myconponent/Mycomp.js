@@ -1,4 +1,4 @@
-import React, { useContext, useEffect } from "react";
+import React, { useContext, useEffect,useState } from "react";
 import "./Mycomp.css";
 import { useNavigate } from "react-router-dom";
 import { HashLink } from "react-router-hash-link";
@@ -14,10 +14,20 @@ const Mycomp = () => {
   }, []);
 
   let navigate = useNavigate();
+  const [show, setShow] = useState(false);
+  const showIt =()=> setShow(true)
+  window.onscroll=()=>{
+    showIt();
+  }
   return (
     <>
       {/* <h1 style={{ color: "black",textAlign:'center' }}>Events </h1> */}
-      <section style={{ padding: "1%", justifyContent: "center" }}>
+      {show ? <div style={{position:'fixed',right:'10px',bottom:'50vh'}}>
+          <HashLink smooth to="#IDEVENTS">
+            <button style={{border:'1px solid grey',fontSize:'20px',borderRadius:'50%',height:'80px',width:'80px',background:'black',color:'white'}}>Go Up</button>
+          </HashLink>
+      </div> : ""}
+      <section style={{ padding: "1%", justifyContent: "center",background:'silver' }} id="IDEVENTS">
         <div
           style={{
             display: "flex",
@@ -26,58 +36,66 @@ const Mycomp = () => {
             flexWrap: "wrap",
           }}
         >
-          <div>
+          <div className="tvyomeventbtns">
             <HashLink smooth to="#IDROBOTRAXCLUB">
-              <button className="tvyomeventbtns">Robotrax Club</button>
+              <img src="https://futureskillsprime.in/sites/default/files/inline-images/iStock-966248982.jpg" style={{height:'118px',width:'118px',borderRadius:'50%'}}/>
+              <br/><span style={{color:'rgba(0,93,189,1)'}}>Robotrax <br/> Club</span>
             </HashLink>
           </div>
-          <div>
+          <div className="tvyomeventbtns">
             <HashLink smooth to="#IDSYNERGYCLUB">
-              <button className="tvyomeventbtns">Synergy Club</button>
+              <img src="https://i.scdn.co/image/ab67616d00001e021c75d11972c198f6850c3632" style={{height:'118px',width:'118px',borderRadius:'50%'}}/>
+              <br/><span>Synergy <br/> Club</span>
             </HashLink>
           </div>
-          <div>
+          <div className="tvyomeventbtns">
             {" "}
             <HashLink smooth to="#IDAERONAUTICSCLUB">
-              <button className="tvyomeventbtns">Aeronautics Club</button>
+            <img src="https://blog.flatworldsolutions.com/files/2019/11/top-mechanical-engineering-trends-to-watch-out-for-in-2020.jpg" style={{height:'118px',width:'118px',borderRadius:'50%'}}/>
+              <br/><span>Aeronautics <br/> Club</span>
             </HashLink>
           </div>
-          <div>
+          <div className="tvyomeventbtns">
             <HashLink smooth to="#IDEQUINOX&ILLUMINATICLUB">
-              <button className="tvyomeventbtns">
-                Equinox & Illuminati Club
-              </button>
+            <img src="https://tdan.com/wp-content/uploads/2022/04/ART01x-feature-image-edited.jpg" style={{height:'118px',width:'118px',borderRadius:'50%'}}/>
+              <br/><span>Equinox & <br/>Illuminati Club</span>
             </HashLink>
           </div>
-          <div>
+          <div className="tvyomeventbtns">
             <HashLink smooth to="#IDLITERARAYCLUB">
-              <button className="tvyomeventbtns">Literary Club</button>
+              <img src="http://atxvideopro.com/wp-content/uploads/2016/12/script-writing-300x300.jpg" style={{height:'118px',width:'118px',borderRadius:'50%'}}/>
+              <br/><span>Literary <br/> Club</span>            
             </HashLink>
           </div>
-          <div>
+          <div className="tvyomeventbtns">
             <HashLink smooth to="#IDMRCCLUB">
-              <button className="tvyomeventbtns">MRC Club</button>
+            <img src="https://www.mmdbservices.com/wp-content/uploads/2022/01/A-girl-trying-to-understand-media-relations-management-services-300x300.jpg" style={{height:'118px',width:'118px',borderRadius:'50%'}}/>
+              <br/><span>MRC <br/> Club</span>
             </HashLink>
           </div>
 
-          <div>
+          <div className="tvyomeventbtns">
             <HashLink smooth to="#IDPHARMQUIMICACLUB">
-              <button className="tvyomeventbtns">Pharmaquimica Club</button>
+              <img src="https://www.thehighereducationreview.com/newnews/Ao89NwKD.jpg" style={{height:'118px',width:'118px',borderRadius:'50%'}}/>
+              <br/><span>Pharmquimica <br/> Club</span>
             </HashLink>
           </div>
-          <div>
+          <div className="tvyomeventbtns">
             <HashLink smooth to="#IDDESIGNCLUB">
-              <button className="tvyomeventbtns">Design Club</button>
+              <img src="https://www.tooltech.net/wp-content/uploads/2019/05/S-5-01-300x300.jpg" style={{height:'118px',width:'118px',borderRadius:'50%'}}/>
+              <br/><span>Design <br/> Club</span>
             </HashLink>
-          </div>
-          <div>
+          </div >
+          <div className="tvyomeventbtns">
             <HashLink smooth to="#LAN WAR">
-              <button className="tvyomeventbtns">LAN War</button>
+              <img src="https://bsmedia.business-standard.com/_media/bs/img/article/2019-07/28/full/1564336499-4935.jpg" style={{height:'118px',width:'118px',borderRadius:'50%'}}/>
+              <br/><span>LAN <br/> War</span>
             </HashLink>
           </div>
-          <div>
+          <div className="tvyomeventbtns">
             <HashLink smooth to="#IDOPENEVENTS">
-              <button className="tvyomeventbtns">Open Events</button>
+              <img src="https://www.iso.org/files/live/sites/isoorg/files/news/News_archive/2020/09/ISOfocus_142/1/isofocus_142-1.jpg/thumbnails/300x300" style={{height:'118px',width:'118px',borderRadius:'50%'}}/>
+              <br/><span>Open <br/> Events</span>
             </HashLink>
           </div>
         </div>

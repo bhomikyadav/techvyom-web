@@ -21,7 +21,6 @@ body {
   padding: 0;
   margin-bottom: 5px;
   margin-top: 0;
-
 }
 
 .sectionclass {
@@ -58,7 +57,7 @@ body {
   overflow: hidden;
   width: 100%;
   margin: 0 auto;
-  position: fixed;
+  position: sticky;
   top: 0;
   left: 0;
   z-index: 100;
@@ -92,10 +91,9 @@ body {
 }
 
 span.gradient {
-  background: #f857a8;
-  background: -webkit-linear-gradient(45deg, #f857a8, #ff5858);
-  background: linear-gradient(45deg, #f857a8, #ff5858);
-  padding: 0 1em;
+  background: rgb(163,199,255);
+background: linear-gradient(90deg, rgba(163,199,255,1) 1%, rgba(0,93,189,1) 99%);
+  padding: 0.5em 1em;
   position: relative;
   right: 1em;
   margin-right: auto;
@@ -133,7 +131,8 @@ a:link,
 a:visited,
 a:active {
   text-decoration: none;
-  color: #f857a8;
+  color:rgba(0,93,189,1);
+  font-weight: 600;
 }
 
 a:hover {
