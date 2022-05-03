@@ -145,7 +145,7 @@ router.post("/addme", CheckVerification, async (req, res) => {
 
     return res.send({
       status: false,
-      msg: "please send email ",
+      msg: "invalid entry ",
     });
   }
   try {

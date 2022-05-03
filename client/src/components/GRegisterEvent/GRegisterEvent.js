@@ -50,7 +50,7 @@ const GRegisterEvent = () => {
     }
 
     try {
-      const responce = await fetch("/group/create", {
+      const responce = await fetch("/group/addme", {
         method: "POST",
         mode: "cors",
         headers: {
