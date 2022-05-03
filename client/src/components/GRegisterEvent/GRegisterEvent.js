@@ -30,6 +30,8 @@ const GRegisterEvent = () => {
       const newg_data = await newg_responce.json();
       if (newg_data.status) {
         toast.success(newg_data.msg);
+      } else {
+        toast.error(newg_data.msg);
       }
     } catch (error) {
       console.log(error);
@@ -70,14 +72,14 @@ const GRegisterEvent = () => {
         toast.error(data.msg);
       }
     } catch (error) {
-      console.log(error);
+      toast.error("internal error");
     }
   };
   return (
     <>
       <div className="tvyomGeventDetails" style={{ color: "black" }}>
         <h1 style={{ color: "black", textAlign: "center", marginTop: "-20px" }}>
-          Event Name
+          {EventData[Ecode].Eventname} details
         </h1>
         <div style={{ color: "black" }}>
           <div className="tvyomGeventDetailsd1">

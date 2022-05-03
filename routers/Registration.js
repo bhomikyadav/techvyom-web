@@ -70,7 +70,7 @@ router.post("/event", CheckVerification, async (req, res) => {
     const { email } = req.body;
     // 1. student ok
     const Send_EmailTO_Student = sendcustomMail(
-      [email, find_event.Eventmentoremail, "tyro.srms@gmail.com"],
+      [email, find_event.Eventmentoremail, "techvyomsrms@gmail.com"],
       `new registration  in ${eventname}`,
       `<p>Hi <h5>Sir /Madam</h5> <br/>  
 Thank you for registering in <h5>${eventname}</h5> of Techvyom of <h5>${find_event.EventClub}</h5> Following  :<br/>
@@ -81,7 +81,7 @@ Pid :<h5> ${Check_student.Pid} </h5><br/>
 <h5> Event Mentor : ${find_event.Eventmentor}</h5> <br/>  
 <h5> Mentor email:${find_event.Eventmentoremail}</h5> <br/>  
 
-See you in the even . Good luck !!  <br/>  
+See you in the event. Good luck !!  <br/>  
 Thanks and regards <br/>  
 Techvyom team <br/>  
  SRMS CET BAREILLY </p>`,
@@ -94,7 +94,7 @@ Event code :${find_event.EventCode}\n
 Event Mentor :${find_event.Eventmentor}\n
 Mentor email:${find_event.Eventmentoremail}\n
 
-See you in the even . Good luck !! \n
+See you in the event. Good luck !! \n
 Thanks and regards\n
 Techvyom team\n
  SRMS CET BAREILLY\n `

@@ -67,7 +67,7 @@ const RegisterEvent = () => {
                 marginTop: "-20px",
               }}
             >
-              Event details
+              {EventData[Ecode].Eventname} details
             </h1>
             <div style={{ color: "black" }}>
               <div className="tvyomeventintropaged1">

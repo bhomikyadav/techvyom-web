@@ -5,25 +5,20 @@ import { HashLink } from "react-router-hash-link";
 import Userdatacontext from "../../context/Userdatacontext";
 import ArrowUpwardSharpIcon from "@mui/icons-material/ArrowUpwardSharp";
 
-const Mycomp = () => {
-  const handleScrollevent = () => {
-    console.log(window.scrollY);
-  };
+const Mycomp = ({ Show }) => {
   const userdata = useContext(Userdatacontext);
   useEffect(() => {
     userdata.collectdata();
   }, []);
-
+  useEffect(() => {
+    console.log(window.screenY);
+  }, [window.screenY]);
   let navigate = useNavigate();
-  const [show, setShow] = useState(false);
-  const showIt = () => setShow(true);
-  window.onscroll = () => {
-    showIt();
-  };
+
   return (
     <>
       {/* <h1 style={{ color: "black",textAlign:'center' }}>Events </h1> */}
-      {show ? (
+      {Show ? (
         <div style={{ position: "fixed", right: "10px", bottom: "50vh" }}>
           <HashLink smooth to="#IDEVENTS">
             <button
@@ -496,8 +491,8 @@ const Mycomp = () => {
 
               <div className="postcard__bar"></div>
               <div className="postcard__preview-txt">
-              Design remote-control Robot wireless and compete with another last stand out
-              will be winners.
+                Design remote-control Robot wireless and compete with another
+                last stand out will be winners.
               </div>
               <ul className="postcard__tagbox">
                 <li className="tag__item">
@@ -591,13 +586,7 @@ const Mycomp = () => {
       {/* =============== */}
       <section className="dark">
         <div className="container py-4">
-          <h1
-            onClick={() => {
-              handleScrollevent();
-            }}
-            className="h1 text-center"
-            id="pageHeaderTitle"
-          >
+          <h1 className="h1 text-center" id="pageHeaderTitle">
             AERONAUTICS CLUB
           </h1>
 
@@ -660,9 +649,9 @@ const Mycomp = () => {
 
               <div className="postcard__bar"></div>
               <div className="postcard__preview-txt">
-                The Machinist is an event of planning, creativity, imagination
-                & innovation. A platform is provided to make your knowledge
-                usable in a practical or technical working mechanism. With your
+                The Machinist is an event of planning, creativity, imagination &
+                innovation. A platform is provided to make your knowledge usable
+                in a practical or technical working mechanism. With your
                 knowledge of the working of any motion make a model to show the
                 transmission of motion and win this event
               </div>
@@ -738,8 +727,8 @@ const Mycomp = () => {
 
               <div className="postcard__bar"></div>
               <div className="postcard__preview-txt">
-                The 3D creation is an event of making 3d model in solid works
-                of the given design.
+                The 3D creation is an event of making 3d model in solid works of
+                the given design.
               </div>
               <ul className="postcard__tagbox">
                 <li className="tag__item">
@@ -974,7 +963,7 @@ const Mycomp = () => {
               <div className="postcard__subtitle small"></div>
               <div className="postcard__bar"></div>
               <div className="postcard__preview-txt">
-              Recite your own poem, shayri, ghazal etc
+                Recite your own poem, shayri, ghazal etc
               </div>
               <ul className="postcard__tagbox">
                 <li className="tag__item">
@@ -1010,7 +999,8 @@ const Mycomp = () => {
 
               <div className="postcard__bar"></div>
               <div className="postcard__preview-txt">
-              Literary, Technical and general knowledge questions(Buzzer Round)
+                Literary, Technical and general knowledge questions(Buzzer
+                Round)
               </div>
               <ul className="postcard__tagbox">
                 <li className="tag__item">
@@ -1081,8 +1071,8 @@ const Mycomp = () => {
 
               <div className="postcard__bar"></div>
               <div className="postcard__preview-txt">
-                Play with the riddles. Everytime you solve a riddle, 
-                you will move forward one step closer to victory."
+                Play with the riddles. Everytime you solve a riddle, you will
+                move forward one step closer to victory."
               </div>
               <ul className="postcard__tagbox">
                 <li className="tag__item">
@@ -1161,7 +1151,8 @@ const Mycomp = () => {
               <div className="postcard__subtitle small"></div>
               <div className="postcard__bar"></div>
               <div className="postcard__preview-txt">
-                Click pictures related to in and out of Techvyom preparations. The best one will get the prize.
+                Click pictures related to in and out of Techvyom preparations.
+                The best one will get the prize.
               </div>
               <ul className="postcard__tagbox">
                 <li className="tag__item">
@@ -1196,7 +1187,7 @@ const Mycomp = () => {
 
               <div className="postcard__bar"></div>
               <div className="postcard__preview-txt">
-              Make a handmade logo on the provided theme.
+                Make a handmade logo on the provided theme.
               </div>
               <ul className="postcard__tagbox">
                 <li className="tag__item">
@@ -1239,7 +1230,8 @@ const Mycomp = () => {
               <div className="postcard__subtitle small"></div>
               <div className="postcard__bar"></div>
               <div className="postcard__preview-txt">
-              Present yourr formulations which were allotted under concerned faculty members.
+                Present yourr formulations which were allotted under concerned
+                faculty members.
               </div>
               <ul className="postcard__tagbox">
                 <li className="tag__item">
@@ -1275,8 +1267,8 @@ const Mycomp = () => {
 
               <div className="postcard__bar"></div>
               <div className="postcard__preview-txt">
-              Participants have to make the collage related to Pharmacy / Environmental Issues 
-              with the help of WASTE MATERIALS.
+                Participants have to make the collage related to Pharmacy /
+                Environmental Issues with the help of WASTE MATERIALS.
               </div>
               <ul className="postcard__tagbox">
                 <li className="tag__item">
@@ -1312,7 +1304,8 @@ const Mycomp = () => {
               <div className="postcard__subtitle small"></div>
               <div className="postcard__bar"></div>
               <div className="postcard__preview-txt">
-              Participants have to bring their own startup and business ideas in the form of the ppt. 
+                Participants have to bring their own startup and business ideas
+                in the form of the ppt.
               </div>
               <ul className="postcard__tagbox">
                 <li className="tag__item">
@@ -1392,7 +1385,7 @@ const Mycomp = () => {
               <div className="postcard__subtitle small"></div>
               <div className="postcard__bar"></div>
               <div className="postcard__preview-txt">
-              Create a painting on the given technical topic.
+                Create a painting on the given technical topic.
               </div>
               <ul className="postcard__tagbox">
                 <li className="tag__item">
@@ -1462,7 +1455,7 @@ const Mycomp = () => {
 
               <div className="postcard__bar"></div>
               <div className="postcard__preview-txt">
-              Make best out of waste that must be useful and attractive.
+                Make best out of waste that must be useful and attractive.
               </div>
               <ul className="postcard__tagbox">
                 <li className="tag__item">
@@ -1497,9 +1490,9 @@ const Mycomp = () => {
 
               <div className="postcard__bar"></div>
               <div className="postcard__preview-txt">
-              Quilling is an art form that involves the use of strips of paper 
-              that are rolled, shaped, and glued together to create decorative designs. 
-              Participate in this event and showcase your talent.
+                Quilling is an art form that involves the use of strips of paper
+                that are rolled, shaped, and glued together to create decorative
+                designs. Participate in this event and showcase your talent.
               </div>
               <ul className="postcard__tagbox">
                 <li className="tag__item">
@@ -1542,9 +1535,10 @@ const Mycomp = () => {
               <div className="postcard__subtitle small"></div>
               <div className="postcard__bar"></div>
               <div className="postcard__preview-txt">
-              Battlegrounds Mobile India (in short form BGMI, previously known as PUBG Mobile India)
-              is the Indian version of PUBG Mobile, exclusively for players in India.
-              Participate in this and show your gamilng skill.
+                Battlegrounds Mobile India (in short form BGMI, previously known
+                as PUBG Mobile India) is the Indian version of PUBG Mobile,
+                exclusively for players in India. Participate in this and show
+                your gamilng skill.
               </div>
               <ul className="postcard__tagbox">
                 <li className="tag__item">
@@ -1580,7 +1574,8 @@ const Mycomp = () => {
 
               <div className="postcard__bar"></div>
               <div className="postcard__preview-txt">
-              One of the famous mobile game. Fan of football(soccer)? than this event is for you.
+                One of the famous mobile game. Fan of football(soccer)? than
+                this event is for you.
               </div>
               <ul className="postcard__tagbox">
                 <li className="tag__item">
@@ -1616,8 +1611,8 @@ const Mycomp = () => {
               <div className="postcard__subtitle small"></div>
               <div className="postcard__bar"></div>
               <div className="postcard__preview-txt">
-              Mini Militia combat an intense battle at the arena with the Doodle Army. 
-              Last one standing wins the game.
+                Mini Militia combat an intense battle at the arena with the
+                Doodle Army. Last one standing wins the game.
               </div>
               <ul className="postcard__tagbox">
                 <li className="tag__item">
@@ -1661,9 +1656,9 @@ const Mycomp = () => {
               <div className="postcard__subtitle small"></div>
               <div className="postcard__bar"></div>
               <div className="postcard__preview-txt">
-              Join us for our  Tech Gallery event! Techvyom will host a  
-              Tech Gallery where you will have the opportunity to 
-              showcase your innovative ideas related to pharmacy and environment.
+                Join us for our Tech Gallery event! Techvyom will host a Tech
+                Gallery where you will have the opportunity to showcase your
+                innovative ideas related to pharmacy and environment.
               </div>
               <ul className="postcard__tagbox">
                 <li className="tag__item">
@@ -1698,9 +1693,9 @@ const Mycomp = () => {
 
               <div className="postcard__bar"></div>
               <div className="postcard__preview-txt">
-              Join us for our  Tech Gallery event! Techvyom will host a 
-              Tech Gallery where you will have the opportunity to showcase 
-              your innovative ideas on technologies.
+                Join us for our Tech Gallery event! Techvyom will host a Tech
+                Gallery where you will have the opportunity to showcase your
+                innovative ideas on technologies.
               </div>
               <ul className="postcard__tagbox">
                 <li className="tag__item">
@@ -1735,9 +1730,9 @@ const Mycomp = () => {
 
               <div className="postcard__bar"></div>
               <div className="postcard__preview-txt">
-              Put your knowledge about all things technology to the test 
-              with our question of tech quiz and have some
-              nerdy fun in the process. Good luck!
+                Put your knowledge about all things technology to the test with
+                our question of tech quiz and have some nerdy fun in the
+                process. Good luck!
               </div>
               <ul className="postcard__tagbox">
                 <li className="tag__item">
@@ -1772,11 +1767,11 @@ const Mycomp = () => {
 
               <div className="postcard__bar"></div>
               <div className="postcard__preview-txt">
-              PLCs (programmable logic controllers) are found everywhere 
-              in industry today. Proper PLC system design can provide 
-              many years of service for a machine or process and greatly 
-              improve efficiency and profitability for the owner. 
-              You need to showcase your talents in designing PLC .
+                PLCs (programmable logic controllers) are found everywhere in
+                industry today. Proper PLC system design can provide many years
+                of service for a machine or process and greatly improve
+                efficiency and profitability for the owner. You need to showcase
+                your talents in designing PLC .
               </div>
               <ul className="postcard__tagbox">
                 <li className="tag__item">
@@ -1811,9 +1806,10 @@ const Mycomp = () => {
 
               <div className="postcard__bar"></div>
               <div className="postcard__preview-txt">
-              3D printing or additive manufacturing is a process of making 
-              three dimensional solid objects from a digital file. 
-              The creation of a 3D printed object is achieved using additive processes.
+                3D printing or additive manufacturing is a process of making
+                three dimensional solid objects from a digital file. The
+                creation of a 3D printed object is achieved using additive
+                processes.
               </div>
               <ul className="postcard__tagbox">
                 <li className="tag__item">
