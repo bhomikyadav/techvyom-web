@@ -28,7 +28,7 @@ const EventData = {
 
     EventClub: "ROBOTRAX CLUB",
     EventCode: "013",
-    Eventintro:" LINE FOLLOWER ROBOT is one of the most exciting Robotics Event of all time. You just must move your bot through the given arena comprised of an interesting path. All you need is to make your bot compatible for every type of path that you can imagine, the path will be of BLACK colour and the background is going to be of WHITE colour. The Arena will be revealed during the competition. Tag Line: - Being on the Line will make you Shine."
+    Eventintro:"LINE FOLLOWER ROBOT is one of the most exciting Robotics Event of all time. You just must move your bot through the given arena comprised of an interesting path. All you need is to make your bot compatible for every type of path that you can imagine, the path will be of BLACK colour and the background is going to be of WHITE colour. The Arena will be revealed during the competition. Tag Line: - Being on the Line will make you Shine."
   },
   "014": {
     Eventname: "Robo Soccer",
@@ -39,7 +39,7 @@ const EventData = {
 
     EventClub: "ROBOTRAX CLUB",
     EventCode: "014",
-    Eventintro:"For all the techies as well as soccer fans out there, having desire of show-casing their talent in football, but also are too lazy to actually play football, here comes an event meant for you. All you need is a higher level of tenacity, passion for football, an all-time habit of beating your opponent and you are good to go."
+    Eventintro:"For all the techies as well as soccer fans out there, having desire of show-casing their talent in football, but also are too lazy to actually play football, here comes an event meant for you. All you need is a higher level of tenacity, passion for football, an all-time habit of beating your opponent and you are good to go."
   },
   "015": {
     Eventname: "Maze Solver",
@@ -127,7 +127,7 @@ const EventData = {
     Grouped: false,
     EventClub: "AERONAUTICS CLUB",
     EventCode: "032",
-    Eventintro:"The Machinist is an event of planning, creativity, imagination & innovation. A platform is provided to make your knowledge usable in a practical or technical working mechanism. With your knowledge of the working of any motion make a model to show the transmission of motion and win this event"
+    Eventintro:"The Machinist is an event of planning, creativity, imagination & innovation. A platform is provided to make your knowledge usable in a practical or technical working mechanism. With your knowledge of the working of any motion make a model to show the transmission of motion and win this event"
   },
   "033": {
     Eventname: "Glider Plane",
@@ -138,7 +138,7 @@ const EventData = {
 
     EventClub: "AERONAUTICS CLUB",
     EventCode: "033",
-    Eventintro:" Participants will design and build a Glider Plane made of Balsawood, which will be launched by using a hand. The goal of the contest is to keep the glider aloft for the longest period of time."
+    Eventintro:" Participants will design and build a Glider Plane made of Balsawood, which will be launched by using a hand. The goal of the contest is to keep the glider aloft for the longest period of time."
   },
   "034": {
     Eventname: "CAD Tricks",
@@ -149,7 +149,7 @@ const EventData = {
     Grouped: false,
     EventClub: "AERONAUTICS CLUB",
     EventCode: "034",
-    Eventintro:" The 3D creation is an event of making 3d model in solid works of the given design."
+    Eventintro:" The 3D creation is an event of making 3d model in solid works of the given design."
   },
   "041": {
     Eventname: "Web Battle",
@@ -357,7 +357,7 @@ const EventData = {
     Grouped: false,
     EventClub: "DESIGN CLUB",
     EventCode: "084",
-    Eventintro:""
+    Eventintro:"Quilling is an art form that involves the use of strips of paper that are rolled, shaped, and glued together to create decorative designs. Participate in this event and showcase your talent."
   },
   "091": {
     Eventname: "BGMI",
@@ -367,6 +367,7 @@ const EventData = {
     Grouped: false,
     EventClub: "LAN WAR",
     EventCode: "091",
+    Eventintro:"Battlegrounds Mobile India (in short form BGMI, previously known as PUBG Mobile India) is the Indian version of PUBG Mobile, exclusively for players in India. Participate in this and show your gamilng skill."
   },
   "092": {
     Eventname: "FIFA",
@@ -376,6 +377,7 @@ const EventData = {
     Grouped: false,
     EventClub: "LAN WAR",
     EventCode: "092",
+    Eventintro:"One of the famous mobile game. Fan of football(soccer)? than this event is for you."
   },
   "093": {
     Eventname: "Mini-Militia",
@@ -385,6 +387,7 @@ const EventData = {
     Grouped: true,
     EventClub: "LAN WAR",
     EventCode: "093",
+    Eventintro:"Mini Militia combat an intense battle at the arena with the Doodle Army. Last one standing wins the game."
   },
   101: {
     Eventname: "Tech Gallery-Medical",
@@ -394,6 +397,7 @@ const EventData = {
     Grouped: false,
     EventClub: "OPEN EVENTS",
     EventCode: "101",
+    Eventintro:"Join us for our  Tech Gallery event! Techvyom will host a Tech Gallery where you will have the opportunity to showcase your innovative ideas related to pharmacy and environment."
   },
   102: {
     Eventname: "Tech Gallery-Technical engineering",
@@ -403,6 +407,7 @@ const EventData = {
     img: "TechGallery(technicalEngineering).jpg",
     EventClub: "OPEN EVENTS",
     EventCode: "102",
+    Eventintro:"Join us for our  Tech Gallery event! Techvyom will host a Tech Gallery where you will have the opportunity to showcase your innovative ideas on technologies."
   },
   103: {
     Eventname: "Tech Quiz",
@@ -412,6 +417,7 @@ const EventData = {
     Grouped: false,
     EventClub: "OPEN EVENTS",
     EventCode: "103",
+    Eventintro:"Put your knowledge about all things technology to the test with our question of tech quiz and have some nerdy fun in the process. Good luck!"
   },
   104: {
     Eventname: "PLC Designing",
@@ -421,6 +427,7 @@ const EventData = {
     Grouped: false,
     EventClub: "OPEN EVENTS",
     EventCode: "104",
+    Eventintro:"PLCs (programmable logic controllers) are found everywhere in industry today. Proper PLC system design can provide many years of service for a machine or process and greatly improve efficiency and profitability for the owner. You need to showcase your talents in designing PLC ."
   },
   105: {
     Eventname: "3D-Printing",
@@ -430,6 +437,7 @@ const EventData = {
     Grouped: false,
     EventClub: "OPEN EVENTS",
     EventCode: "105",
+    Eventintro:"3D printing or additive manufacturing is a process of making three dimensional solid objects from a digital file. The creation of a 3D printed object is achieved using additive processes."
   },
 };
 module.exports = EventData;

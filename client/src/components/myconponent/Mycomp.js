@@ -333,7 +333,7 @@ const Mycomp = () => {
               </div>
               <div className="postcard__bar"></div>
               <div className="postcard__preview-txt">
-                For all the techies as well as soccer fans out there, having
+                For all the techies as well as soccer fans out there, having
                 desire of show-casing their talent in football, but also are too
                 lazy to actually play football, here comes an event meant for
                 you. All you need is a higher level of tenacity, passion for
@@ -460,7 +460,7 @@ const Mycomp = () => {
 
               <div className="postcard__bar"></div>
               <div className="postcard__preview-txt">
-                In this event, the robots have to move the blocks of wood from
+                In this event, the robots have to move the blocks of wood from
                 one position (start) to the other position (stop) in water.
               </div>
               <ul className="postcard__tagbox">
@@ -660,7 +660,7 @@ const Mycomp = () => {
 
               <div className="postcard__bar"></div>
               <div className="postcard__preview-txt">
-                The Machinist is an event of planning, creativity, imagination
+                The Machinist is an event of planning, creativity, imagination
                 & innovation. A platform is provided to make your knowledge
                 usable in a practical or technical working mechanism. With your
                 knowledge of the working of any motion make a model to show the
@@ -700,7 +700,7 @@ const Mycomp = () => {
 
               <div className="postcard__bar"></div>
               <div className="postcard__preview-txt">
-                Participants will design and build a Glider Plane made of
+                Participants will design and build a Glider Plane made of
                 Balsawood, which will be launched by using a hand. The goal of
                 the contest is to keep the glider aloft for the longest period
                 of time.
@@ -738,7 +738,7 @@ const Mycomp = () => {
 
               <div className="postcard__bar"></div>
               <div className="postcard__preview-txt">
-                The 3D creation is an event of making 3d model in solid works
+                The 3D creation is an event of making 3d model in solid works
                 of the given design.
               </div>
               <ul className="postcard__tagbox">
@@ -821,7 +821,7 @@ const Mycomp = () => {
 
               <div className="postcard__bar"></div>
               <div className="postcard__preview-txt">
-                Participants has to find a programming mistake or error in the
+                Participants has to find a programming mistake or error in the
                 given block of code
               </div>
               <ul className="postcard__tagbox">
@@ -857,7 +857,7 @@ const Mycomp = () => {
 
               <div className="postcard__bar"></div>
               <div className="postcard__preview-txt">
-                Participants has to write a code /query for the schema(tables)
+                Participants has to write a code /query for the schema(tables)
                 provided.
               </div>
               <ul className="postcard__tagbox">
@@ -893,7 +893,7 @@ const Mycomp = () => {
 
               <div className="postcard__bar"></div>
               <div className="postcard__preview-txt">
-                Participants has to perform Programming in C
+                Participants have to perform Programming in C
               </div>
               <ul className="postcard__tagbox">
                 <li className="tag__item">
@@ -928,7 +928,7 @@ const Mycomp = () => {
 
               <div className="postcard__bar"></div>
               <div className="postcard__preview-txt">
-                Participants are required to perform a play on given problem.
+                Participants are required to perform a play on given problem.
               </div>
               <ul className="postcard__tagbox">
                 <li className="tag__item">
@@ -1081,7 +1081,7 @@ const Mycomp = () => {
 
               <div className="postcard__bar"></div>
               <div className="postcard__preview-txt">
-                Play with the riddles. Everytime you solve a riddle, 
+                Play with the riddles. Everytime you solve a riddle, 
                 you will move forward one step closer to victory."
               </div>
               <ul className="postcard__tagbox">
@@ -1497,9 +1497,9 @@ const Mycomp = () => {
 
               <div className="postcard__bar"></div>
               <div className="postcard__preview-txt">
-                Drag and Place is one of the most exciting synergy event. you
-                just have to drag the obstacle and place it in their required
-                places. the arena will be revealed during thecompetition.
+              Quilling is an art form that involves the use of strips of paper 
+              that are rolled, shaped, and glued together to create decorative designs. 
+              Participate in this event and showcase your talent.
               </div>
               <ul className="postcard__tagbox">
                 <li className="tag__item">
@@ -1542,10 +1542,9 @@ const Mycomp = () => {
               <div className="postcard__subtitle small"></div>
               <div className="postcard__bar"></div>
               <div className="postcard__preview-txt">
-                Chain Reaction is a sequence of reactions where a reactive
-                product causes additional reactions to take place. In a Chain
-                Reaction positive feedback leads to a self- amplifying chain of
-                events.
+              Battlegrounds Mobile India (in short form BGMI, previously known as PUBG Mobile India)
+              is the Indian version of PUBG Mobile, exclusively for players in India.
+              Participate in this and show your gamilng skill.
               </div>
               <ul className="postcard__tagbox">
                 <li className="tag__item">
@@ -1581,11 +1580,7 @@ const Mycomp = () => {
 
               <div className="postcard__bar"></div>
               <div className="postcard__preview-txt">
-                The Machinist is an event of planning, creativity, imagination
-                & innovation. A platform is provided to make your knowledge
-                usable in a practical or technical working mechanism. With your
-                knowledge of the working of any motion make a model to show the
-                transmission of motion and win this event
+              One of the famous mobile game. Fan of football(soccer)? than this event is for you.
               </div>
               <ul className="postcard__tagbox">
                 <li className="tag__item">
@@ -1621,10 +1616,8 @@ const Mycomp = () => {
               <div className="postcard__subtitle small"></div>
               <div className="postcard__bar"></div>
               <div className="postcard__preview-txt">
-                Chain Reaction is a sequence of reactions where a reactive
-                product causes additional reactions to take place. In a Chain
-                Reaction positive feedback leads to a self- amplifying chain of
-                events.
+              Mini Militia combat an intense battle at the arena with the Doodle Army. 
+              Last one standing wins the game.
               </div>
               <ul className="postcard__tagbox">
                 <li className="tag__item">
@@ -1668,10 +1661,9 @@ const Mycomp = () => {
               <div className="postcard__subtitle small"></div>
               <div className="postcard__bar"></div>
               <div className="postcard__preview-txt">
-                The better you control your drone, better you make choices,
-                better chances to compete your opponent. Construct a drone which
-                can reach the destination while flying through hurdles and sharp
-                turns etc.
+              Join us for our  Tech Gallery event! Techvyom will host a  
+              Tech Gallery where you will have the opportunity to 
+              showcase your innovative ideas related to pharmacy and environment.
               </div>
               <ul className="postcard__tagbox">
                 <li className="tag__item">
@@ -1706,8 +1698,9 @@ const Mycomp = () => {
 
               <div className="postcard__bar"></div>
               <div className="postcard__preview-txt">
-                In this event, the robots have to move the blocks of wood from
-                one position (start) to the other position (stop) in water.
+              Join us for our  Tech Gallery event! Techvyom will host a 
+              Tech Gallery where you will have the opportunity to showcase 
+              your innovative ideas on technologies.
               </div>
               <ul className="postcard__tagbox">
                 <li className="tag__item">
@@ -1742,8 +1735,9 @@ const Mycomp = () => {
 
               <div className="postcard__bar"></div>
               <div className="postcard__preview-txt">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                Eligendi, fugiat asperiores inventore beatae accusamus odit
+              Put your knowledge about all things technology to the test 
+              with our question of tech quiz and have some
+              nerdy fun in the process. Good luck!
               </div>
               <ul className="postcard__tagbox">
                 <li className="tag__item">
@@ -1778,9 +1772,11 @@ const Mycomp = () => {
 
               <div className="postcard__bar"></div>
               <div className="postcard__preview-txt">
-                Drag and Place is one of the most exciting synergy event. you
-                just have to drag the obstacle and place it in their required
-                places. the arena will be revealed during thecompetition.
+              PLCs (programmable logic controllers) are found everywhere 
+              in industry today. Proper PLC system design can provide 
+              many years of service for a machine or process and greatly 
+              improve efficiency and profitability for the owner. 
+              You need to showcase your talents in designing PLC .
               </div>
               <ul className="postcard__tagbox">
                 <li className="tag__item">
@@ -1815,9 +1811,9 @@ const Mycomp = () => {
 
               <div className="postcard__bar"></div>
               <div className="postcard__preview-txt">
-                Drag and Place is one of the most exciting synergy event. you
-                just have to drag the obstacle and place it in their required
-                places. the arena will be revealed during thecompetition.
+              3D printing or additive manufacturing is a process of making 
+              three dimensional solid objects from a digital file. 
+              The creation of a 3D printed object is achieved using additive processes.
               </div>
               <ul className="postcard__tagbox">
                 <li className="tag__item">

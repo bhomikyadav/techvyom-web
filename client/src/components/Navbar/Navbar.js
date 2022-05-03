@@ -1,7 +1,8 @@
-import React, { useContext } from "react";
+import React, { useContext, useState,useEffect } from "react";
 import "./Navbar.css";
 import { Link } from "react-router-dom";
 import Userdatacontext from "../../context/Userdatacontext";
+import MenuRoundedIcon from '@mui/icons-material/MenuRounded';
 
 const Navbar = () => {
   const userdata = useContext(Userdatacontext);
@@ -13,6 +14,20 @@ const Navbar = () => {
     userdata.setusernumber("");
     userdata.setuserPid("");
   };
+  const [screenWidth, setScreenWidth] = useState(window.innerWidth);
+  useEffect(() => {
+    const changeWidth = () => {
+      setScreenWidth(window.innerWidth);
+    };
+
+    window.addEventListener("resize", changeWidth);
+    return () => {
+      window.removeEventListener("resize", changeWidth);
+    };
+  }, []);
+  const [openMenu, setOpenMenu] = useState(false);
+  const open = () =>{!openMenu ?  setOpenMenu(true) : close()};
+  const close = () => setOpenMenu(false)
   return (
     <>
       <header id="nav-wrapper" style={{ marginTop: "0px" }}>
@@ -30,7 +45,9 @@ const Navbar = () => {
             </button>
           </div>
           <div className="nav right">
-            <Link to="/" className="nav-link active">
+            {openMenu || screenWidth > 799 ?
+            <div className="mobilemenubtn">
+             <Link to="/" className="nav-link active">
               <span className="nav-link-span">
                 <span className="u-nav">Home</span>
               </span>
@@ -67,6 +84,8 @@ const Navbar = () => {
                 <span className="u-nav">about me</span>
               </span>
             </Link>
+            </div> : ""}
+            {screenWidth > 799 ? "" : <button onClick={open} className="menubtn"><MenuRoundedIcon style={{verticalAlign:'top'}}/></button>}
           </div>
         </nav>
       </header>
