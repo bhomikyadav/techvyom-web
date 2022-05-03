@@ -60,7 +60,7 @@ const GRegisterEvent = () => {
           name: userdata.username,
           email: userdata.useremail,
           rollnumber: userdata.userrollnumber,
-          Pid: userdata.userpid,
+          Pid: userdata.userPid,
           tid,
           eventname: EventData[Ecode].Eventname,
         }),
