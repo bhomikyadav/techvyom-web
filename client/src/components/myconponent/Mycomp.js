@@ -496,8 +496,8 @@ const Mycomp = () => {
 
               <div className="postcard__bar"></div>
               <div className="postcard__preview-txt">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                Eligendi, fugiat asperiores inventore beatae accusamus odit
+              Design remote-control Robot wireless and compete with another last stand out
+              will be winners.
               </div>
               <ul className="postcard__tagbox">
                 <li className="tag__item">
@@ -703,7 +703,7 @@ const Mycomp = () => {
                 Participants will design and build a Glider Plane made of
                 Balsawood, which will be launched by using a hand. The goal of
                 the contest is to keep the glider aloft for the longest period
-                of time. Rules:-
+                of time.
               </div>
               <ul className="postcard__tagbox">
                 <li className="tag__item">
@@ -858,7 +858,7 @@ const Mycomp = () => {
               <div className="postcard__bar"></div>
               <div className="postcard__preview-txt">
                 Participants has to write a code /query for the schema(tables)
-                provided RULES:
+                provided.
               </div>
               <ul className="postcard__tagbox">
                 <li className="tag__item">
@@ -893,7 +893,7 @@ const Mycomp = () => {
 
               <div className="postcard__bar"></div>
               <div className="postcard__preview-txt">
-                Participants has to perform Programming in c
+                Participants has to perform Programming in C
               </div>
               <ul className="postcard__tagbox">
                 <li className="tag__item">
@@ -974,10 +974,7 @@ const Mycomp = () => {
               <div className="postcard__subtitle small"></div>
               <div className="postcard__bar"></div>
               <div className="postcard__preview-txt">
-                Chain Reaction is a sequence of reactions where a reactive
-                product causes additional reactions to take place. In a Chain
-                Reaction positive feedback leads to a self- amplifying chain of
-                events.
+              Recite your own poem, shayri, ghazal etc
               </div>
               <ul className="postcard__tagbox">
                 <li className="tag__item">
@@ -1013,11 +1010,7 @@ const Mycomp = () => {
 
               <div className="postcard__bar"></div>
               <div className="postcard__preview-txt">
-                The Machinist is an event of planning, creativity, imagination
-                & innovation. A platform is provided to make your knowledge
-                usable in a practical or technical working mechanism. With your
-                knowledge of the working of any motion make a model to show the
-                transmission of motion and win this event
+              Literary, Technical and general knowledge questions(Buzzer Round)
               </div>
               <ul className="postcard__tagbox">
                 <li className="tag__item">
@@ -1053,10 +1046,7 @@ const Mycomp = () => {
 
               <div className="postcard__bar"></div>
               <div className="postcard__preview-txt">
-                Participants will design and build a Glider Plane made of
-                Balsawood, which will be launched by using a hand. The goal of
-                the contest is to keep the glider aloft for the longest period
-                of time. Rules:-
+                Spell and Pronounce the given word correctly and get rewarded.
               </div>
               <ul className="postcard__tagbox">
                 <li className="tag__item">
@@ -1091,8 +1081,8 @@ const Mycomp = () => {
 
               <div className="postcard__bar"></div>
               <div className="postcard__preview-txt">
-                The 3D creation is an event of making 3d model in solid works
-                of the given design.
+                Play with the riddles. Everytime you solve a riddle, 
+                you will move forward one step closer to victory."
               </div>
               <ul className="postcard__tagbox">
                 <li className="tag__item">
@@ -1127,8 +1117,7 @@ const Mycomp = () => {
 
               <div className="postcard__bar"></div>
               <div className="postcard__preview-txt">
-                The 3D creation is an event of making 3d model in solid works
-                of the given design.
+                Create the meaningful words.
               </div>
               <ul className="postcard__tagbox">
                 <li className="tag__item">
@@ -1172,10 +1161,7 @@ const Mycomp = () => {
               <div className="postcard__subtitle small"></div>
               <div className="postcard__bar"></div>
               <div className="postcard__preview-txt">
-                The better you control your drone, better you make choices,
-                better chances to compete your opponent. Construct a drone which
-                can reach the destination while flying through hurdles and sharp
-                turns etc.
+                Click pictures related to in and out of Techvyom preparations. The best one will get the prize.
               </div>
               <ul className="postcard__tagbox">
                 <li className="tag__item">
@@ -1210,8 +1196,7 @@ const Mycomp = () => {
 
               <div className="postcard__bar"></div>
               <div className="postcard__preview-txt">
-                In this event, the robots have to move the blocks of wood from
-                one position (start) to the other position (stop) in water.
+              Make a handmade logo on the provided theme.
               </div>
               <ul className="postcard__tagbox">
                 <li className="tag__item">
@@ -1254,10 +1239,7 @@ const Mycomp = () => {
               <div className="postcard__subtitle small"></div>
               <div className="postcard__bar"></div>
               <div className="postcard__preview-txt">
-                Chain Reaction is a sequence of reactions where a reactive
-                product causes additional reactions to take place. In a Chain
-                Reaction positive feedback leads to a self- amplifying chain of
-                events.
+              Present yourr formulations which were allotted under concerned faculty members.
               </div>
               <ul className="postcard__tagbox">
                 <li className="tag__item">
@@ -1293,11 +1275,8 @@ const Mycomp = () => {
 
               <div className="postcard__bar"></div>
               <div className="postcard__preview-txt">
-                The Machinist is an event of planning, creativity, imagination
-                & innovation. A platform is provided to make your knowledge
-                usable in a practical or technical working mechanism. With your
-                knowledge of the working of any motion make a model to show the
-                transmission of motion and win this event
+              Participants have to make the collage related to Pharmacy / Environmental Issues 
+              with the help of WASTE MATERIALS.
               </div>
               <ul className="postcard__tagbox">
                 <li className="tag__item">
@@ -1333,10 +1312,7 @@ const Mycomp = () => {
               <div className="postcard__subtitle small"></div>
               <div className="postcard__bar"></div>
               <div className="postcard__preview-txt">
-                Chain Reaction is a sequence of reactions where a reactive
-                product causes additional reactions to take place. In a Chain
-                Reaction positive feedback leads to a self- amplifying chain of
-                events.
+              Participants have to bring their own startup and business ideas in the form of the ppt. 
               </div>
               <ul className="postcard__tagbox">
                 <li className="tag__item">
@@ -1372,11 +1348,7 @@ const Mycomp = () => {
 
               <div className="postcard__bar"></div>
               <div className="postcard__preview-txt">
-                The Machinist is an event of planning, creativity, imagination
-                & innovation. A platform is provided to make your knowledge
-                usable in a practical or technical working mechanism. With your
-                knowledge of the working of any motion make a model to show the
-                transmission of motion and win this event
+                Make a Pencil Sketch Painting on the theme provided at the spot.
               </div>
               <ul className="postcard__tagbox">
                 <li className="tag__item">
@@ -1420,10 +1392,7 @@ const Mycomp = () => {
               <div className="postcard__subtitle small"></div>
               <div className="postcard__bar"></div>
               <div className="postcard__preview-txt">
-                The better you control your drone, better you make choices,
-                better chances to compete your opponent. Construct a drone which
-                can reach the destination while flying through hurdles and sharp
-                turns etc.
+              Create a painting on the given technical topic.
               </div>
               <ul className="postcard__tagbox">
                 <li className="tag__item">
@@ -1458,8 +1427,7 @@ const Mycomp = () => {
 
               <div className="postcard__bar"></div>
               <div className="postcard__preview-txt">
-                In this event, the robots have to move the blocks of wood from
-                one position (start) to the other position (stop) in water.
+                Showcase your art skills on multimedia.
               </div>
               <ul className="postcard__tagbox">
                 <li className="tag__item">
@@ -1494,8 +1462,7 @@ const Mycomp = () => {
 
               <div className="postcard__bar"></div>
               <div className="postcard__preview-txt">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                Eligendi, fugiat asperiores inventore beatae accusamus odit
+              Make best out of waste that must be useful and attractive.
               </div>
               <ul className="postcard__tagbox">
                 <li className="tag__item">

@@ -91,10 +91,13 @@ function About() {
                   lineHeight: "40px",
                 }}
               >
+                <div style={{display:'flex'}}>
                 {singledata.map((value, index) => {
-                  return <li key={index}>{value.Eventname}</li>;
+                  return <li key={index} style={{marginRight:'30px'}}>{value.Eventname}</li>;
                 })}
+                </div>
               </ul>
+              <br/>
               <h6 style={{ margintop: "1%" }}>group Events</h6>
               <ul
                 style={{
