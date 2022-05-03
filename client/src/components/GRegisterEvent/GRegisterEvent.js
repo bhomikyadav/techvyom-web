@@ -30,6 +30,8 @@ const GRegisterEvent = () => {
       const newg_data = await newg_responce.json();
       if (newg_data.status) {
         toast.success(newg_data.msg);
+        toast.success("visit about section for details");
+        navigate("/");
       } else {
         toast.error(newg_data.msg);
       }
@@ -68,6 +70,8 @@ const GRegisterEvent = () => {
       const data = await responce.json();
       if (data.status) {
         toast.success(data.msg);
+        toast.success("visit about section for details");
+        navigate("/");
       } else {
         toast.error(data.msg);
       }

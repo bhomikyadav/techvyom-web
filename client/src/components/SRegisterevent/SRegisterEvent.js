@@ -42,6 +42,7 @@ const RegisterEvent = () => {
       const data = await responce.json();
       if (data.status) {
         toast.success(data.msg);
+        toast.success("visit about section for details");
         navigate("/");
       } else {
         toast.error(data.msg);
