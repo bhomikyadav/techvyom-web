@@ -150,6 +150,13 @@ router.post("/addme", CheckVerification, async (req, res) => {
   }
   try {
     const { email, name, eventname, rollnumber, tid, Pid } = req.body;
+    const Check_student = await Student.findOne({ rollnumber });
+    if (!Check_student) {
+      return res.send({
+        status: false,
+        msg: "register first",
+      });
+    }
     const event_entered = await Events.findOne({ Eventname: eventname });
     if (!event_entered) {
       return res.send({
@@ -167,7 +174,7 @@ router.post("/addme", CheckVerification, async (req, res) => {
       });
     }
     const find_group = await Eventgroup.find({ tid });
-    if (!find_group[0]) {
+    if (find_group === []) {
       return res.send({
         status: false,
         msg: "invalid tid or create new group",
@@ -198,28 +205,28 @@ router.post("/addme", CheckVerification, async (req, res) => {
       [email, event_entered.Eventmentoremail, "techvyomsrms@gmail.com"],
       "register in new event",
       `<p>Hi <h5>Sir /Madam</h5> <br/>  
-Thank you for registering in <h5>${eventname}</h5> of Techvyom of <h5>${find_event.EventClub}</h5> Following  :<br/>
+Thank you for registering in <h5>${eventname}</h5> of Techvyom of <h5>${event_entered.EventClub}</h5> Following  :<br/>
 Event name : <h5> ${eventname}</h5> <br/>  
 Pid :<h5> ${Check_student.Pid} </h5><br/>  
 Tid :<h5> ${Check_student.tid} </h5><br/>  
 
-<h5> Event code : ${find_event.EventCode} </><br/>  
-<h5> Event Mentor : ${find_event.Eventmentor}</h5> <br/>  
-<h5> Mentor email:${find_event.Eventmentoremail}</h5> <br/>  
+<h5> Event code : ${event_entered.EventCode} </><br/>  
+<h5> Event Mentor : ${event_entered.Eventmentor}</h5> <br/>  
+<h5> Mentor email:${event_entered.Eventmentoremail}</h5> <br/>  
 
 See you in the event. Good luck !!  <br/>  
 Thanks and regards <br/>  
 Techvyom team <br/>  
  SRMS CET BAREILLY </p>`,
       `Hi Sir /Madam 
-Thank you for registering in ${eventname} of Techvyom of ${find_event.EventClub} \nFollowing  :
+Thank you for registering in ${eventname} of Techvyom of ${event_entered.EventClub} \nFollowing  :
 Event name : ${eventname}\n
 Pid :${Check_student.Pid}\n
 Tid :${Check_student.tid}\n
 
-Event code :${find_event.EventCode}\n
-Event Mentor :${find_event.Eventmentor}\n
-Mentor email:${find_event.Eventmentoremail}\n
+Event code :${event_entered.EventCode}\n
+Event Mentor :${event_entered.Eventmentor}\n
+Mentor email:${event_entered.Eventmentoremail}\n
 
 See you in the event. Good luck !! \n
 Thanks and regards\n
