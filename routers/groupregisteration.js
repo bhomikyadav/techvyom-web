@@ -1,6 +1,5 @@
 const router = require("express").Router();
 const Jio = require("joi");
-const Student = require("../models/Student");
 const Eventgroup = require("../models/Eventgroup");
 const CheckVerification = require("../controllers/checkVerification");
 const Events = require("../models/Events");
@@ -70,10 +69,10 @@ router.post("/create", CheckVerification, async (req, res) => {
       });
     }
     const Send_EmailTO_Student = sendcustomMail(
-      email,
+      [email, event_entered.Eventmentoremail, "tyro.srms@gmail.com"],
       "register in new event",
       `<p>Hi <h5>Sir /Madam</h5> <br/>  
-Thank you for registering in <h5>${eventname}</h5> of Techvyom of <h5>${find_event.EventClub}</h5> Following are yeh details :<br/>
+Thank you for registering in <h5>${eventname}</h5> of Techvyom of <h5>${find_event.EventClub}</h5> Following  :<br/>
 Event name : <h5> ${eventname}</h5> <br/>  
 Pid :<h5> ${Check_student.Pid} </h5><br/>  
 Tid :<h5> ${Check_student.tid} </h5><br/>  
@@ -87,7 +86,7 @@ Thanks and regards <br/>
 Techvyom team <br/>  
  SRMS CET BAREILLY </p>`,
       `Hi Sir /Madam 
-Thank you for registering in ${eventname} of Techvyom of ${find_event.EventClub} \nFollowing are yeh details :
+Thank you for registering in ${eventname} of Techvyom of ${find_event.EventClub} \nFollowing  :
 Event name : ${eventname}\n
 Pid :${Check_student.Pid}\n
 Tid :${Check_student.tid}\n
@@ -187,10 +186,10 @@ router.post("/addme", CheckVerification, async (req, res) => {
       });
     }
     const Send_EmailTO_Student = sendcustomMail(
-      email,
+      [email, event_entered.Eventmentoremail, "tyro.srms@gmail.com"],
       "register in new event",
       `<p>Hi <h5>Sir /Madam</h5> <br/>  
-Thank you for registering in <h5>${eventname}</h5> of Techvyom of <h5>${find_event.EventClub}</h5> Following are yeh details :<br/>
+Thank you for registering in <h5>${eventname}</h5> of Techvyom of <h5>${find_event.EventClub}</h5> Following  :<br/>
 Event name : <h5> ${eventname}</h5> <br/>  
 Pid :<h5> ${Check_student.Pid} </h5><br/>  
 Tid :<h5> ${Check_student.tid} </h5><br/>  
@@ -204,7 +203,7 @@ Thanks and regards <br/>
 Techvyom team <br/>  
  SRMS CET BAREILLY </p>`,
       `Hi Sir /Madam 
-Thank you for registering in ${eventname} of Techvyom of ${find_event.EventClub} \nFollowing are yeh details :
+Thank you for registering in ${eventname} of Techvyom of ${find_event.EventClub} \nFollowing  :
 Event name : ${eventname}\n
 Pid :${Check_student.Pid}\n
 Tid :${Check_student.tid}\n
