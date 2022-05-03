@@ -13,7 +13,7 @@ const GRegisterEvent = () => {
   const createnewgroup = async (event) => {
     event.preventDefault();
     try {
-      const newg_responce = await fetch("http://localhost:5000/group/create", {
+      const newg_responce = await fetch("/group/create", {
         method: "POST",
         mode: "cors",
         headers: {
@@ -39,8 +39,8 @@ const GRegisterEvent = () => {
     userdata.collectdata();
   }, []);
   useEffect(() => {
-    window.scrollTo(0, 0)
-  }, [])
+    window.scrollTo(0, 0);
+  }, []);
   const handleonsubmit = async (event) => {
     event.preventDefault();
     if (tid === "") {
@@ -48,7 +48,7 @@ const GRegisterEvent = () => {
     }
 
     try {
-      const responce = await fetch("http://localhost:5000/group/create", {
+      const responce = await fetch("/group/create", {
         method: "POST",
         mode: "cors",
         headers: {

@@ -4,6 +4,7 @@ const Student = require("../models/Student");
 const Eventgroup = require("../models/Eventgroup");
 const CheckVerification = require("../controllers/checkVerification");
 const Events = require("../models/Events");
+const sendcustomMail = require("../controllers/sendmail");
 router.post("/create", CheckVerification, async (req, res) => {
   const verificationBody = Jio.object({
     name: Jio.string().required(),
@@ -68,10 +69,48 @@ router.post("/create", CheckVerification, async (req, res) => {
         msg: "internal error",
       });
     }
+    const Send_EmailTO_Student = sendcustomMail(
+      email,
+      "register in new event",
+      `<p>Hi <h5>Sir /Madam</h5> <br/>  
+Thank you for registering in <h5>${eventname}</h5> of Techvyom of <h5>${find_event.EventClub}</h5> Following are yeh details :<br/>
+Event name : <h5> ${eventname}</h5> <br/>  
+Pid :<h5> ${Check_student.Pid} </h5><br/>  
+Tid :<h5> ${Check_student.tid} </h5><br/>  
+
+<h5> Event code : ${find_event.EventCode} </><br/>  
+<h5> Event Mentor : ${find_event.Eventmentor}</h5> <br/>  
+<h5> Mentor email:${find_event.Eventmentoremail}</h5> <br/>  
+
+See you in the even . Good luck !!  <br/>  
+Thanks and regards <br/>  
+Techvyom team <br/>  
+ SRMS CET BAREILLY </p>`,
+      `Hi Sir /Madam 
+Thank you for registering in ${eventname} of Techvyom of ${find_event.EventClub} \nFollowing are yeh details :
+Event name : ${eventname}\n
+Pid :${Check_student.Pid}\n
+Tid :${Check_student.tid}\n
+
+Event code :${find_event.EventCode}\n
+Event Mentor :${find_event.Eventmentor}\n
+Mentor email:${find_event.Eventmentoremail}\n
+
+See you in the even . Good luck !! \n
+Thanks and regards\n
+Techvyom team\n
+ SRMS CET BAREILLY\n `
+    );
+    if (Send_EmailTO_Student) {
+      return res.send({
+        status: true,
+        msg: "registered",
+        tid,
+      });
+    }
     return res.send({
-      status: true,
-      msg: "registered",
-      tid,
+      status: false,
+      msg: "internal server error",
     });
   } catch (error) {
     return res.send({
@@ -147,11 +186,48 @@ router.post("/addme", CheckVerification, async (req, res) => {
         msg: "internal error",
       });
     }
+    const Send_EmailTO_Student = sendcustomMail(
+      email,
+      "register in new event",
+      `<p>Hi <h5>Sir /Madam</h5> <br/>  
+Thank you for registering in <h5>${eventname}</h5> of Techvyom of <h5>${find_event.EventClub}</h5> Following are yeh details :<br/>
+Event name : <h5> ${eventname}</h5> <br/>  
+Pid :<h5> ${Check_student.Pid} </h5><br/>  
+Tid :<h5> ${Check_student.tid} </h5><br/>  
 
+<h5> Event code : ${find_event.EventCode} </><br/>  
+<h5> Event Mentor : ${find_event.Eventmentor}</h5> <br/>  
+<h5> Mentor email:${find_event.Eventmentoremail}</h5> <br/>  
+
+See you in the even . Good luck !!  <br/>  
+Thanks and regards <br/>  
+Techvyom team <br/>  
+ SRMS CET BAREILLY </p>`,
+      `Hi Sir /Madam 
+Thank you for registering in ${eventname} of Techvyom of ${find_event.EventClub} \nFollowing are yeh details :
+Event name : ${eventname}\n
+Pid :${Check_student.Pid}\n
+Tid :${Check_student.tid}\n
+
+Event code :${find_event.EventCode}\n
+Event Mentor :${find_event.Eventmentor}\n
+Mentor email:${find_event.Eventmentoremail}\n
+
+See you in the even . Good luck !! \n
+Thanks and regards\n
+Techvyom team\n
+ SRMS CET BAREILLY\n `
+    );
+    if (Send_EmailTO_Student) {
+      return res.send({
+        status: true,
+        msg: "registered",
+        tid,
+      });
+    }
     return res.send({
-      status: true,
-      msg: "registered",
-      yourteam: find_group,
+      status: false,
+      msg: "internal server error",
     });
   } catch (error) {
     console.log("1" + error);

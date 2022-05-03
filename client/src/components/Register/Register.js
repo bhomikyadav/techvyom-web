@@ -1,5 +1,5 @@
 import React, { useState, useContext } from "react";
-import style from './register.module.css'
+import style from "./register.module.css";
 import toast from "react-hot-toast";
 import Userdatacontext from "../../context/Userdatacontext";
 import { useNavigate } from "react-router-dom";
@@ -51,7 +51,7 @@ const Register = () => {
         userData.setusername(name);
         userData.setusernumber(number);
         userData.setuserrollnumber(rollnumber);
-        const otpresponce = await fetch("http://localhost:5000/otp/genrate", {
+        const otpresponce = await fetch("/otp/genrate", {
           method: "POST",
           mode: "cors",
           headers: {
@@ -78,10 +78,7 @@ const Register = () => {
   };
   return (
     <div className={style.tvyomregisterform}>
-      <form
-        className="container"
-        onSubmit={(e) => handleonsubmit(e)}
-      >
+      <form className="container" onSubmit={(e) => handleonsubmit(e)}>
         <h1
           className="my-10 mb-4"
           style={{ textAlign: "center", color: "black" }}
@@ -179,15 +176,12 @@ const Register = () => {
               border: "2px solid rgb(5, 55, 105)",
               background: "#EDEADE",
               height: "36px",
-              marginBottom:'45px'
+              marginBottom: "45px",
             }}
           />
         </div>
 
-        <button
-          type="submit"
-          className="btn btn-primary btn-block mb-4"
-        >
+        <button type="submit" className="btn btn-primary btn-block mb-4">
           Verify email
         </button>
       </form>

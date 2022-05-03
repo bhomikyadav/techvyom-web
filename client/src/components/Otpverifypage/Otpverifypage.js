@@ -12,7 +12,7 @@ const Otpverifypage = () => {
   const handleonsubmitotp = async (event) => {
     event.preventDefault();
     try {
-      const responce_otp = await fetch("http://localhost:5000/otp/verifyotp", {
+      const responce_otp = await fetch("/otp/verifyotp", {
         method: "POST",
         mode: "cors",
         headers: {
@@ -32,11 +32,13 @@ const Otpverifypage = () => {
   return (
     <>
       <div className="d-flex justify-content-center align-items-center containerotp">
-        <div className="cardotp py-5 px-3" style={{textAlign:'center'}}>
-          <h5 className="m-0" style={{color:'black'}}>Mobile phone verification</h5>
+        <div className="cardotp py-5 px-3" style={{ textAlign: "center" }}>
+          <h5 className="m-0" style={{ color: "black" }}>
+            Mobile phone verification
+          </h5>
           <span className="mobile-text">
             Enter the 4 digit code we just send on your email 
-            <b className="text-danger" > {userdata.useremail}</b>
+            <b className="text-danger"> {userdata.useremail}</b>
           </span>
           <div className="d-flex flex-row my-4">
             <input
@@ -47,7 +49,10 @@ const Otpverifypage = () => {
               }}
               className="form-control"
               autoFocus=""
-              style={{textAlign:'center',border:'1px solid rgb(5, 55, 105)'}}
+              style={{
+                textAlign: "center",
+                border: "1px solid rgb(5, 55, 105)",
+              }}
             />
           </div>
           <button

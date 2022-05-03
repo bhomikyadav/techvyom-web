@@ -1,7 +1,7 @@
 const router = require("express").Router();
 const Jio = require("joi");
 const Praticipation = require("../models/Participatin");
-const Student = require("../models/Student");
+const Eventgroup = require("../models/Eventgroup");
 
 // post(name,email,rollnumber,Phonenumber)
 router.post("/single", async (req, res) => {
@@ -18,10 +18,17 @@ router.post("/single", async (req, res) => {
     });
   }
   try {
-    const single_user = await Praticipation.find({ Pid });
+    const single_user = await Praticipation.find({ Pid: req.body.Pid });
+    if (single_user !== []) {
+      return res.send({
+        status: "true",
+        data: single_user,
+      });
+    }
+
     return res.send({
-      status: "true",
-      data: single_user,
+      status: "false",
+      msg: "no data found",
     });
   } catch {
     return res.send({
@@ -32,9 +39,9 @@ router.post("/single", async (req, res) => {
 });
 
 // ------------------------------------------
-router.post("/login", async (req, res) => {
+router.post("/group", async (req, res) => {
   const validatadta = Jio.object({
-    rollnumber: Jio.string().required(),
+    Pid: Jio.string().required(),
   });
 
   const { error } = validatadta.validate(req.body);
@@ -46,29 +53,23 @@ router.post("/login", async (req, res) => {
     });
   }
   try {
-    const student_exits = await Student.findOne({
-      rollnumber: req.body.rollnumber,
-    });
-    if (!student_exits) {
-      return res
-        .status(401)
-        .send({ status: false, msg: "please register first" });
+    const single_user = await Eventgroup.find({ Pid: req.body.Pid });
+    if (single_user !== []) {
+      return res.send({
+        status: "true",
+        data: single_user,
+      });
     }
-    if (student_exits.Pid != req.body.Pid) {
-      return res.status(401).send({ status: false, msg: "wrong Pid" });
-    }
+
     return res.send({
-      status: true,
-      msg: "login successfully",
-      name: student_exits.name,
-      number: student_exits.Phonenumber,
-      rollnumber: student_exits.rollnumber,
-      verified: student_exits.verified,
-      email: student_exits.email,
-      Pid: student_exits.Pid,
+      status: "false",
+      msg: "no data found",
     });
-  } catch (error) {
-    return res.send({ status: false, msg: "internal server error" });
+  } catch {
+    return res.send({
+      status: "false",
+      msg: "internal server error",
+    });
   }
 });
 

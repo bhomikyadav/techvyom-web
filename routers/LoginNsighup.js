@@ -93,7 +93,7 @@ router.post("/login", async (req, res) => {
     console.error(error);
     return res.send({
       status: false,
-      msg: "invalid credentials 1",
+      msg: "invalid credentials ",
     });
   }
   try {
@@ -101,12 +101,10 @@ router.post("/login", async (req, res) => {
       rollnumber: req.body.rollnumber,
     });
     if (!student_exits) {
-      return res
-        .status(401)
-        .send({ status: false, msg: "please register first" });
+      return res.send({ status: false, msg: "please register first" });
     }
     if (student_exits.Pid != req.body.Pid) {
-      return res.status(401).send({ status: false, msg: "wrong Pid" });
+      return res.send({ status: false, msg: "wrong Pid" });
     }
     return res.send({
       status: true,

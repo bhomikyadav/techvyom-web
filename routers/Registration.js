@@ -34,7 +34,7 @@ router.post("/event", CheckVerification, async (req, res) => {
       });
     }
 
-    const allreadyexits = await Praticipation.find({
+    const allreadyexits = await Praticipation.exists({
       $and: [{ Pid }, { Eventname: eventname }],
     });
     if (allreadyexits) {
@@ -72,19 +72,19 @@ router.post("/event", CheckVerification, async (req, res) => {
     const Send_EmailTO_Student = sendcustomMail(
       email,
       "register in new event",
-      `Hi Sir /Madam 
-Thank you for registering in ${eventname} of Techvyom of ${find_event.EventClub} \nFollowing are yeh details :
-Event name : ${eventname}\n
-Pid :${Check_student.Pid}\n
+      `<p>Hi <h5>Sir /Madam</h5> <br/>  
+Thank you for registering in <h5>${eventname}</h5> of Techvyom of <h5>${find_event.EventClub}</h5> Following are yeh details :<br/>
+Event name : <h5> ${eventname}</h5> <br/>  
+Pid :<h5> ${Check_student.Pid} </h5><br/>  
 
-Event code :${find_event.EventCode}\n
-Event Mentor :${find_event.Eventmentor}\n
-Mentor email:${find_event.Eventmentoremail}\n
+<h5> Event code : ${find_event.EventCode} </><br/>  
+<h5> Event Mentor : ${find_event.Eventmentor}</h5> <br/>  
+<h5> Mentor email:${find_event.Eventmentoremail}</h5> <br/>  
 
-See you in the even . Good luck !! \n
-Thanks and regards\n
-Techvyom team\n
- SRMS CET BAREILLY\n `,
+See you in the even . Good luck !!  <br/>  
+Thanks and regards <br/>  
+Techvyom team <br/>  
+ SRMS CET BAREILLY </p>`,
       `Hi Sir /Madam 
 Thank you for registering in ${eventname} of Techvyom of ${find_event.EventClub} \nFollowing are yeh details :
 Event name : ${eventname}\n

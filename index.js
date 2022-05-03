@@ -26,7 +26,7 @@ app.use("/add", require("./routers/Registration"));
 // check
 app.use("/group", require("./routers/groupregisteration"));
 // ADMIN
-app.use("/admin", require("./routers/Admin"));
+app.use("/info", require("./routers/Infouser"));
 app.use("/forgot", require("./routers/Forgot"));
 
 app.listen(port, () => {

@@ -17,7 +17,7 @@ const Login = () => {
       return;
     }
     try {
-      const f_responce = await fetch("http://localhost:5000/forgot", {
+      const f_responce = await fetch("/forgot", {
         method: "POST",
         mode: "cors",
         headers: {
@@ -59,7 +59,18 @@ const Login = () => {
         userdata.setuserrollnumber(data.rollnumber);
         userdata.setuseremail(data.email);
         userdata.setusernumber(data.number);
-        userdata.setlocaldata();
+
+        localStorage.setItem(
+          "data",
+          JSON.stringify({
+            name: data.name,
+            number: data.number,
+            rollnumber: data.rollnumber,
+            email: data.email,
+            Pid: data.Pid,
+          })
+        );
+
         toast.success(data.msg);
         navigate("/");
       } else {
@@ -74,11 +85,22 @@ const Login = () => {
   return (
     <>
       <section
-        
-        style={{ backgroundColor:' rgb(163,199,255)',
-          background:'linear-gradient(90deg, rgba(163,199,255,1) 1%, rgba(0,93,189,1) 99%)',overflowY:'hidden',minHeight:'80vh'}}
+        style={{
+          backgroundColor: " rgb(163,199,255)",
+          background:
+            "linear-gradient(90deg, rgba(163,199,255,1) 1%, rgba(0,93,189,1) 99%)",
+          overflowY: "hidden",
+          minHeight: "80vh",
+        }}
       >
-        <div className="container h-100" style={{paddingTop:'1.7rem',paddingBottom:'1.7rem',overflowY:'hidden'}}>
+        <div
+          className="container h-100"
+          style={{
+            paddingTop: "1.7rem",
+            paddingBottom: "1.7rem",
+            overflowY: "hidden",
+          }}
+        >
           <div className="row d-flex justify-content-center align-items-center">
             <div className="col col-xl-10">
               <div className="card" style={{ borderRadius: "1rem" }}>
@@ -122,7 +144,7 @@ const Login = () => {
                         </h5>
 
                         <div className="form-outline mb-2">
-                        <label
+                          <label
                             className="form-label"
                             htmlFor="form2Example17"
                           >
@@ -135,11 +157,10 @@ const Login = () => {
                             onChange={(e) => setrollnumber(e.target.value)}
                             className="form-control form-control-lg"
                           />
-                          
                         </div>
 
                         <div className="form-outline mb-2">
-                        <label
+                          <label
                             className="form-label"
                             htmlFor="form2Example27"
                           >
@@ -152,7 +173,6 @@ const Login = () => {
                             onChange={(e) => setPid(e.target.value)}
                             className="form-control form-control-lg"
                           />
-                          
                         </div>
                         <p
                           onClick={(e) => {
@@ -169,16 +189,13 @@ const Login = () => {
                             className="btn btn-dark btn-lg btn-block"
                             type="button"
                             onClick={(e) => handleonclick(e)}
-                            style={{padding:'8px 25px'}}
+                            style={{ padding: "8px 25px" }}
                           >
                             Login
                           </button>
                         </div>
 
-                        <p
-                          className="pb-lg-2"
-                          style={{ color: "#393f81" }}
-                        >
+                        <p className="pb-lg-2" style={{ color: "#393f81" }}>
                           Don't have an account?{" "}
                           <Link to="/register" style={{ color: "#393f81" }}>
                             Register here

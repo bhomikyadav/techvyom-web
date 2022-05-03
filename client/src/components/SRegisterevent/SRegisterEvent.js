@@ -15,16 +15,17 @@ const RegisterEvent = () => {
     userdata.collectdata();
   }, []);
   useEffect(() => {
-    window.scrollTo(0, 0)
-  }, [])
+    window.scrollTo(0, 0);
+  }, []);
 
   const handlesubmit = async (event) => {
     event.preventDefault();
-    if (!userdata.name) {
+    if (userdata.name === "") {
       navigate("/register");
+      return;
     }
     try {
-      const responce = await fetch("http://localhost:5000/add/event/", {
+      const responce = await fetch("/add/event/", {
         method: "POST",
         mode: "cors",
         headers: {
