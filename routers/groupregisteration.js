@@ -5,6 +5,7 @@ const CheckVerification = require("../controllers/checkVerification");
 const Events = require("../models/Events");
 const Student = require("../models/Student");
 const sendcustomMail = require("../controllers/sendmail");
+const Praticipation = require("../models/Participatin");
 router.post("/create", CheckVerification, async (req, res) => {
   const verificationBody = Jio.object({
     name: Jio.string().required(),
@@ -36,6 +37,14 @@ router.post("/create", CheckVerification, async (req, res) => {
       return res.send({
         status: false,
         msg: "invalid event",
+      });
+    }
+    const numberofregingroup = await Eventgroup.find({ Pid });
+    const numberofreginsingle = await Praticipation.find({ Pid });
+    if (numberofregingroup.length + numberofreginsingle.length > 5) {
+      return res.send({
+        status: false,
+        msg: "cannt register more then 5 event",
       });
     }
     const allreadyexits = await Eventgroup.exists({
@@ -162,6 +171,15 @@ router.post("/addme", CheckVerification, async (req, res) => {
       return res.send({
         status: false,
         msg: "invalid event",
+      });
+    }
+
+    const numberofregingroup = await Eventgroup.find({ Pid });
+    const numberofreginsingle = await Praticipation.find({ Pid });
+    if (numberofregingroup.length + numberofreginsingle.length > 5) {
+      return res.send({
+        status: false,
+        msg: "cannt register more then 5 event",
       });
     }
     const allreadyexits = await Eventgroup.exists({
