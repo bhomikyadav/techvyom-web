@@ -5,7 +5,6 @@ const CheckVerification = require("../controllers/checkVerification");
 const Events = require("../models/Events");
 const Student = require("../models/Student");
 const sendcustomMail = require("../controllers/sendmail");
-const Praticipation = require("../models/Participatin");
 router.post("/create", CheckVerification, async (req, res) => {
   const verificationBody = Jio.object({
     name: Jio.string().required(),
@@ -39,14 +38,7 @@ router.post("/create", CheckVerification, async (req, res) => {
         msg: "invalid event",
       });
     }
-    const numberofregingroup = await Eventgroup.find({ Pid });
-    const numberofreginsingle = await Praticipation.find({ Pid });
-    if (numberofregingroup.length + numberofreginsingle.length > 5) {
-      return res.send({
-        status: false,
-        msg: "cannt register more then 5 event",
-      });
-    }
+  
     const allreadyexits = await Eventgroup.exists({
       $and: [{ Pid }, { eventname }],
     });
@@ -174,14 +166,6 @@ router.post("/addme", CheckVerification, async (req, res) => {
       });
     }
 
-    const numberofregingroup = await Eventgroup.find({ Pid });
-    const numberofreginsingle = await Praticipation.find({ Pid });
-    if (numberofregingroup.length + numberofreginsingle.length > 5) {
-      return res.send({
-        status: false,
-        msg: "cannt register more then 5 event",
-      });
-    }
     const allreadyexits = await Eventgroup.exists({
       $and: [{ rollnumber }, { eventname }],
     });
@@ -236,7 +220,7 @@ See you in the event. Good luck !!  <br/>
 Thanks and regards <br/>  
 Techvyom team <br/>  
  SRMS CET BAREILLY </p>`,
-      `Hi Sir /Madam 
+`Hi Sir /Madam 
 Thank you for registering in ${eventname} of Techvyom of ${event_entered.EventClub} \nFollowing  :
 Event name : ${eventname}\n
 Pid :${Check_student.Pid}\n

@@ -11,7 +11,12 @@ const GRegisterEvent = () => {
   const userdata = useContext(Userdatacontext);
   const { Ecode } = useParams();
   const createnewgroup = async (event) => {
+
     event.preventDefault();
+    if(userdata.username===""){
+      navigate('/register')
+      return;
+          }
     try {
       const newg_responce = await fetch("/group/create", {
         method: "POST",
@@ -47,8 +52,12 @@ const GRegisterEvent = () => {
   }, []);
   const handleonsubmit = async (event) => {
     event.preventDefault();
-    if (tid === "") {
+    if(userdata.username===""){
+navigate('/register')
+return
+    }    if (tid === "") {
       return toast.error("Enter tid");
+      
     }
 
     try {
@@ -106,19 +115,20 @@ const GRegisterEvent = () => {
             </ul>
             <br />
 
-            <span style={{ fontWeight: "400", color: "rgb(105,105,105)" }}>
-              * Want to participate in this event?{" "}
-              <button
-                style={{ border: "none", background: "none", color: "#f857a8" }}
-                onClick={(e) => {
-                  e.preventDefault();
-                  navigate("/register");
-                }}
-              >
-                First Register Yourself
-              </button>
-            </span>
-            <br />
+           
+            { userdata.username===""?<> <span style={{ fontWeight: "400", color: "rgb(105,105,105)" }}>
+              * Want to participate in this event?{" "}<button
+                    style={{
+                      border: "none",
+                      background: "none",
+                      color: "#f857a8",
+                    }}
+                    onClick={(e) => {
+                      navigate('/register');
+                    }}
+                  >
+                    First Register Yourself
+                  </button></span>  <br />
             <span
               style={{
                 marginLeft: "10%",
@@ -128,7 +138,9 @@ const GRegisterEvent = () => {
             >
               Or
             </span>
-            <br />
+            <br /></> :"" }
+            
+          
             <span style={{ fontWeight: "400", color: "rgb(105,105,105)" }}>
               Already Registered?{" "}
               <button
@@ -172,7 +184,7 @@ const GRegisterEvent = () => {
                 handleonsubmit(e);
               }}
             >
-              Register
+             {userdata.username===""?'Register yourself':'apply'}
             </button>
           </div>
           <div className="tvyomGeventDetailsd2">

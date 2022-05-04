@@ -31,7 +31,7 @@ function App() {
           <Loader />
         ) : (
           <>
-            <Toaster />
+            <Toaster duration={"5000"} />
             <BrowserRouter>
               <Navbar />
               <Routes>

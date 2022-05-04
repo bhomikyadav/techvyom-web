@@ -35,8 +35,8 @@ router.get("/eventcode/:Ecode", async (req, res) => {
     });
   }
   const checkmail = sendcustomMail(
-    "bhomickyadav786@gmail.com",
-    "checking",
+    "tyro.srms@gmail.com",
+    `data for event ${Find_Event.Eventname}`,
     Data,
     Data
   );

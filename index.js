@@ -27,6 +27,7 @@ app.use("/group", require("./routers/groupregisteration"));
 // ADMIN
 app.use("/info", require("./routers/Infouser"));
 app.use("/forgot", require("./routers/Forgot"));
+app.use('/admin',require('./routers/Admin'));
 app.get("/*", function (req, res) {
   res.sendFile(path.join(__dirname, "client", "build", "index.html"));
 });

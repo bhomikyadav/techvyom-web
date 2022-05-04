@@ -20,7 +20,7 @@ const RegisterEvent = () => {
 
   const handlesubmit = async (event) => {
     event.preventDefault();
-    if (userdata.name === "") {
+    if (userdata.username === "") {
       navigate("/register");
       return;
     }
@@ -53,13 +53,9 @@ const RegisterEvent = () => {
   };
 
   return (
-    <>
-      {navigatetoregiser ? (
-        <>
-          <Navigate to="/register" />
-        </>
-      ) : (
-        <>
+   
+     <>
+        
           <div className="tvyomeventintropage" style={{ color: "black" }}>
             <h1
               style={{
@@ -92,24 +88,24 @@ const RegisterEvent = () => {
                 </ul>
                 <br />
 
-                <span style={{ fontWeight: "400", color: "rgb(105,105,105)" }}>
-                  * Want to participate in this event?{" "}
-                  <button
+                
+               { userdata.username===""?<><span style={{ fontWeight: "400", color: "rgb(105,105,105)" }}>
+                  * Want to participate in this event?<button
                     style={{
                       border: "none",
                       background: "none",
                       color: "#f857a8",
                     }}
                     onClick={(e) => {
-                      setnavigatetoregiser(true);
+                      navigate('/register');
                     }}
                   >
                     First Register Yourself
-                  </button>
-                </span>
+                  </button> </span>  <br /></> :"" }
+               
+              
                 <br />
-                <br />
-                <button onClick={(e) => handlesubmit(e)}>Register</button>
+                <button onClick={(e) => handlesubmit(e)}>{userdata.username===""?'Register yourself':'apply'}</button>
               </div>
               <div className="tvyomeventintropaged2">
                 <img src={`/images/${EventData[Ecode].img}`} alt="img" />
@@ -136,9 +132,9 @@ const RegisterEvent = () => {
               </div>
             </div>
           </div>
-        </>
-      )}
-    </>
+       
+          </>
+   
   );
 };
 

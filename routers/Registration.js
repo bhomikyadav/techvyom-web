@@ -44,14 +44,7 @@ router.post("/event", CheckVerification, async (req, res) => {
         msg: "u allready registered",
       });
     }
-    const numberofregingroup = await Eventgroup.find({ Pid });
-    const numberofreginsingle = await Praticipation.find({ Pid });
-    if (numberofregingroup.length + numberofreginsingle.length > 5) {
-      return res.send({
-        status: false,
-        msg: "cannt register more then 5 event",
-      });
-    }
+  
 
     const Check_student = await Student.findOne({ rollnumber });
     if (!Check_student) {
