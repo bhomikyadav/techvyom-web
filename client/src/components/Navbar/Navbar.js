@@ -1,8 +1,8 @@
-import React, { useContext, useState,useEffect } from "react";
+import React, { useContext, useState, useEffect } from "react";
 import "./Navbar.css";
 import { Link } from "react-router-dom";
 import Userdatacontext from "../../context/Userdatacontext";
-import MenuRoundedIcon from '@mui/icons-material/MenuRounded';
+import MenuRoundedIcon from "@mui/icons-material/MenuRounded";
 
 const Navbar = () => {
   const userdata = useContext(Userdatacontext);
@@ -25,9 +25,13 @@ const Navbar = () => {
       window.removeEventListener("resize", changeWidth);
     };
   }, []);
-  const [openMenu, setOpenMenu] = useState(false);
-  const open = () =>{!openMenu ?  setOpenMenu(true) : close()};
-  const close = () => setOpenMenu(false)
+
+  const open = () => {
+    userdata.openMenu
+      ? userdata.setOpenMenu(false)
+      : userdata.setOpenMenu(true);
+  };
+
   return (
     <>
       <header id="nav-wrapper" style={{ marginTop: "0px" }}>
@@ -45,47 +49,56 @@ const Navbar = () => {
             </button>
           </div>
           <div className="nav right">
-            {openMenu || screenWidth > 799 ?
-            <div className="mobilemenubtn">
-             <Link to="/" className="nav-link active">
-              <span className="nav-link-span">
-                <span className="u-nav">Home</span>
-              </span>
-            </Link>
-            {userdata.username !== "" ? (
-              <Link
-                to="/register"
-                onClick={(e) => {
-                  handlelogout(e);
-                }}
-                className="nav-link"
-              >
-                <span className=" nav-link-span">
-                  <span className="u-nav"> Logout</span>
-                </span>
-              </Link>
-            ) : (
-              <>
-                <Link to="/register" className="nav-link">
+            {userdata.openMenu || screenWidth > 799 ? (
+              <div className="mobilemenubtn">
+                <Link to="/" className="nav-link active">
                   <span className="nav-link-span">
-                    <span className="u-nav"> Register</span>
+                    <span className="u-nav">Home</span>
                   </span>
                 </Link>
+                {userdata.username !== "" ? (
+                  <Link
+                    to="/register"
+                    onClick={(e) => {
+                      handlelogout(e);
+                    }}
+                    className="nav-link"
+                  >
+                    <span className=" nav-link-span">
+                      <span className="u-nav"> Logout</span>
+                    </span>
+                  </Link>
+                ) : (
+                  <>
+                    <Link to="/register" className="nav-link">
+                      <span className="nav-link-span">
+                        <span className="u-nav"> Register</span>
+                      </span>
+                    </Link>
 
-                <Link to="/login" className="nav-link">
+                    <Link to="/login" className="nav-link">
+                      <span className="nav-link-span">
+                        <span className="u-nav">Login</span>
+                      </span>
+                    </Link>
+                  </>
+                )}
+                <Link to="/aboutme" className="nav-link">
                   <span className="nav-link-span">
-                    <span className="u-nav">Login</span>
+                    <span className="u-nav">about me</span>
                   </span>
                 </Link>
-              </>
+              </div>
+            ) : (
+              ""
             )}
-            <Link to="/aboutme" className="nav-link">
-              <span className="nav-link-span">
-                <span className="u-nav">about me</span>
-              </span>
-            </Link>
-            </div> : ""}
-            {screenWidth > 799 ? "" : <button onClick={open} className="menubtn"><MenuRoundedIcon style={{verticalAlign:'top'}}/></button>}
+            {screenWidth > 799 ? (
+              ""
+            ) : (
+              <button onClick={open} className="menubtn">
+                <MenuRoundedIcon style={{ verticalAlign: "top" }} />
+              </button>
+            )}
           </div>
         </nav>
       </header>

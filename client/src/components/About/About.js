@@ -1,10 +1,30 @@
 import React, { useContext, useEffect, useState } from "react";
 import "./About.css";
 import userdatacontext from "../../context/Userdatacontext";
+import { useNavigate } from "react-router-dom";
 function About() {
+  const navigate = useNavigate();
   const userdata = useContext(userdatacontext);
   const [singledata, setsingledata] = useState([]);
   const [groupevent, setgroupevent] = useState([]);
+  const verifymyemail = async () => {
+    try {
+      const emal_responce = await fetch("0/otp/genrate", {
+        method: "POST",
+        mode: "cors",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify({ email: userdata.useremail }),
+      });
+      const data_email = await emal_responce.json();
+      if (data_email.status) {
+        navigate("/otpverify");
+      }
+    } catch (error) {
+      console.log(error);
+    }
+  };
   useEffect(() => {
     userdata.collectdata();
     handlesingleventdata();
@@ -80,7 +100,7 @@ function About() {
               <span>{userdata.userPid}</span>
               <br />
               <h6>Email:</h6>
-              <span>{userdata.userPid}</span>
+              <span>{userdata.useremail}</span>
               <br />
               <h6>Single Events</h6>
               <ul
@@ -91,13 +111,17 @@ function About() {
                   lineHeight: "40px",
                 }}
               >
-                <div style={{display:'flex'}}>
-                {singledata.map((value, index) => {
-                  return <li key={index} style={{marginRight:'30px'}}>{value.Eventname}</li>;
-                })}
+                <div style={{ display: "flex" }}>
+                  {singledata.map((value, index) => {
+                    return (
+                      <li key={index} style={{ marginRight: "30px" }}>
+                        {value.Eventname}
+                      </li>
+                    );
+                  })}
                 </div>
               </ul>
-              <br/>
+              <br />
               <h6 style={{ margintop: "1%" }}>group Events</h6>
               <ul
                 style={{
@@ -116,6 +140,16 @@ function About() {
                 })}
               </ul>
             </div>
+            <button
+              onClick={(e) => {
+                verifymyemail(e);
+              }}
+              type="button"
+              className="btn btn-success my-5 mx-5"
+              style={{ textAline: "center" }}
+            >
+              verify your email
+            </button>
           </div>
         </>
       )}

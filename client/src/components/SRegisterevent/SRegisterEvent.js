@@ -73,14 +73,7 @@ const RegisterEvent = () => {
             <div style={{ color: "black" }}>
               <div className="tvyomeventintropaged1">
                 <h3>Introduction :</h3>
-                <p>
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
-                  do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-                  Ut enim ad minim veniam, quis nostrud exercitation ullamco
-                  laboris nisi ut aliquip ex ea commodo consequat. Duis aute
-                  irure dolor in reprehenderit in voluptate velit esse cillum
-                  dolore eu fugiat nulla pariatur.
-                </p>
+                <p>{EventData[Ecode].Eventintro}</p>
                 <br />
 
                 <h3>Rules :</h3>
@@ -93,40 +86,7 @@ const RegisterEvent = () => {
                         fontSize: "18px",
                       }}
                     />
-                    &ensp;Lorem ipsum dolor sit amet, consectetur adipiscing
-                    elit.
-                  </li>
-                  <li>
-                    <GridViewIcon
-                      style={{
-                        transform: "rotate(45deg)",
-                        verticalAlign: "middle",
-                        fontSize: "18px",
-                      }}
-                    />
-                    &ensp;Lorem ipsum dolor sit amet, consectetur adipiscing
-                    elit.
-                  </li>
-                  <li>
-                    <GridViewIcon
-                      style={{
-                        transform: "rotate(45deg)",
-                        verticalAlign: "middle",
-                        fontSize: "18px",
-                      }}
-                    />
-                    &ensp;Lorem ipsum dolor sit amet, consectetur adipiscing
-                    elit.
-                  </li>
-                  <li>
-                    <GridViewIcon
-                      style={{
-                        transform: "rotate(45deg)",
-                        verticalAlign: "middle",
-                        fontSize: "18px",
-                      }}
-                    />
-                    &ensp;Lorem ipsum dolor sit amet, consectetur adipiscing
+                    &ensp;{EventData[Ecode].EventRule}
                     elit.
                   </li>
                 </ul>

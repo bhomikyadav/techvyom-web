@@ -8,6 +8,9 @@ const Home = () => {
   const userdata = useContext(Userdatacontext);
   const [Show, setShow] = useState(false);
   const handleonshowfunction = () => {
+    // if (userdata.openMenu) {
+    //   userdata.setOpenMenu(false);
+    // }
     if (window.scrollY >= 150) {
       setShow(true);
     } else {

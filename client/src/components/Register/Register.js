@@ -18,7 +18,7 @@ const Register = () => {
       return;
     }
     try {
-      const response = await fetch("http://localhost:5000/user/create", {
+      const response = await fetch("/user/create", {
         method: "POST",
         mode: "cors",
         headers: {

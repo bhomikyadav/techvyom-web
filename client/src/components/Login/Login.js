@@ -201,9 +201,7 @@ const Login = () => {
                             Register here
                           </Link>
                         </p>
-                        <a href="#!" className="small text-muted">
-                          verify your email
-                        </a>
+
                         <a href="#!" className="small text-muted"></a>
                       </form>
                     </div>

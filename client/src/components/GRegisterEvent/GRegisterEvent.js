@@ -88,14 +88,7 @@ const GRegisterEvent = () => {
         <div style={{ color: "black" }}>
           <div className="tvyomGeventDetailsd1">
             <h3 style={{ color: "black" }}>Introduction :</h3>
-            <p>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-              eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
-              enim ad minim veniam, quis nostrud exercitation ullamco laboris
-              nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in
-              reprehenderit in voluptate velit esse cillum dolore eu fugiat
-              nulla pariatur.
-            </p>
+            <p>{EventData[Ecode].Eventintro}</p>
             <br />
 
             <h3>Rules :</h3>
@@ -108,37 +101,7 @@ const GRegisterEvent = () => {
                     fontSize: "18px",
                   }}
                 />
-                &ensp;Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-              </li>
-              <li>
-                <GridViewIcon
-                  style={{
-                    transform: "rotate(45deg)",
-                    verticalAlign: "middle",
-                    fontSize: "18px",
-                  }}
-                />
-                &ensp;Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-              </li>
-              <li>
-                <GridViewIcon
-                  style={{
-                    transform: "rotate(45deg)",
-                    verticalAlign: "middle",
-                    fontSize: "18px",
-                  }}
-                />
-                &ensp;Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-              </li>
-              <li>
-                <GridViewIcon
-                  style={{
-                    transform: "rotate(45deg)",
-                    verticalAlign: "middle",
-                    fontSize: "18px",
-                  }}
-                />
-                &ensp;Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                &ensp;{EventData[Ecode].EventRule}
               </li>
             </ul>
             <br />

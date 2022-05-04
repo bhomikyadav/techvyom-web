@@ -7,6 +7,7 @@ const Userdatastate = (props) => {
   const [username, setusername] = useState("");
   const [usernumber, setusernumber] = useState("");
   const [userrollnumber, setuserrollnumber] = useState("");
+  const [openMenu, setOpenMenu] = useState(false);
 
   const collectdata = () => {
     if (username === "") {
@@ -35,6 +36,8 @@ const Userdatastate = (props) => {
   return (
     <Userdatacontext.Provider
       value={{
+        openMenu,
+        setOpenMenu,
         setlocaldata,
         collectdata,
         useremail,
