@@ -23,7 +23,9 @@ const Home = () => {
   }, []);
   return (
     <>
-      <div className={style.tvyomhomepage}></div>
+      <div className={style.tvyomhomepage}>
+        <img src="/images/tvyomePoster.png"/>
+      </div>
       <Mycomp Show={Show} />
       <Footer />
     </>
