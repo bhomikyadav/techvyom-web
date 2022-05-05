@@ -64,7 +64,7 @@ const Mycomp = ({ Show }) => {
           <div className="tvyomeventbtns">
             <HashLink smooth to="#IDROBOTRAXCLUB">
               <img
-                src="https://futureskillsprime.in/sites/default/files/inline-images/iStock-966248982.jpg"
+                src="/images/robotraxClub.jpg"
                 style={{ height: "118px", width: "118px", borderRadius: "50%" }}
               />
               <br />
@@ -76,7 +76,7 @@ const Mycomp = ({ Show }) => {
           <div className="tvyomeventbtns">
             <HashLink smooth to="#IDSYNERGYCLUB">
               <img
-                src="https://i.scdn.co/image/ab67616d00001e021c75d11972c198f6850c3632"
+                src="/images/synergyClub.jpg"
                 style={{ height: "118px", width: "118px", borderRadius: "50%" }}
               />
               <br />
@@ -89,7 +89,7 @@ const Mycomp = ({ Show }) => {
             {" "}
             <HashLink smooth to="#IDAERONAUTICSCLUB">
               <img
-                src="https://blog.flatworldsolutions.com/files/2019/11/top-mechanical-engineering-trends-to-watch-out-for-in-2020.jpg"
+                src="/images/aeronauticsClub.jpg"
                 style={{ height: "118px", width: "118px", borderRadius: "50%" }}
               />
               <br />
@@ -101,7 +101,7 @@ const Mycomp = ({ Show }) => {
           <div className="tvyomeventbtns">
             <HashLink smooth to="#IDEQUINOX&ILLUMINATICLUB">
               <img
-                src="https://tdan.com/wp-content/uploads/2022/04/ART01x-feature-image-edited.jpg"
+                src="/images/equinoxClub.jpg"
                 style={{ height: "118px", width: "118px", borderRadius: "50%" }}
               />
               <br />
@@ -114,7 +114,7 @@ const Mycomp = ({ Show }) => {
           <div className="tvyomeventbtns">
             <HashLink smooth to="#IDLITERARAYCLUB">
               <img
-                src="http://atxvideopro.com/wp-content/uploads/2016/12/script-writing-300x300.jpg"
+                src="/images/literaryClub.jpg"
                 style={{ height: "118px", width: "118px", borderRadius: "50%" }}
               />
               <br />
@@ -126,7 +126,7 @@ const Mycomp = ({ Show }) => {
           <div className="tvyomeventbtns">
             <HashLink smooth to="#IDMRCCLUB">
               <img
-                src="https://www.mmdbservices.com/wp-content/uploads/2022/01/A-girl-trying-to-understand-media-relations-management-services-300x300.jpg"
+                src="/images/mrcClub.jpg"
                 style={{ height: "118px", width: "118px", borderRadius: "50%" }}
               />
               <br />
@@ -139,7 +139,7 @@ const Mycomp = ({ Show }) => {
           <div className="tvyomeventbtns">
             <HashLink smooth to="#IDPHARMQUIMICACLUB">
               <img
-                src="https://www.thehighereducationreview.com/newnews/Ao89NwKD.jpg"
+                src="/images/pharmaquimicaClub.jpg"
                 style={{ height: "118px", width: "118px", borderRadius: "50%" }}
               />
               <br />
@@ -151,7 +151,7 @@ const Mycomp = ({ Show }) => {
           <div className="tvyomeventbtns">
             <HashLink smooth to="#IDDESIGNCLUB">
               <img
-                src="https://www.tooltech.net/wp-content/uploads/2019/05/S-5-01-300x300.jpg"
+                src="/images/designClub.jpg"
                 style={{ height: "118px", width: "118px", borderRadius: "50%" }}
               />
               <br />
@@ -163,7 +163,7 @@ const Mycomp = ({ Show }) => {
           <div className="tvyomeventbtns">
             <HashLink smooth to="#IDLANWAR">
               <img
-                src="https://bsmedia.business-standard.com/_media/bs/img/article/2019-07/28/full/1564336499-4935.jpg"
+                src="/images/lanWar.jpg"
                 style={{ height: "118px", width: "118px", borderRadius: "50%" }}
               />
               <br />
@@ -175,7 +175,7 @@ const Mycomp = ({ Show }) => {
           <div className="tvyomeventbtns">
             <HashLink smooth to="#IDOPENEVENTS">
               <img
-                src="https://www.iso.org/files/live/sites/isoorg/files/news/News_archive/2020/09/ISOfocus_142/1/isofocus_142-1.jpg/thumbnails/300x300"
+                src="/images/openEvents.jpg"
                 style={{ height: "118px", width: "118px", borderRadius: "50%" }}
               />
               <br />
