@@ -16,20 +16,25 @@ router.post("/create", async (req, res) => {
   if (error) {
     return res.send({
       status: false,
-      msg: "invalid credentials 1",
+      msg: "invalid credentials ",
     });
   }
   try {
     // checking if user allready registered
     const student_exits = await Student.exists({
-      $or: [{ rollnumber: req.body.rollnumber }, { email: req.body.email }],
+      $or: [
+        { rollnumber: req.body.rollnumber },
+        { email: req.body.email },
+        { Phonenumber: req.body.Phonenumber },
+      ],
     });
     if (student_exits) {
       return res.status(401).send({
         status: false,
-        msg: "student allready registered",
+        msg: "The email and phone number you have entered is already in use",
       });
     }
+
     // get Pid from Numberofstudent model
     const { numberofstudent } = await Numberofstudent.findOne({
       name: "admin",
