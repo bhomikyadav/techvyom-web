@@ -65,7 +65,7 @@ const Mycomp = ({ Show }) => {
             <HashLink smooth to="#IDROBOTRAXCLUB">
               <img
                 src="/images/robotraxClub.jpg"
-                style={{ height: "118px", width: "118px", borderRadius: "50%" }}
+                className="tvyomEventBtnsImg"
               />
               <br />
               <span style={{ color: "rgba(0,93,189,1)" }}>
@@ -77,7 +77,7 @@ const Mycomp = ({ Show }) => {
             <HashLink smooth to="#IDSYNERGYCLUB">
               <img
                 src="/images/synergyClub.jpg"
-                style={{ height: "118px", width: "118px", borderRadius: "50%" }}
+                className="tvyomEventBtnsImg"
               />
               <br />
               <span>
@@ -90,7 +90,7 @@ const Mycomp = ({ Show }) => {
             <HashLink smooth to="#IDAERONAUTICSCLUB">
               <img
                 src="/images/aeronauticsClub.jpg"
-                style={{ height: "118px", width: "118px", borderRadius: "50%" }}
+                className="tvyomEventBtnsImg"
               />
               <br />
               <span>
@@ -102,7 +102,7 @@ const Mycomp = ({ Show }) => {
             <HashLink smooth to="#IDEQUINOX&ILLUMINATICLUB">
               <img
                 src="/images/equinoxClub.jpg"
-                style={{ height: "118px", width: "118px", borderRadius: "50%" }}
+                className="tvyomEventBtnsImg"
               />
               <br />
               <span>
@@ -115,7 +115,7 @@ const Mycomp = ({ Show }) => {
             <HashLink smooth to="#IDLITERARAYCLUB">
               <img
                 src="/images/literaryClub.jpg"
-                style={{ height: "118px", width: "118px", borderRadius: "50%" }}
+                className="tvyomEventBtnsImg"
               />
               <br />
               <span>
@@ -127,7 +127,7 @@ const Mycomp = ({ Show }) => {
             <HashLink smooth to="#IDMRCCLUB">
               <img
                 src="/images/mrcClub.jpg"
-                style={{ height: "118px", width: "118px", borderRadius: "50%" }}
+                className="tvyomEventBtnsImg"
               />
               <br />
               <span>
@@ -140,7 +140,7 @@ const Mycomp = ({ Show }) => {
             <HashLink smooth to="#IDPHARMQUIMICACLUB">
               <img
                 src="/images/pharmaquimicaClub.jpg"
-                style={{ height: "118px", width: "118px", borderRadius: "50%" }}
+                className="tvyomEventBtnsImg"
               />
               <br />
               <span>
@@ -152,7 +152,7 @@ const Mycomp = ({ Show }) => {
             <HashLink smooth to="#IDDESIGNCLUB">
               <img
                 src="/images/designClub.jpg"
-                style={{ height: "118px", width: "118px", borderRadius: "50%" }}
+                className="tvyomEventBtnsImg"
               />
               <br />
               <span>
@@ -164,7 +164,7 @@ const Mycomp = ({ Show }) => {
             <HashLink smooth to="#IDLANWAR">
               <img
                 src="/images/lanWar.jpg"
-                style={{ height: "118px", width: "118px", borderRadius: "50%" }}
+                className="tvyomEventBtnsImg"
               />
               <br />
               <span>
@@ -176,7 +176,7 @@ const Mycomp = ({ Show }) => {
             <HashLink smooth to="#IDOPENEVENTS">
               <img
                 src="/images/openEvents.jpg"
-                style={{ height: "118px", width: "118px", borderRadius: "50%" }}
+                className="tvyomEventBtnsImg"
               />
               <br />
               <span>
