@@ -35,12 +35,16 @@
 }
 @media (max-width:1180px) {
     .tvyomregisterform>form{
-        width: 50%;
+        width: 80%;
+    }
+    .tvyomregisterform>form>button{
+        width: 40%;
     }
 }
 @media (max-width:660px) {
     .tvyomregisterform>form>button{
-        width: 50%;
+        width: 100%;
         margin: auto;
     }
+    
 }

@@ -179,7 +179,7 @@ const Login = () => {
                             handleonclickforgot(e);
                           }}
                           className="mb-3 pb-lg-2"
-                          style={{ color: "#393f81" }}
+                          style={{ color: "#393f81",cursor:'pointer' }}
                         >
                           Forgot pid?{" "}
                         </p>
