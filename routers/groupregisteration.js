@@ -38,7 +38,7 @@ router.post("/create", CheckVerification, async (req, res) => {
         msg: "invalid event",
       });
     }
-  
+
     const allreadyexits = await Eventgroup.exists({
       $and: [{ Pid }, { eventname }],
     });
@@ -220,12 +220,11 @@ See you in the event. Good luck !!  <br/>
 Thanks and regards <br/>  
 Techvyom team <br/>  
  SRMS CET BAREILLY </p>`,
-`Hi Sir /Madam 
+      `Hi Sir /Madam 
 Thank you for registering in ${eventname} of Techvyom of ${event_entered.EventClub} \nFollowing  :
 Event name : ${eventname}\n
 Pid :${Check_student.Pid}\n
 Tid :${Check_student.tid}\n
-
 Event code :${event_entered.EventCode}\n
 Event Mentor :${event_entered.Eventmentor}\n
 Mentor email:${event_entered.Eventmentoremail}\n

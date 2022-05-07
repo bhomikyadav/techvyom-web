@@ -3,6 +3,7 @@ const dotenv = require("dotenv");
 const path = require("path");
 const cors = require("cors");
 const app = express();
+const Event = require("./models/Events");
 
 dotenv.config({ path: "./config.env" });
 const port = process.env.PORT;
@@ -15,7 +16,9 @@ app.use(express.static("client/build"));
 //     res.sendFile(path.resolve(__dirname, "client", "build", "index.html"));
 //   });
 // }
+// =====================
 
+// =============================
 // check
 app.use("/user", require("./routers/LoginNsighup"));
 // check
@@ -27,10 +30,11 @@ app.use("/group", require("./routers/groupregisteration"));
 // ADMIN
 app.use("/info", require("./routers/Infouser"));
 app.use("/forgot", require("./routers/Forgot"));
-app.use('/admin',require('./routers/Admin'));
+app.use("/admin", require("./routers/Admin"));
 app.get("/*", function (req, res) {
   res.sendFile(path.join(__dirname, "client", "build", "index.html"));
 });
+
 app.listen(port, () => {
   console.log(`server in runing :${port}`);
 });

@@ -15,38 +15,38 @@ router.get("/eventcode/:Ecode", async (req, res) => {
     });
   }
   if (Find_Event.Grouped) {
-    Data = `Sno. name rollnumber Pid tid <br>`;
+    Data = `Sno. name rollnumber Pid tid \n`;
     const DBDATA_gup = await Eventgroup.find({
-      Eventname: Find_Event.Eventname,
+      eventname: Find_Event.Eventname,
     });
     DBDATA_gup.map((value, index) => {
       Data =
         Data +
-        `${index} ${value.name} ${value.rollnumber} ${value.Pid} ${value.tid} <br>`;
+        `${index} ${value.name} ${value.rollnumber} ${value.Pid} ${value.tid} \n`;
     });
   } else {
-    Data = `<pre>Sno. name rollnumber Pid <br>`;
+    Data = `Sno. name rollnumber Pid \n`;
     const DBDATA_par = await Praticipation.find({
       Eventname: Find_Event.Eventname,
     });
     DBDATA_par.map((value, index) => {
       Data =
-        Data + `${index} ${value.name} ${value.rollnumber} ${value.Pid} <br>`;
+        Data + `${index} ${value.name} ${value.rollnumber} ${value.Pid} \n`;
     });
   }
-  const checkmail = sendcustomMail(
-    "tyro.srms@gmail.com",
-    `data for event ${Find_Event.Eventname}`,
-    Data,
-    Data
-  );
-
-  if (checkmail) {
-    return res.send({
-      msg: "ok",
-    });
-  } else {
-    return res.send({ msg: "internal server error" });
-  }
+  // const checkmail = sendcustomMail(
+  //   "tyro.srms@gmail.com",
+  //   `data for event ${Find_Event.Eventname}`,
+  //   Data,
+  //   Data
+  // );
+  console.log(Data);
+  // if (checkmail) {
+  return res.send({
+    msg: "ok",
+  });
+  // } else {
+  //   return res.send({ msg: "internal server error" });
+  // }
 });
 module.exports = router;
