@@ -49,4 +49,6 @@ router.get("/eventcode/:Ecode", async (req, res) => {
   //   return res.send({ msg: "internal server error" });
   // }
 });
+
+//parul 
 module.exports = router;
